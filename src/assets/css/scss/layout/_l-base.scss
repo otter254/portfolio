@@ -10,17 +10,10 @@
   opacity: 0;
   visibility: hidden;
   transition: visibility $time $ease, opacity $time $ease;
-
+  background: color(bg);
   .is-loaded & {
     opacity: 1;
     visibility: visible;
-  }
-}
-.l-wrapper {
-  padding-top: $lgHeaderHeight;
-
-  @include media(sm) {
-    padding-top: $smHeaderHeight;
   }
 }
 
@@ -57,5 +50,43 @@
 .l-sm {
   @include media(lg) {
     display: none !important;
+  }
+}
+
+.l-main {
+  overflow: hidden;
+  position: relative;
+  &--wrapper {
+    width: 400%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    will-change: auto;
+  }
+  &-panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    // background: color(bg);
+    // &-01 {
+    //   background: #000;
+    // }
+    // &-02 {
+    //   background: blue;
+    // }
+    // &-03 {
+    //   background: red;
+    // }
+    // &-04 {
+    //   background: green($color: #000000);
+    // }
+  }
+  &-panel__contents {
+    border: 1px solid #fff;
+    height: calc(100% - 10vh);
+    width: calc(100% - 10vw);
   }
 }

@@ -22,9 +22,10 @@ $ff-en: 'Roboto', sans-serif;       // 400|500|700
 // ex) color: getColor(text);
 // ----------------------------------------------------------------------
 $propColor: (
-  text: #333,
-  link: #333,
-  border: #333,
+  text: #fff,
+  bg:#080808,
+  link: #fff,
+  border: #fff,
   selection: #87ceeb,
   tapHighlight: rgba(#000, 0),
   flickingDot: #ccc,

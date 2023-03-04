@@ -5,9 +5,31 @@
 @use '../fundation/function' as *;
 
 .c-title {
-  /* stylelint-disable */
-  // 使用する最に stylelint-disableコメント削除
-  /* stylelint-enable */
+  &__section {
+    .secNm {
+      &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 10vh;
+        background-color: #fff;
+        position: relative;
+        right: -5px;
+        margin-inline: 10px;
+      }
+    }
+  }
+  &__lv02 {
+    span {
+      &::before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 2px;
+        background: #fff;
+      }
+    }
+  }
 
   @include media(sm) {
   }

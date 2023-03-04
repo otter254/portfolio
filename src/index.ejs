@@ -12,25 +12,46 @@ var pageData = {
 <!-- main -->
 <main class="l-main">
 
-  <!-- Slider main container -->
+    <div class="l-main--wrapper" id="wrapper">
+
+      <!-- MV -->
+      <section class="l-main-panel l-main-panel-01 panel" id="panel01">
+        <div class="l-main-panel__contents">
+
+        </div>
+      </section>
+
+      <!-- パネル2枚目 コンセプトアート section01-conceptart01 -->
+      <%- include(dir + 'inc/layout/_panel02', {meta: pageData}) %>
+
+
+      <section class="l-main-panel l-main-panel-03 panel" id="panel03">
+        <p class="l-main-panel__contents">Panel 3/4</p>
+      </section>
+      <section class="l-main-panel l-main-panel-04 panel" id="panel04">
+        <p class="l-main-panel__contents">Panel 4/4</p>
+      </section>
+    </div>
+
+  <!-- Slider main container
   <div class="swiper">
-    <!-- Additional required wrapper -->
+    Additional required wrapper
     <div class="swiper-wrapper">
-      <!-- Slides -->
+      Slides
       <div class="swiper-slide">Slide 1</div>
       <div class="swiper-slide">Slide 2</div>
       <div class="swiper-slide">Slide 3</div>
       ...
     </div>
-    <!-- If we need pagination -->
+    If we need pagination
     <div class="swiper-pagination"></div>
 
-    <!-- If we need navigation buttons -->
+    If we need navigation buttons
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-    <!-- If we need scrollbar -->
+    If we need scrollbar
     <div class="swiper-scrollbar"></div>
-  </div>
+  </div> -->
 
 
 </main>

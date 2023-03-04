@@ -4,8 +4,8 @@
 @use '../fundation/mixin' as *;
 @use '../fundation/function' as *;
 
-.top {
-
-  @include media(sm) {
+.c-contents {
+  &__body {
+    width: 100%;
   }
 }

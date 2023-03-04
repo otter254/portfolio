@@ -73,3 +73,8 @@
     text-align: center;
   }
 }
+
+.u-v-lr {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}

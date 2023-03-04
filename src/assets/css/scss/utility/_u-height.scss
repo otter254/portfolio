@@ -4,8 +4,7 @@
 @use '../fundation/mixin' as *;
 @use '../fundation/function' as *;
 
-.top {
-
-  @include media(sm) {
-  }
+// display
+.u-h-max {
+  height: 100%;
 }

@@ -75,7 +75,7 @@
     "figlet": "^1.5.0",
     "focus-visible": "^5.2.0",
     "fs": "0.0.2",
-    "gsap": "^3.10.4",
+    "gsap": "^3.11.4",
     "gulp": "^4.0.2",
     "gulp-consolidate": "^0.2.0",
     "gulp-ejs": "^5.1.0",

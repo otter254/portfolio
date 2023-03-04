@@ -5,11 +5,13 @@
 @use '../fundation/function' as *;
 
 .l-header {
-  background-color: #fff;
+  background-color: color(bg);
   left: 0;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 5vw;
+  max-width: 80px;
+  height: 100vh;
   z-index: 999;
   transition: box-shadow $time $ease;
 
@@ -17,26 +19,11 @@
   &__inner {
     display: flex;
     align-items: center;
-    height: $lgHeaderHeight;
-
-    @include media(sm) {
-      height: $smHeaderHeight;
-    }
+    flex-direction: column;
+    justify-content: space-between;
+    padding-block: 50px;
   }
 
-  // ロゴ
-  &__logo {
-    margin-right: auto;
-  }
-
-  // ハンバーガー
-  .c-hamburger {
-    margin-left: 20px;
-
-    @include media(sm) {
-      margin-left: 0;
-    }
-  }
 
   .is-scroll & {
     box-shadow: 0 3px 3px rgba(#000, .1);
