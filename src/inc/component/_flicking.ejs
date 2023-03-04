@@ -1,0 +1,27 @@
+<%
+/*
+  ejgs::Flickingの設置用コンポーネント
+
+  @param
+  class: 独自クラス（無ければ無視）
+  slide: スライド用配列
+    img: 1x画像のURL
+    img2x: 2x用の画像URL（無ければ無視）
+    alt: 画像の説明
+*/
+
+var attr = (typeof attr === 'undefined') ? '' : attr;
+%>
+
+<div class="u-flicking js-flicking<% if (attr.class) { %> <%- attr.class %><% } %>">
+  <div class="u-flicking__container">
+    <div class="u-flicking__slide">
+      <% attr.slide.forEach(function(slide) { %>
+        <div class="u-flicking__panel"><img src="<%- slide.img %>"<% if (slide.img2x) { %> srcset="<%- slide.img2x %> 2x"<% } %> alt="<%- slide.alt %>"></div>
+      <% }) %>
+    </div>
+    <span class="u-flicking__prev"><%- include('./_icon', {attr: {id: 'chevron-left', type: 'regular'}}) %></span>
+    <span class="u-flicking__next"><%- include('./_icon', {attr: {id: 'chevron-right', type: 'regular'}}) %></span>
+  </div>
+  <nav class="u-flicking__pagination"></nav>
+</div>

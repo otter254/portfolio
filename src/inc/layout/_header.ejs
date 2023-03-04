@@ -1,0 +1,19 @@
+<%
+var define = (typeof define === 'undefined') ? '' : define;
+%>
+
+<header class="l-header">
+  <div class="l-header__inner">
+    <h1 class="l-header__logo">
+      <a href="<%= siteurl %>">ロゴ</a>
+    </h1>
+    <%- include('../navigation/_lg') %>
+    <div class="c-hamburger js-hmb" role="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+<div class="l-backlayer js-layer"></div>
+<%- include('../navigation/_mega') %>

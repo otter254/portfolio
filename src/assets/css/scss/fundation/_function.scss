@@ -1,0 +1,27 @@
+@charset 'utf-8';
+@use 'sass:math';
+
+$smBaseWidth: 375;  // VW計算のための基準Width
+$smBaseHeight: 668; // VW計算のための基準Width
+
+// function
+// ----------------------------------------------------------------------
+// 01. vw変換
+// 02. vh変換
+// ----------------------------------------------------------------------
+
+// 01 vw変換
+// ex) margin: 0 vw(80);
+// ----------------------------------------------------------------------
+
+@function vw($num, $baseWidth: $smBaseWidth) {
+  @return math.div($num, $baseWidth) * 100vw;
+}
+
+// 02 vh変換
+// ex) margin: vh(80) 0;
+// ----------------------------------------------------------------------
+
+@function vh($num, $baseHeight: $smBaseHeight) {
+  @return math.div($num, $baseHeight) * 100vh;
+}

@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+// コーディング規約
+// 1. ファイル名に接頭辞が付いている場合、classNameにも接頭辞を付与します。
+// 2. ファイル名に接頭辞が付いていない場合、原則個別要素に影響しない内容を記述します。
+
+// Fundation
+@use '../../../node_modules/ress/ress.css';
+@use 'scss/fundation/**/*';
+
+// Layout
+@use 'scss/layout/**/*';
+
+// Component
+@use 'scss/component/**/*';
+
+// Project
+@use 'scss/project/**/*';
+
+// Utility
+@use 'scss/utility/**/*';

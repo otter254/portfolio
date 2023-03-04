@@ -1,0 +1,58 @@
+@charset 'utf-8';
+@use 'sass:math';
+@use '../fundation/variable' as *;
+@use '../fundation/mixin' as *;
+@use '../fundation/function' as *;
+
+.c-accordion {
+  &--btn {
+    @include fz(16, true);
+    padding: 15px;
+    border: solid 1px color('border');
+    position: relative;
+    svg {
+      width: 15px;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      transform-origin: center;
+      transition: transform $time $ease;
+    }
+    &.is-opened {
+      svg {
+        transform: translateY(-50%) rotate(180deg);
+      }
+      & + .c-accordion--panel {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  &--panel {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: height $time $ease, visibility $time $ease, opacity $time $ease;
+  }
+  &--item {
+    @include fz(16, true);
+    padding: 15px;
+  }
+
+  @include media(sm) {
+    &--btn {
+      @include fz(14, true);
+      padding: vw(10);
+      svg {
+        width: vw(10);
+        right: vw(15);
+      }
+    }
+    &--item {
+      @include fz(14, true);
+      padding: vw(10);
+    }
+  }
+}

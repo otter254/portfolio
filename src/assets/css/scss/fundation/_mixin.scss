@@ -1,0 +1,310 @@
+@charset 'utf-8';
+@use 'sass:math';
+@use './variable' as *;
+
+// mixin
+// ----------------------------------------------------------------------
+// 01. メディアクエリー
+// 02. フォント一括設定
+// 03. object-fitのIE用polyfill
+// 04. プレースホルダーのレイアウト
+// 05. formパーツのスタイルリセット
+// 06. 幅と余白の設定
+// 07. IE11用スタイル
+// 08. safari用スタイル
+// 09. タブレット用スタイル
+// 10. ラップトップだけどタッチサポートしているデバイス全般用スタイル
+// 11. ホバー時のopacityアニメーション（LGのみ）
+// ----------------------------------------------------------------------
+
+// 01 メディアクエリー
+// ex) @include media(sm) { ～ contents ～ }
+// ex) @include media(min-width, 800) { ～ contents ～ }
+// ----------------------------------------------------------------------
+
+@mixin media($type) {
+  @if ($type == 'sm') {
+    @media screen and (max-width: ($breakPoint - 1)) {
+      @content;
+    }
+  }
+  @else if ($type == 'lg') {
+    @media screen and (min-width: $breakPoint), print {
+      @content;
+    }
+  }
+  @else if ($type == 'retina') {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      @content;
+    }
+  }
+}
+
+// 02 フォント一括設定
+// font-size, rem/px, line-height, font-weight, letter-spacing
+// line-heightとletter-spacingはデザインデータの数値を参照
+// ex) @include fz(16, true, 24, 400, 75, false);
+// ----------------------------------------------------------------------
+
+@mixin fz($size, $rem: true, $height: false, $weight: false, $spacing: false, $centering: false) {
+  @if $rem {
+    font-size: #{math.div($size, 10)}rem;
+  }
+  @else {
+    font-size: #{$size}px;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $spacing {
+    letter-spacing: #{math.div($spacing, 1000)}em;
+
+    @if $centering {
+      text-indent: #{math.div($spacing, 1000)}em;
+    }
+  }
+
+  @if $height {
+    line-height: math.div($height, $size);
+  }
+}
+
+// 03 object-fitのIE用polyfill
+// ex) @include objectFit(cover, center);
+// ----------------------------------------------------------------------
+
+@mixin objectFit($fit: cover, $position: null) {
+  -o-object-fit: $fit;
+  object-fit: $fit;
+
+  @if $position {
+    -o-object-position: $position;
+    object-position: $position;
+    /* stylelint-disable-next-line */
+    font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+  }
+  @else {
+    font-family: 'object-fit: #{$fit}';
+  }
+}
+
+// 04 プレースホルダーのレイアウト
+// ex) @include placeHolder() { ～ contents ～ }
+// ----------------------------------------------------------------------
+
+@mixin placeHolder() {
+  &:placeholder-shown {
+    @content;
+  }
+
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    @content;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+// 05 formパーツのスタイルリセット
+// ex) @include formReset();
+// ----------------------------------------------------------------------
+
+@mixin formReset() {
+  input, button, textarea, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    outline: none;
+    padding: 0;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+}
+
+// 06 幅と余白の設定
+// ex) @include width(1200px, 30px, 20px);
+// ----------------------------------------------------------------------
+
+@mixin width($width: 1000px, $marginLg: 0, $marginSm: 0) {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $width;
+
+  @if $marginLg {
+    @if $marginLg == 0 {
+      width: auto;
+    }
+    @else {
+      width: calc(100% - #{$marginLg} * 2);
+    }
+  }
+  @else {
+    width: auto;
+  }
+
+  @include media(sm) {
+    @if $marginSm {
+      @if $marginSm == 0 {
+        width: auto;
+      }
+      @else {
+        width: calc(100% - #{$marginSm} * 2);
+      }
+    }
+    @else {
+      width: auto;
+    }
+  }
+}
+
+// 07 IE11用スタイル
+// ex) @include ie11(lg / sm) { ～ contents ～ }
+// ----------------------------------------------------------------------
+
+@mixin ie11($size: false) {
+  html[data-browser = "ie"][data-browserversion = "11"] & {
+    @if ($size) {
+      @if ($size == 'lg') {
+        @include media(lg) {
+          @content;
+        }
+      }
+      @else if ($size == 'sm') {
+        @include media(sm) {
+          @content;
+        }
+      }
+    }
+    @else {
+      @content;
+    }
+  }
+}
+
+// 08 safari用スタイル
+// ex) @include safari(lg / sm) { ～ contents ～ }
+// ----------------------------------------------------------------------
+
+@mixin safari($size: false) {
+  @if ($size == 'sm') {
+    html[data-browser = "mobile-safari"] & {
+      @content;
+    }
+  }
+  @else {
+    html[data-browser = "safari"] & {
+      @content;
+    }
+  }
+}
+
+// 09 タブレット用スタイル
+// ex) @include tablet(portrait / landscape) { ～ contents ～ }
+// ----------------------------------------------------------------------
+
+@mixin tablet($orientation: false) {
+  @if ($orientation) {
+    html[data-type="tablet"][data-orientation="#{$orientation}"] & {
+      @content;
+    }
+  }
+  @else {
+    html[data-type = 'tablet'] & {
+      @content;
+    }
+  }
+}
+
+// 10 ラップトップだけどタッチサポートしているデバイス全般用スタイル
+// ex) @include ipados(portrait / landscape) { ～ contents ～ }
+// ----------------------------------------------------------------------
+
+@mixin ipados($orientation: false) {
+  @if ($orientation) {
+    html[data-type="laptop"][data-os="mac-os"][data-browser="safari"][data-touchsupport="true"][data-orientation="#{$orientation}"]
+    & {
+      @content;
+    }
+  }
+  @else {
+    html[data-type = "laptop"][data-os = "mac-os"][data-browser = "safari"][data-touchsupport = "true"] & {
+      @content;
+    }
+  }
+}
+
+// 11 ホバー時のopacityアニメーション（LGのみ）
+// ex) @include hoverOpacity(0.8);
+// ----------------------------------------------------------------------
+
+@mixin hoverOpacity($opacity: 0.6) {
+  transition: opacity $time $ease;
+  @include media(lg) {
+    &:hover {
+      opacity: $opacity;
+    }
+  }
+}
+
+// 12 ホバーはLGのみ
+// ----------------------------------------------------------------------
+@mixin ahover {
+  @include media(lg) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+// 13 flex
+// ----------------------------------------------------------------------
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin iflex {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+@mixin flexAuto($max: 100%) {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: $max;
+}
+
+@mixin flexChild($w: 100%) {
+  flex: 0 0 $w;
+  max-width: $w;
+}
+
+@mixin flexCalc($w: 0) {
+  flex: 0 0 calc(100% - #{$w});
+  flex-basis: calc(100% - #{$w});
+  max-width: calc(100% - #{$w});
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,112 @@
+@charset 'utf-8';
+@use 'sass:math';
+@use './variable' as *;
+@use './mixin' as *;
+@use './function' as *;
+
+// 全体
+* {
+  box-sizing: border-box;
+
+  &:before, &:after {
+    box-sizing: border-box;
+  }
+
+  &::selection {
+    background-color: color(selection);
+  }
+}
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: color(tapHighlight);
+
+  @include media(sm) {
+    font-size: vw(10);
+
+    &.is-nav-active {
+      overflow: hidden;
+    }
+  }
+}
+body {
+  color: color(text);
+  font-family: $ff-jp;
+  font-feature-settings: 'palt';
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: none;
+  min-width: $lgMinWidth;
+  @include fz(14, true);
+
+  @include media(sm) {
+    min-width: initial;
+  }
+
+  // アンチエイリアス
+  @include media(retina) {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+// アンカー
+a {
+  color: color(link);
+  text-decoration: none;
+
+  &[href ^= "tel:"] {
+    @include media(lg) {
+      pointer-events: none;
+    }
+  }
+}
+
+// リスト
+ol, ul {
+  list-style-position: inside;
+}
+
+// 画像
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+picture {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// テーブル
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    word-break: break-all;
+  }
+}
+
+// IE11のクリアボタンを非表示
+input::-ms-clear {
+  display: none;
+}
+
+// タブキーでの移動以外はアウトラインを削除
+[data-js-focus-visible]:focus:not([data-focus-visible-added]) {
+  outline: none;
+}
+
+// 状態
+[aria-hidden = "false"] {
+  visibility: visible;
+}
+[aria-hidden = "true"] {
+  display: none;
+  visibility: hidden;
+}
+

@@ -1,0 +1,48 @@
+@charset 'utf-8';
+@use 'sass:math';
+@use '../fundation/variable' as *;
+@use '../fundation/mixin' as *;
+@use '../fundation/function' as *;
+
+.l-header {
+  background-color: #fff;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: box-shadow $time $ease;
+
+  // インナー
+  &__inner {
+    display: flex;
+    align-items: center;
+    height: $lgHeaderHeight;
+
+    @include media(sm) {
+      height: $smHeaderHeight;
+    }
+  }
+
+  // ロゴ
+  &__logo {
+    margin-right: auto;
+  }
+
+  // ハンバーガー
+  .c-hamburger {
+    margin-left: 20px;
+
+    @include media(sm) {
+      margin-left: 0;
+    }
+  }
+
+  .is-scroll & {
+    box-shadow: 0 3px 3px rgba(#000, .1);
+
+    @include media(sm) {
+      box-shadow: 0 vw(3) vw(3) rgba(#000, .1);
+    }
+  }
+}

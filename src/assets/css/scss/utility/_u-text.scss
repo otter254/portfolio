@@ -1,0 +1,75 @@
+@charset 'utf-8';
+@use 'sass:math';
+@use '../fundation/variable' as *;
+@use '../fundation/mixin' as *;
+@use '../fundation/function' as *;
+
+// フォント
+.u-text {
+  &-jp {
+    font-family: $ff-jp;
+  }
+
+  &-en {
+    font-family: $ff-en;
+  }
+}
+
+.u-color {
+  &-alert {
+    color: color(alert);
+  }
+
+  &-text {
+    color: color(text);
+  }
+}
+
+.u-fw {
+  &-bold {
+    font-weight: bold;
+  }
+
+  &-semibold {
+    font-weight: 500;
+  }
+
+  &-regular {
+    font-weight: 400;
+  }
+
+  &-light {
+    font-weight: 100;
+  }
+}
+
+// テキストリンク
+.u-text-link {
+  text-decoration: underline;
+  color: color(primary);
+
+  @include ahover {
+    text-decoration: none;
+  }
+}
+
+// 文頭を一文字文ずらす。（例：「※注意」）
+.u-text-indent {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+// text-align
+.u-ta {
+  &-left {
+    text-align: left;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+  }
+}

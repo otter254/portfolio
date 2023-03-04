@@ -1,0 +1,44 @@
+@charset 'utf-8';
+@use 'sass:map';
+@use './function' as *;
+
+// レイアウト
+// ----------------------------------------------------------------------
+$breakPoint: 768px;      // ブレークポイント
+$lgMinWidth: 1200px;     // タブレットの縮小サイズ
+$lgHeaderHeight: 40px;   // ヘッダーの高さ（LG）
+$smHeaderHeight: vw(40); // ヘッダーの高さ（SM）
+
+
+
+// フォント
+// ----------------------------------------------------------------------
+$ff-jp: 'Noto Sans JP', sans-serif; // 400|500|700
+$ff-en: 'Roboto', sans-serif;       // 400|500|700
+
+
+
+// カラー
+// ex) color: getColor(text);
+// ----------------------------------------------------------------------
+$propColor: (
+  text: #333,
+  link: #333,
+  border: #333,
+  selection: #87ceeb,
+  tapHighlight: rgba(#000, 0),
+  flickingDot: #ccc,
+  flickingCurrent: #c00,
+  alert: #D10000,
+);
+
+@function color($key: 'text') {
+  @return map.get($propColor, $key);
+}
+
+
+
+// アニメーション
+// ----------------------------------------------------------------------
+$time: 500ms;
+$ease: ease;

@@ -1,0 +1,63 @@
+@charset 'utf-8';
+@use 'sass:math';
+@use '../fundation/variable' as *;
+@use '../fundation/mixin' as *;
+@use '../fundation/function' as *;
+
+@for $i from 0 through 10 {
+  .u-pl-#{$i} {
+    padding-left: 8px * $i;
+    @include media(sm) {
+      padding-left: vw(4 * $i);
+    }
+  }
+
+  .u-pt-#{$i} {
+    padding-top: 8px * $i;
+    @include media(sm) {
+      padding-top: vw(4 * $i);
+    }
+  }
+
+  .u-pl-#{$i} {
+    padding-right: 8px * $i;
+    @include media(sm) {
+      padding-right: vw(4 * $i);
+    }
+  }
+
+  .u-pb-#{$i} {
+    padding-bottom: 8px * $i;
+    @include media(sm) {
+      padding-bottom: vw(4 * $i);
+    }
+  }
+
+  .u-ml-#{$i} {
+    margin-left: 8px * $i;
+    @include media(sm) {
+      margin-left: vw(4 * $i);
+    }
+  }
+
+  .u-mt-#{$i} {
+    margin-top: 8px * $i;
+    @include media(sm) {
+      margin-top: vw(4 * $i);
+    }
+  }
+
+  .u-mr-#{$i} {
+    margin-right: 8px * $i;
+    @include media(sm) {
+      margin-left: vw(4 * $i);
+    }
+  }
+
+  .u-mb-#{$i} {
+    margin-bottom: 8px * $i;
+    @include media(sm) {
+      margin-bottom: vw(4 * $i);
+    }
+  }
+}

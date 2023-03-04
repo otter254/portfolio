@@ -1,0 +1,13 @@
+{
+  "siteName": "gulp + EJS ボイラーテンプレート",
+  "siteDomainProduction": "https://production.com/",
+  "siteDomainDevelopment": "/",
+  "metaAuthor": "サンプルテキスト",
+  "metaAppid": "0123456789",
+  "metaTwitterSite": "サンプルテキスト",
+  "metaTwitterCreator": "サンプルテキスト",
+  "publishFileName": "glpEJS",
+  "themeColor": "#000",
+  "useWebp": false,
+  "useSSI": true
+}

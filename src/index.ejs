@@ -1,0 +1,37 @@
+<%
+var dir = './'
+var define = (typeof define === 'undefined') ? '' : define
+var pageData = {
+  pageName: 'top',
+  title: 'トップページ',
+  desc: 'サンプルテキストです（150文字前後）。'
+}
+%>
+
+<%- include(dir + 'inc/layout/_head', {meta: pageData}) %>
+<!-- main -->
+<main class="l-main">
+
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+
+</main>
+<%- include(dir + 'inc/layout/_foot', {meta: pageData}) %>
