@@ -26,6 +26,7 @@ $smLineBottom: vw(10);
   height: $lgBoxHeight;
   position: relative;
   width: $lgBoxWidth;
+  opacity: 0;
   span {
     background-color: $lineColor;
     display: inline-block;

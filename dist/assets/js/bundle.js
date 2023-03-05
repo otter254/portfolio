@@ -286,6 +286,140 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/assets/js/helper/mv.js":
+/*!************************************!*\
+  !*** ./src/assets/js/helper/mv.js ***!
+  \************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap/ScrollTrigger */ "./node_modules/gsap/ScrollTrigger.js");
+
+
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+
+
+gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__.ScrollTrigger);
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  // ——————————————————————————————————————————————————
+  // TextScramble
+  // ——————————————————————————————————————————————————
+  var TextScramble = /*#__PURE__*/function () {
+    function TextScramble(el) {
+      _classCallCheck(this, TextScramble);
+      this.el = el;
+      this.chars = '!<>-_\\/[]{}—=+*^?#________';
+      this.update = this.update.bind(this);
+    }
+    _createClass(TextScramble, [{
+      key: "setText",
+      value: function setText(newText) {
+        var _this = this;
+        var oldText = this.el.innerText;
+        var length = Math.max(oldText.length, newText.length);
+        var promise = new Promise(function (resolve) {
+          return _this.resolve = resolve;
+        });
+        this.queue = [];
+        for (var i = 0; i < length; i++) {
+          var from = oldText[i] || '';
+          var to = newText[i] || '';
+          var start = Math.floor(Math.random() * 40);
+          var end = start + Math.floor(Math.random() * 40);
+          this.queue.push({
+            from: from,
+            to: to,
+            start: start,
+            end: end
+          });
+        }
+        cancelAnimationFrame(this.frameRequest);
+        this.frame = 0;
+        this.update();
+        return promise;
+      }
+    }, {
+      key: "update",
+      value: function update() {
+        var output = '';
+        var complete = 0;
+        for (var i = 0, n = this.queue.length; i < n; i++) {
+          var _this$queue$i = this.queue[i],
+            from = _this$queue$i.from,
+            to = _this$queue$i.to,
+            start = _this$queue$i.start,
+            end = _this$queue$i.end,
+            char = _this$queue$i.char;
+          if (this.frame >= end) {
+            complete++;
+            output += to;
+          } else if (this.frame >= start) {
+            if (!char || Math.random() < 0.28) {
+              char = this.randomChar();
+              this.queue[i].char = char;
+            }
+            output += "<span class=\"dud\">".concat(char, "</span>");
+          } else {
+            output += from;
+          }
+        }
+        this.el.innerHTML = output;
+        if (complete === this.queue.length) {
+          this.resolve();
+        } else {
+          this.frameRequest = requestAnimationFrame(this.update);
+          this.frame++;
+        }
+      }
+    }, {
+      key: "randomChar",
+      value: function randomChar() {
+        return this.chars[Math.floor(Math.random() * this.chars.length)];
+      }
+    }]);
+    return TextScramble;
+  }();
+  setTimeout(function () {
+    var el = document.querySelector('.mvtext');
+    var fx = new TextScramble(el);
+    fx.setText('CREATE');
+    var el02 = document.querySelector('.mvtext02');
+    var fx02 = new TextScramble(el02);
+    fx02.setText('species');
+  }, 700);
+  setTimeout(function () {
+    var tl = gsap__WEBPACK_IMPORTED_MODULE_0__["default"].timeline();
+    tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvbglayer", {
+      opacity: 0,
+      duration: 1
+    }));
+    tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvfade01", {
+      opacity: 1,
+      y: 0,
+      duration: 1
+    }));
+    tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvfade02", {
+      opacity: 1,
+      y: 0,
+      duration: 1
+    }, "+=0.8"));
+    tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvfade03", {
+      opacity: 1,
+      y: 0,
+      duration: 1
+    }, "+=0.8"));
+  }, 2500);
+});
+
+/***/ }),
+
 /***/ "./src/assets/js/helper/preventDefault.js":
 /*!************************************************!*\
   !*** ./src/assets/js/helper/preventDefault.js ***!
@@ -46435,8 +46569,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helper_set100vh__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./helper/set100vh */ "./src/assets/js/helper/set100vh.js");
 /* harmony import */ var _helper_swiper__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./helper/swiper */ "./src/assets/js/helper/swiper.js");
 /* harmony import */ var _helper_headerFixed__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./helper/headerFixed */ "./src/assets/js/helper/headerFixed.js");
-/* harmony import */ var throttle_debounce__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! throttle-debounce */ "./node_modules/throttle-debounce/esm/index.js");
-/* harmony import */ var _page_top__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./page/top */ "./src/assets/js/page/top.js");
+/* harmony import */ var _helper_mv__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./helper/mv */ "./src/assets/js/helper/mv.js");
+/* harmony import */ var throttle_debounce__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! throttle-debounce */ "./node_modules/throttle-debounce/esm/index.js");
+/* harmony import */ var _page_top__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./page/top */ "./src/assets/js/page/top.js");
 
 
 // babel polyfill
@@ -46446,6 +46581,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // helper
+
 
 
 
@@ -46585,7 +46721,8 @@ var initRun = function initRun() {
   getScrollPos();
 
   // top
-  if (className.endsWith('top')) (0,_page_top__WEBPACK_IMPORTED_MODULE_13__["default"])();
+  if (className.endsWith('top')) (0,_page_top__WEBPACK_IMPORTED_MODULE_14__["default"])();
+  if (className.endsWith('top')) (0,_helper_mv__WEBPACK_IMPORTED_MODULE_12__["default"])();
   _constant_elements__WEBPACK_IMPORTED_MODULE_1__["default"].HTML.classList.add('is-loaded');
 };
 
@@ -46603,12 +46740,12 @@ window.addEventListener('load', initRun);
 /**
 * SCROLL
 */
-window.addEventListener('scroll', (0,throttle_debounce__WEBPACK_IMPORTED_MODULE_12__.throttle)(100, getScrollPos), false);
+window.addEventListener('scroll', (0,throttle_debounce__WEBPACK_IMPORTED_MODULE_13__.throttle)(100, getScrollPos), false);
 
 /**
 * RESIZE
 */
-window.addEventListener('resize', (0,throttle_debounce__WEBPACK_IMPORTED_MODULE_12__.debounce)(50, resize), false);
+window.addEventListener('resize', (0,throttle_debounce__WEBPACK_IMPORTED_MODULE_13__.debounce)(50, resize), false);
 }();
 /******/ })()
 ;
