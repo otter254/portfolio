@@ -4,12 +4,12 @@
   <title>gulp + EJS ボイラーテンプレート</title>
   <meta name="description" content="サンプルテキストです（150文字前後）。">
   <meta name="author" content="サンプルテキスト">
-  <link rel="shortcut icon" type="image/svg+xml" href="/assets/images/favicon.svg">
-  <link rel="shortcut icon" sizes="16x16" href="/assets/images/favicon16.ico">
-  <link rel="shortcut icon" sizes="32x32" href="/assets/images/favicon32.ico">
-  <link rel="shortcut icon" sizes="48x48" href="/assets/images/favicon48.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/touch180.png">
-  <link rel="canonical" href="/">
+  <link rel="shortcut icon" type="image/svg+xml" href="http://10.52.32.155:3000/assets/images/favicon.svg">
+  <link rel="shortcut icon" sizes="16x16" href="http://10.52.32.155:3000/assets/images/favicon16.ico">
+  <link rel="shortcut icon" sizes="32x32" href="http://10.52.32.155:3000/assets/images/favicon32.ico">
+  <link rel="shortcut icon" sizes="48x48" href="http://10.52.32.155:3000/assets/images/favicon48.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://10.52.32.155:3000/assets/images/touch180.png">
+  <link rel="canonical" href="http://10.52.32.155:3000/">
   <!-- Settings -->
   <meta name="viewport" content="width=device-width,viewport-fit=cover">
   <meta name="theme-color" content="#000">
@@ -19,20 +19,20 @@
   <meta property="og:description" content="サンプルテキストです（150文字前後）。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:url" content="/">
-  <meta property="og:image" content="/assets/images/ogpimg.png">
+  <meta property="og:url" content="http://10.52.32.155:3000/">
+  <meta property="og:image" content="http://10.52.32.155:3000/assets/images/ogpimg.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="サンプルテキスト">
   <meta name="twitter:creator" content="サンプルテキスト">
   <!-- Preload -->
-  <link rel="preload" as="style" href="/assets/css/style.css?rev=d40d105158c20aee">
-  <link rel="preload" as="script" href="/assets/js/bundle.js?rev=d40d105158c20aee">
+  <link rel="preload" as="style" href="http://10.52.32.155:3000/assets/css/style.css?rev=82551304f04c4ca4">
+  <link rel="preload" as="script" href="http://10.52.32.155:3000/assets/js/bundle.js?rev=82551304f04c4ca4">
   <!-- CSS -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;family=Roboto:wght@400;500;700&amp;display=swap">
-  <link rel="stylesheet" href="/assets/css/style.css?rev=d40d105158c20aee">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"> -->
+  <link rel="stylesheet" href="http://10.52.32.155:3000/assets/css/style.css?rev=82551304f04c4ca4">
 </head>
 
 <body id="gotop" class="top">
@@ -42,29 +42,137 @@
       <div class="l-content">
         <!-- main -->
         <main class="l-main">
-          <!-- Slider main container -->
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div> ...
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+          <div class="l-main--wrapper" id="wrapper">
+            <!-- MV -->
+            <section class="l-main-panel l-main-panel-01 panel" id="panel01">
+              <div class="l-main-panel__contents">
+              </div>
+            </section>
+            <!-- パネル2枚目 コンセプトアート section01-conceptart01 -->
+            <section class="l-main-panel l-main-panel-02 panel" id="panel02">
+              <div class="l-main-panel__contents u-d-flex">
+                <div class="c-title__section u-h-max u-d-flex u-v-lr">
+                  <b class="secNm u-d-flex">section01</b>
+                  <b>conceptart</b>
+                </div>
+                <div class="c-contents__body top-conceptart">
+                  <h2 class="c-title__lv02"> 環境デザイン <span class="u-d-block u-d-flex">environmental design</span>
+                  </h2>
+                  <div class="top-conceptart__content u-d-flex">
+                    <figure>
+                      <img src="/assets/images/top/img-01.jpg" alt="" height="1333" width="2000" decoding="async" loading="lazy">
+                    </figure>
+                    <div class="txt">
+                      <h3 class="c-title__lv03">main story</h3>
+                      <h4 class="c-title__lv04">あああ</h4>
+                      <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- パネル3枚目 コンセプトアート section01-conceptart02 -->
+            <section class="l-main-panel l-main-panel-02 panel" id="panel02">
+              <div class="l-main-panel__contents u-d-flex">
+                <div class="c-title__section u-h-max u-d-flex u-v-lr">
+                  <b class="secNm u-d-flex">section01</b>
+                  <b>conceptart</b>
+                </div>
+                <div class="c-contents__body top-conceptart__detail">
+                  <div class="top-conceptart__detail__content u-d-flex u-h-max">
+                    <div class="u-d-flex">
+                      <div class="img col2">
+                        <figure>
+                          <img src="/assets/images/top/img-01.jpg" class="u-h-max" alt="" height="1333" width="2000" decoding="async" loading="lazy">
+                        </figure>
+                        <figure>
+                          <img src="/assets/images/top/img-01.jpg" class="u-h-max" alt="" height="1333" width="2000" decoding="async" loading="lazy">
+                        </figure>
+                      </div>
+                      <div class="txt u-p-ct">
+                        <div>
+                          <h3 class="c-title__lv03">main story</h3>
+                          <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-d-flex">
+                      <div class="img col2">
+                        <figure>
+                          <img src="/assets/images/top/img-01.jpg" class="u-h-max" alt="" height="1333" width="2000" decoding="async" loading="lazy">
+                        </figure>
+                        <figure>
+                          <img src="/assets/images/top/img-01.jpg" class="u-h-max" alt="" height="1333" width="2000" decoding="async" loading="lazy">
+                        </figure>
+                      </div>
+                      <div class="txt u-p-cb">
+                        <div>
+                          <h3 class="c-title__lv03">main story</h3>
+                          <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- パネル4枚目 コンセプトアート section01-conceptart03 -->
+            <section class="l-main-panel l-main-panel-02 panel" id="panel02">
+              <div class="l-main-panel__contents u-d-flex">
+                <div class="c-title__section u-h-max u-d-flex u-v-lr">
+                  <b class="secNm u-d-flex">section01</b>
+                  <b>conceptart</b>
+                </div>
+                <div class="c-contents__body top-conceptart__detail">
+                  <div class="top-conceptart__detail__content u-d-flex u-h-max">
+                    <div class="u-d-flex">
+                      <div class="img col3">
+                        <figure>
+                          <img src="/assets/images/top/img-01.jpg" class="u-h-max" alt="" height="1333" width="2000" decoding="async" loading="lazy">
+                        </figure>
+                        <figure>
+                          <img src="/assets/images/top/img-01.jpg" class="u-h-max" alt="" height="1333" width="2000" decoding="async" loading="lazy">
+                        </figure>
+                        <figure>
+                          <img src="/assets/images/top/img-01.jpg" class="u-h-max" alt="" height="1333" width="2000" decoding="async" loading="lazy">
+                        </figure>
+                      </div>
+                      <div class="txt u-p-ct">
+                        <div>
+                          <h3 class="c-title__lv03">main story</h3>
+                          <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
+          <!-- Slider main container
+  <div class="swiper">
+    Additional required wrapper
+    <div class="swiper-wrapper">
+      Slides
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    If we need pagination
+    <div class="swiper-pagination"></div>
+
+    If we need navigation buttons
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    If we need scrollbar
+    <div class="swiper-scrollbar"></div>
+  </div> -->
         </main>
       </div>
-      <!--#include virtual="/ssi/footer.html" -->
     </div>
   </div>
-  <script src="/assets/js/bundle.js?rev=d40d105158c20aee" defer="defer"></script>
+  <script src="http://10.52.32.155:3000/assets/js/bundle.js?rev=82551304f04c4ca4" defer="defer"></script>
 
 
 </body></html>

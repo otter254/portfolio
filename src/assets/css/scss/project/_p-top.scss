@@ -6,6 +6,63 @@
 
 .top {
 
+  // パネル２枚目
+  &-conceptart {
+    padding-bottom: 50px;
+    &__content {
+      align-items: end;
+      figure {
+        aspect-ratio: 16 / 9;
+        width: 60%;
+      }
+      .txt {
+        width: 40%;
+        max-width: 320px;
+        margin-left: 4rem;
+      }
+    }
+  }
+
+  // パネル3枚目
+  &-conceptart {
+    &__detail {
+      &__content {
+        // > div {
+        //   width: 50%;
+        // }
+        .col2 {
+          figure {
+            aspect-ratio: 9 / 16;
+            height: calc(50% - 20px);
+            img {
+              object-fit: cover;
+            }
+            &:first-of-type {
+              margin-bottom: 20px;
+            }
+          }
+        }
+        .col3 {
+          figure {
+            aspect-ratio: 16 / 9;
+            height: calc((100% - 40px) / 3);
+            img {
+              object-fit: cover;
+            }
+            &:not(:last-of-type) {
+              margin-bottom: 20px;
+            }
+          }
+        }
+        .txt {
+          margin-left: 4rem;
+          width: 40%;
+          max-width:  320px;
+        }
+      }
+    }
+  }
+
   @include media(sm) {
   }
 }

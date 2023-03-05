@@ -19,15 +19,36 @@
       }
     }
   }
+
   &__lv02 {
+    margin-bottom: 30px;
     span {
+      position: relative;
+      padding-left: 20px;
+      text-transform: uppercase;
       &::before {
         content: "";
         display: block;
         width: 10px;
         height: 2px;
         background: #fff;
+        position: absolute;
+        top: calc(50% - 1px);
+        left: 0;
       }
+    }
+  }
+
+  &__lv03 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    &::after {
+      content: "";
+      width: 20px;
+      height: 1px;
+      background: #fff;
+      display: block;
+      margin-top: 10px;
     }
   }
 
