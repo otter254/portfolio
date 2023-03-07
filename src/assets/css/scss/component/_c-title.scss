@@ -6,6 +6,7 @@
 
 .c-title {
   &__section {
+    @include fz(16, true, false, 400, 100, false);
     .secNm {
       &::after {
         content: "";
@@ -21,11 +22,14 @@
   }
 
   &__lv02 {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
+    @include fz(24, true, false, 400, 100, false);
     span {
       position: relative;
+      margin-top: 6px;
       padding-left: 20px;
       text-transform: uppercase;
+      @include fz(12, true, false, 400, 100, false);
       &::before {
         content: "";
         display: block;
@@ -41,14 +45,15 @@
 
   &__lv03 {
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    @include fz(18, true, false, 400, 100, false);
     &::after {
       content: "";
       width: 20px;
       height: 1px;
       background: #fff;
       display: block;
-      margin-top: 10px;
+      margin-top: 6px;
     }
   }
 

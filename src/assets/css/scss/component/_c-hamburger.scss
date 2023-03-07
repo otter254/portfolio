@@ -21,12 +21,13 @@ $smLineTop: vw(10);    // 上下ライン位置（SM）
 $smLineBottom: vw(10);
 
 .c-hamburger {
-  background-color: $boxColor;
   display: inline-block;
   height: $lgBoxHeight;
   position: relative;
   width: $lgBoxWidth;
+  transition-duration: .5s;
   opacity: 0;
+  transform: translateY(10px);
   span {
     background-color: $lineColor;
     display: inline-block;

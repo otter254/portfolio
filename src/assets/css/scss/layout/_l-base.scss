@@ -85,8 +85,27 @@
     // }
   }
   &-panel__contents {
-    border: 1px solid #fff;
+    // border: 1px solid #a73e3e;
     height: calc(100% - 10vh);
     width: calc(100% - 10vw);
+  }
+}
+
+.progress {
+  position: fixed;
+  bottom: 5vh;
+  left: 10vw;
+  width: 80vw;
+  height: 1px;
+  background-color: #797979;
+  opacity: 0;
+  z-index: 100;
+  &__bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 0;
   }
 }

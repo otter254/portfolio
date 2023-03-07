@@ -402,19 +402,20 @@ gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollTrigger__
     }));
     tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvfade01", {
       opacity: 1,
-      y: 0,
-      duration: 1
-    }));
+      y: 0
+    }, "+=0.3"));
     tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvfade02", {
       opacity: 1,
-      y: 0,
-      duration: 1
-    }, "+=0.8"));
+      y: 0
+    }, "+=0.1"));
     tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvfade03", {
       opacity: 1,
-      y: 0,
+      y: 0
+    }, "+=0.1"));
+    tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-progress", {
+      opacity: 1,
       duration: 1
-    }, "+=0.8"));
+    }, "+=0.1"));
   }, 2500);
 });
 
@@ -653,7 +654,6 @@ gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollTrigger__
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var wrapper = document.querySelector('#wrapper');
   if (wrapper) {
-    // gsap.registerPlugin(ScrollTrigger); // npm/yarnの際に必要
     var panels = gsap__WEBPACK_IMPORTED_MODULE_0__["default"].utils.toArray('.panel');
     var wrapperWidth = wrapper.offsetWidth;
     /**
@@ -683,6 +683,55 @@ gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollTrigger__
       }
     });
   }
+
+  // プログレスバー
+  var progressBar = document.querySelector('.progress__bar');
+  window.addEventListener('scroll', function () {
+    var windowYPos = window.pageYOffset;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = windowYPos / height * 100;
+    progressBar.style.width = scrolled + "%";
+  });
+
+  // mv 背景画像パララックス
+  var mvparallax01 = document.querySelector('.js-mvparallax01');
+  var mvparallax02 = document.querySelector('.js-mvparallax02');
+  gsap__WEBPACK_IMPORTED_MODULE_0__["default"].fromTo(mvparallax01, {
+    x: 0
+  }, {
+    x: 150,
+    // y方向-に60px移動させる
+    ease: "none",
+    // イージングなし
+    scrollTrigger: {
+      trigger: '#panel01',
+      // ScrollTriggerの開始位置を計算するために使用される要素
+      start: "bottom bottom",
+      // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
+      end: "bottom top",
+      // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
+      scrub: 1 // 要素を1秒遅れで追従させる
+    }
+  });
+
+  gsap__WEBPACK_IMPORTED_MODULE_0__["default"].fromTo(mvparallax02, {
+    x: 0
+  }, {
+    x: 100,
+    // y方向-に60px移動させる
+    ease: "none",
+    // イージングなし
+    scrollTrigger: {
+      trigger: '#panel01',
+      // ScrollTriggerの開始位置を計算するために使用される要素
+      start: "bottom bottom",
+      // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
+      end: "bottom top",
+      // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
+      scrub: 1 // 要素を1秒遅れで追従させる
+      //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
+    }
+  });
 });
 
 /***/ }),

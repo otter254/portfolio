@@ -23,10 +23,11 @@
     justify-content: space-between;
     padding-block: 50px;
     .txt {
-      @include fz(14, true, false, 400, 100, false);
+      @include fz(12, true, false, 400, 100, false);
       text-transform: uppercase;
       opacity: 0;
       transform: translateY(10px);
+      transition-duration: .5s;
     }
   }
 

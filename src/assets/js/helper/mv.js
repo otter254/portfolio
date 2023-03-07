@@ -75,8 +75,9 @@ export default () => {
     setTimeout(() => {
       const tl = gsap.timeline();
       tl.add(gsap.to("#js-mvbglayer", { opacity:0, duration: 1 }));
-      tl.add(gsap.to("#js-mvfade01", { opacity:1, y:0 ,duration: 1 }));
-      tl.add(gsap.to("#js-mvfade02", { opacity:1, y:0 ,duration: 1 }, "+=0.8"));
-      tl.add(gsap.to("#js-mvfade03", { opacity:1, y:0 ,duration: 1 }, "+=0.8"));
+      tl.add(gsap.to("#js-mvfade01", { opacity:1, y:0}, "+=0.3"));
+      tl.add(gsap.to("#js-mvfade02", { opacity:1, y:0}, "+=0.1"));
+      tl.add(gsap.to("#js-mvfade03", { opacity:1, y:0}, "+=0.1"));
+      tl.add(gsap.to("#js-progress", { opacity:1 , duration:1,}, "+=0.1"));
     }, 2500);
 }
