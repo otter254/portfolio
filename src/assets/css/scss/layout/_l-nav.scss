@@ -27,8 +27,10 @@
   // 展開メニュー
   &__mega {
     background-color: #fff;
-    top: $lgHeaderHeight;
+    top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
     opacity: 0;
     overflow-y: auto;
     position: fixed;
@@ -36,17 +38,19 @@
     visibility: hidden;
     width: 100%;
     max-height: 100%;
-    z-index: 999;
+    z-index: 998;
+    color: color(bg);
+    display: flex;
+    align-items: center;
     nav {
-      @include fz(14, true, 20, 500);
+      margin-left: 150px;
+      @include fz(16, true, 20, 500, 200);
       ul {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
         list-style: none;
+        text-transform: uppercase;
         li {
           &:nth-of-type(n + 2) {
-            margin-left: 10px;
+            margin-top: 24px;
           }
         }
       }
