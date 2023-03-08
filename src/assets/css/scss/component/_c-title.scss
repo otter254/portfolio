@@ -5,13 +5,17 @@
 @use '../fundation/function' as *;
 
 .c-title {
+  // セクションのタイトル
   &__section {
-    @include fz(16, true, false, 400, 100, false);
+    @include fz(25, true, false, 300, 200, false);
+    padding-top: 50px;
+    text-transform: uppercase;
+    margin-right: 5vw;
     .secNm {
       &::after {
         content: "";
         display: block;
-        width: 1px;
+        width: 2px;
         height: 10vh;
         background-color: #fff;
         position: relative;
@@ -23,7 +27,7 @@
 
   &__lv02 {
     margin-bottom: 32px;
-    @include fz(24, true, false, 400, 100, false);
+    @include fz(28, true, false, 400, 100, false);
     span {
       position: relative;
       margin-top: 6px;

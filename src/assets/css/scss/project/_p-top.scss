@@ -59,12 +59,14 @@
 
   // パネル２枚目
   &-conceptart {
-    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__content {
       align-items: end;
       figure {
         aspect-ratio: 16 / 9;
-        width: 60%;
+        max-width: 60%;
       }
       .txt {
         width: 40%;
@@ -82,15 +84,19 @@
         //   width: 50%;
         // }
         .col2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 20px;
           figure {
             aspect-ratio: 9 / 16;
             height: calc(50% - 20px);
             img {
               object-fit: cover;
             }
-            &:first-of-type {
-              margin-bottom: 20px;
-            }
+            // &:first-of-type {
+            //   margin-bottom: 20px;
+            // }
           }
         }
         .col3 {
