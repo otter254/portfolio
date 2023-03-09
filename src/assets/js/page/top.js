@@ -3,6 +3,8 @@
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger);
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+gsap.registerPlugin(ScrollToPlugin);
 
 
 export default () => {
@@ -29,6 +31,26 @@ export default () => {
                 end: () => "+=" + wrapperWidth // アニメーションの終了タイミング
             }
         })
+
+        const anchors = document.querySelectorAll(".anchor");
+        console.log(anchors)
+        let index = '';
+        anchors.forEach( (anchor) => {
+            anchor.addEventListener( 'click', (e) => {
+                e.preventDefault();
+                index = [].slice.call(anchors).indexOf(anchor); // 何番目のアンカーリンクをクリックしたか取得
+                const target = document.querySelector(e.currentTarget.querySelector('a').getAttribute('href')); // クリックしたアンカーリンクに紐づくpanelを取得
+                const scrollbarWidth = window.innerWidth - document.body.clientWidth; // スクロールバーの長さを取得
+                const wrapperOffset = target.offsetLeft * ( wrapper.clientWidth / ( wrapper.clientWidth - window.innerWidth ) ) + scrollbarWidth * index; // 移動位置を取得
+                gsap.to(window, {
+                    scrollTo: {
+                        y: wrapperOffset,
+                        autoKill: false
+                    },
+                    duration: 1
+                });
+            });
+        });
     }
 
     // プログレスバー
@@ -68,6 +90,6 @@ export default () => {
          scrub: 1, // 要素を1秒遅れで追従させる
         //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
         }
-    }); 
+    });
 
 }

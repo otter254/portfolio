@@ -60,6 +60,10 @@
       margin-top: 6px;
     }
   }
+  &__lv04 {
+    margin-bottom: 8px;
+    @include fz(16, true, false, 400, 100, false);
+  }
 
   @include media(sm) {
   }
