@@ -18,6 +18,7 @@ import set100vh from './helper/set100vh'
 import swiper from './helper/swiper'
 import headerFixed from './helper/headerFixed'
 import mv from './helper/mv'
+import modal from './helper/modal'
 
 // plugins
 import { throttle, debounce } from 'throttle-debounce'
@@ -151,6 +152,7 @@ const initRun = () => {
   // top
   if (className.endsWith('top')) pageNameTop()
   if (className.endsWith('top')) mv()
+  if (className.endsWith('top')) modal()
 
   EL.HTML.classList.add('is-loaded')
 }

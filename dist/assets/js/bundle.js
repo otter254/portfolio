@@ -286,6 +286,38 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/assets/js/helper/modal.js":
+/*!***************************************!*\
+  !*** ./src/assets/js/helper/modal.js ***!
+  \***************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var modalWrapper = document.querySelector('.modal-wrapper');
+  var images = document.querySelectorAll('.image');
+  var modalImage = document.querySelector('.modal-image');
+  images.forEach(function (image) {
+    image.addEventListener('click', function () {
+      modalWrapper.classList.add('show');
+      modalImage.classList.add('show');
+      var imageSrc = image.getAttribute('data-src');
+      modalImage.src = imageSrc;
+    });
+  });
+  modalWrapper.addEventListener('click', function () {
+    if (this.classList.contains('show')) {
+      this.classList.remove('show');
+      modalImage.classList.remove('show');
+    }
+  });
+});
+
+/***/ }),
+
 /***/ "./src/assets/js/helper/mv.js":
 /*!************************************!*\
   !*** ./src/assets/js/helper/mv.js ***!
@@ -46926,8 +46958,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helper_swiper__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./helper/swiper */ "./src/assets/js/helper/swiper.js");
 /* harmony import */ var _helper_headerFixed__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./helper/headerFixed */ "./src/assets/js/helper/headerFixed.js");
 /* harmony import */ var _helper_mv__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./helper/mv */ "./src/assets/js/helper/mv.js");
-/* harmony import */ var throttle_debounce__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! throttle-debounce */ "./node_modules/throttle-debounce/esm/index.js");
-/* harmony import */ var _page_top__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./page/top */ "./src/assets/js/page/top.js");
+/* harmony import */ var _helper_modal__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./helper/modal */ "./src/assets/js/helper/modal.js");
+/* harmony import */ var throttle_debounce__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! throttle-debounce */ "./node_modules/throttle-debounce/esm/index.js");
+/* harmony import */ var _page_top__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./page/top */ "./src/assets/js/page/top.js");
 
 
 // babel polyfill
@@ -46937,6 +46970,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // helper
+
 
 
 
@@ -47077,8 +47111,9 @@ var initRun = function initRun() {
   getScrollPos();
 
   // top
-  if (className.endsWith('top')) (0,_page_top__WEBPACK_IMPORTED_MODULE_14__["default"])();
+  if (className.endsWith('top')) (0,_page_top__WEBPACK_IMPORTED_MODULE_15__["default"])();
   if (className.endsWith('top')) (0,_helper_mv__WEBPACK_IMPORTED_MODULE_12__["default"])();
+  if (className.endsWith('top')) (0,_helper_modal__WEBPACK_IMPORTED_MODULE_13__["default"])();
   _constant_elements__WEBPACK_IMPORTED_MODULE_1__["default"].HTML.classList.add('is-loaded');
 };
 
@@ -47096,12 +47131,12 @@ window.addEventListener('load', initRun);
 /**
 * SCROLL
 */
-window.addEventListener('scroll', (0,throttle_debounce__WEBPACK_IMPORTED_MODULE_13__.throttle)(100, getScrollPos), false);
+window.addEventListener('scroll', (0,throttle_debounce__WEBPACK_IMPORTED_MODULE_14__.throttle)(100, getScrollPos), false);
 
 /**
 * RESIZE
 */
-window.addEventListener('resize', (0,throttle_debounce__WEBPACK_IMPORTED_MODULE_13__.debounce)(50, resize), false);
+window.addEventListener('resize', (0,throttle_debounce__WEBPACK_IMPORTED_MODULE_14__.debounce)(50, resize), false);
 }();
 /******/ })()
 ;
