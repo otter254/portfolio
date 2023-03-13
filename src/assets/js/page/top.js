@@ -1,5 +1,6 @@
 'use strict'
 
+import EL from '../constant/elements'
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger);
@@ -90,6 +91,30 @@ export default () => {
          scrub: 1, // 要素を1秒遅れで追従させる
         //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
         }
+    });
+
+    // gsap.set('.js-fadeup', {autoAlpha: 0, y:100}); 
+
+    const images = gsap.utils.toArray('.js-fadeup');
+    console.log(images)
+    images.forEach((image) => {
+        console.log(image)
+      gsap.fromTo(image, 
+        {
+            autoAlpha: 0,
+            y: 100,
+        },
+        {
+        autoAlpha: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: image,
+          start: "top -10%",
+          end: "bottom -50%",
+          scrub: 1,
+          markers:true,
+        },
+      });
     });
 
 }

@@ -676,25 +676,27 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-/* harmony import */ var gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap/ScrollTrigger */ "./node_modules/gsap/ScrollTrigger.js");
-/* harmony import */ var gsap_ScrollToPlugin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gsap/ScrollToPlugin */ "./node_modules/gsap/ScrollToPlugin.js");
+/* harmony import */ var _constant_elements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constant/elements */ "./src/assets/js/constant/elements.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gsap/ScrollTrigger */ "./node_modules/gsap/ScrollTrigger.js");
+/* harmony import */ var gsap_ScrollToPlugin__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gsap/ScrollToPlugin */ "./node_modules/gsap/ScrollToPlugin.js");
 
 
 
 
-gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__.ScrollTrigger);
 
-gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollToPlugin__WEBPACK_IMPORTED_MODULE_2__.ScrollToPlugin);
+gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger);
+
+gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin__WEBPACK_IMPORTED_MODULE_3__.ScrollToPlugin);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var wrapper = document.querySelector('#wrapper');
   if (wrapper) {
-    var panels = gsap__WEBPACK_IMPORTED_MODULE_0__["default"].utils.toArray('.panel');
+    var panels = gsap__WEBPACK_IMPORTED_MODULE_1__["default"].utils.toArray('.panel');
     var wrapperWidth = wrapper.offsetWidth;
     /**
     * 横スクロール開始
     */
-    gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to(panels, {
+    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].to(panels, {
       xPercent: -100 * (panels.length - 1),
       // transformX
       ease: "none",
@@ -728,7 +730,7 @@ gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollToPlugin_
         var target = document.querySelector(e.currentTarget.querySelector('a').getAttribute('href')); // クリックしたアンカーリンクに紐づくpanelを取得
         var scrollbarWidth = window.innerWidth - document.body.clientWidth; // スクロールバーの長さを取得
         var wrapperOffset = target.offsetLeft * (wrapper.clientWidth / (wrapper.clientWidth - window.innerWidth)) + scrollbarWidth * index; // 移動位置を取得
-        gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to(window, {
+        gsap__WEBPACK_IMPORTED_MODULE_1__["default"].to(window, {
           scrollTo: {
             y: wrapperOffset,
             autoKill: false
@@ -751,7 +753,7 @@ gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollToPlugin_
   // mv 背景画像パララックス
   var mvparallax01 = document.querySelector('.js-mvparallax01');
   var mvparallax02 = document.querySelector('.js-mvparallax02');
-  gsap__WEBPACK_IMPORTED_MODULE_0__["default"].fromTo(mvparallax01, {
+  gsap__WEBPACK_IMPORTED_MODULE_1__["default"].fromTo(mvparallax01, {
     x: 0
   }, {
     x: 150,
@@ -769,7 +771,7 @@ gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollToPlugin_
     }
   });
 
-  gsap__WEBPACK_IMPORTED_MODULE_0__["default"].fromTo(mvparallax02, {
+  gsap__WEBPACK_IMPORTED_MODULE_1__["default"].fromTo(mvparallax02, {
     x: 0
   }, {
     x: 100,
@@ -786,6 +788,28 @@ gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollToPlugin_
       scrub: 1 // 要素を1秒遅れで追従させる
       //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
     }
+  });
+
+  // gsap.set('.js-fadeup', {autoAlpha: 0, y:100}); 
+
+  var images = gsap__WEBPACK_IMPORTED_MODULE_1__["default"].utils.toArray('.js-fadeup');
+  console.log(images);
+  images.forEach(function (image) {
+    console.log(image);
+    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].fromTo(image, {
+      autoAlpha: 0,
+      y: 100
+    }, {
+      autoAlpha: 1,
+      y: 0,
+      scrollTrigger: {
+        trigger: image,
+        start: "top -10%",
+        end: "bottom -50%",
+        scrub: 1,
+        markers: true
+      }
+    });
   });
 });
 
