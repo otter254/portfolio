@@ -4,12 +4,12 @@
   <title>gulp + EJS ボイラーテンプレート</title>
   <meta name="description" content="サンプルテキストです（150文字前後）。">
   <meta name="author" content="サンプルテキスト">
-  <link rel="shortcut icon" type="image/svg+xml" href="/assets/images/favicon.svg">
-  <link rel="shortcut icon" sizes="16x16" href="/assets/images/favicon16.ico">
-  <link rel="shortcut icon" sizes="32x32" href="/assets/images/favicon32.ico">
-  <link rel="shortcut icon" sizes="48x48" href="/assets/images/favicon48.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/touch180.png">
-  <link rel="canonical" href="/">
+  <link rel="shortcut icon" type="image/svg+xml" href="http://192.168.3.8:3000/assets/images/favicon.svg">
+  <link rel="shortcut icon" sizes="16x16" href="http://192.168.3.8:3000/assets/images/favicon16.ico">
+  <link rel="shortcut icon" sizes="32x32" href="http://192.168.3.8:3000/assets/images/favicon32.ico">
+  <link rel="shortcut icon" sizes="48x48" href="http://192.168.3.8:3000/assets/images/favicon48.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://192.168.3.8:3000/assets/images/touch180.png">
+  <link rel="canonical" href="http://192.168.3.8:3000/">
   <!-- Settings -->
   <meta name="viewport" content="width=device-width,viewport-fit=cover">
   <meta name="theme-color" content="#000">
@@ -19,21 +19,21 @@
   <meta property="og:description" content="サンプルテキストです（150文字前後）。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:url" content="/">
-  <meta property="og:image" content="/assets/images/ogpimg.png">
+  <meta property="og:url" content="http://192.168.3.8:3000/">
+  <meta property="og:image" content="http://192.168.3.8:3000/assets/images/ogpimg.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="サンプルテキスト">
   <meta name="twitter:creator" content="サンプルテキスト">
   <!-- Preload -->
-  <link rel="preload" as="style" href="/assets/css/style.css?rev=7551b0145fa806a7">
-  <link rel="preload" as="script" href="/assets/js/bundle.js?rev=7551b0145fa806a7">
+  <link rel="preload" as="style" href="http://192.168.3.8:3000/assets/css/style.css?rev=36c71131ced1e520">
+  <link rel="preload" as="script" href="http://192.168.3.8:3000/assets/js/bundle.js?rev=36c71131ced1e520">
   <!-- CSS -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;family=Roboto:wght@400;500;700&amp;display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css?rev=7551b0145fa806a7">
+  <link rel="stylesheet" href="http://192.168.3.8:3000/assets/css/style.css?rev=36c71131ced1e520">
 </head>
 
 <body id="gotop" class="top">
@@ -68,18 +68,18 @@
             <!-- パネル2枚目 コンセプトアート section01-conceptart01 -->
             <section class="l-main-panel l-main-panel-02 panel" id="panel02">
               <div class="l-main-panel__contents u-d-flex">
-                <div class="c-title__section u-h-max u-d-flex u-v-lr u-text-en u-pl-5">
+                <div class="c-title__section u-h-max u-d-flex u-v-lr u-text-en u-pl-5 js-blur">
                   <b class="secNm u-d-flex">section01</b>
                   <b>conceptart</b>
                 </div>
                 <div class="c-contents__body top-conceptart">
-                  <h2 class="c-title__lv02"> 環境デザイン <span class="u-d-block u-d-flex u-text-en">environmental design</span>
+                  <h2 class="c-title__lv02 js-blur"> 環境デザイン <span class="u-d-block u-d-flex u-text-en">environmental design</span>
                   </h2>
                   <div class="top-conceptart__content u-d-flex">
                     <figure class="js-fadeup">
                       <img src="/assets/images/top/img-01.jpg" class="image" data-src="/assets/images/top/img-01.jpg" alt="" height="1333" width="2000" decoding="async" loading="lazy">
                     </figure>
-                    <div class="txt">
+                    <div class="txt js-blur">
                       <h3 class="c-title__lv03 u-text-en">main story</h3>
                       <h4 class="c-title__lv04">『新種の海』</h4>
                       <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -100,7 +100,7 @@
                     <div class="u-d-flex">
                       <div class="img col3 ex">
                         <figure class="js-fadeup">
-                          <img src="/assets/images/top/img-01.jpg" class="u-h-max image" data-src="/assets/images/top/img-01.jpg" alt="" height="1333" width="2000" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/img-01.jpg" class="u-h-max" data-src="/assets/images/top/img-01.jpg" alt="" height="1333" width="2000" decoding="async" loading="lazy">
                         </figure>
                         <figure class="js-fadeup">
                           <img src="/assets/images/top/img-01.jpg" class="u-h-max" alt="" height="1333" width="2000" decoding="async" loading="lazy">
@@ -131,10 +131,10 @@
                   <div class="top-conceptart__detail__content u-d-flex u-h-max">
                     <div class="u-d-flex">
                       <div class="img col2">
-                        <figure>
+                        <figure class="js-fadeup">
                           <img src="/assets/images/top/img-01.jpg" class="u-h-max" alt="" height="1333" width="2000" decoding="async" loading="lazy">
                         </figure>
-                        <figure>
+                        <figure class="js-fadeup">
                           <img src="/assets/images/top/img-01.jpg" class="u-h-max" alt="" height="1333" width="2000" decoding="async" loading="lazy">
                         </figure>
                       </div>
@@ -147,13 +147,13 @@
                     </div>
                     <div class="u-d-flex">
                       <div class="img col3">
-                        <figure>
+                        <figure class="js-fadeup">
                           <img src="/assets/images/top/img-01.jpg" class="u-h-max" alt="" height="1333" width="2000" decoding="async" loading="lazy">
                         </figure>
-                        <figure>
+                        <figure class="js-fadeup">
                           <img src="/assets/images/top/img-01.jpg" class="u-h-max" alt="" height="1333" width="2000" decoding="async" loading="lazy">
                         </figure>
-                        <figure>
+                        <figure class="js-fadeup">
                           <img src="/assets/images/top/img-01.jpg" class="u-h-max" alt="" height="1333" width="2000" decoding="async" loading="lazy">
                         </figure>
                       </div>
@@ -178,13 +178,13 @@
                 <div class="c-contents__body top-conceptartworks">
                   <div class="top-conceptartworks__content u-d-flex u-h-max">
                     <div class="img">
-                      <figure>
+                      <figure class="js-fadeup">
                         <img src="/assets/images/top/img-01.jpg" alt="" height="1333" width="2000" decoding="async" loading="lazy">
                       </figure>
-                      <figure>
+                      <figure class="js-fadeup">
                         <img src="/assets/images/top/img-01.jpg" alt="" height="1333" width="2000" decoding="async" loading="lazy">
                       </figure>
-                      <figure>
+                      <figure class="js-fadeup">
                         <img src="/assets/images/top/img-01.jpg" alt="" height="1333" width="2000" decoding="async" loading="lazy">
                       </figure>
                     </div>
@@ -235,14 +235,14 @@
                   <b class="secNm u-d-flex">section01</b>
                   <b>conceptart</b>
                 </div>
-                <div class="c-contents__body top-conceptartworks">
-                  <div class="top-conceptartworks__content u-d-flex u-h-max">
+                <div class="c-contents__body top-works">
+                  <div class="top-works__content u-d-flex u-h-max">
                     <div class="u-h-max">
                       <h2 class="c-title__lv02"> 環境デザイン <span class="u-d-block u-d-flex u-text-en">environmental design</span>
                       </h2>
                       <div class="img">
                         <figure>
-                          <img src="/assets/images/top/img-01.jpg" alt="" height="1333" width="2000" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/img-01.jpg" class="js-fadeup" alt="" height="1333" width="2000" decoding="async" loading="lazy">
                         </figure>
                         <figure>
                           <img src="/assets/images/top/img-01.jpg" alt="" height="1333" width="2000" decoding="async" loading="lazy">
@@ -310,7 +310,7 @@
       </div>
     </div>
   </div>
-  <script src="/assets/js/bundle.js?rev=7551b0145fa806a7" defer="defer"></script>
+  <script src="http://192.168.3.8:3000/assets/js/bundle.js?rev=36c71131ced1e520" defer="defer"></script>
 
 
 </body></html>

@@ -693,14 +693,12 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
   if (wrapper) {
     var panels = gsap__WEBPACK_IMPORTED_MODULE_1__["default"].utils.toArray('.panel');
     var wrapperWidth = wrapper.offsetWidth;
-    /**
-    * 横スクロール開始
-    */
-    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].to(panels, {
+    var scrollTween = gsap__WEBPACK_IMPORTED_MODULE_1__["default"].to(panels, {
       xPercent: -100 * (panels.length - 1),
       // transformX
       ease: "none",
       // easingの設定
+      animation: scrollTween,
       scrollTrigger: {
         // scrollTrigger
         trigger: wrapper,
@@ -720,8 +718,8 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
       }
     });
 
+    // アンカーリンク
     var anchors = document.querySelectorAll(".anchor");
-    console.log(anchors);
     var index = '';
     anchors.forEach(function (anchor) {
       anchor.addEventListener('click', function (e) {
@@ -737,6 +735,42 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
           },
           duration: 1
         });
+      });
+    });
+
+    // 画像 fade in 下から
+    var images = document.querySelectorAll('.js-fadeup');
+    console.log(images);
+    images.forEach(function (el) {
+      gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(el, {
+        autoAlpha: 0,
+        y: 100,
+        scrollTrigger: {
+          trigger: el,
+          start: "right right",
+          end: "right 70%",
+          scrub: 1,
+          // markers:true,
+          containerAnimation: scrollTween
+        }
+      });
+    });
+
+    // テキスト blur
+    var blurs = document.querySelectorAll('.js-blur');
+    blurs.forEach(function (el) {
+      gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: "left right",
+          scrub: 1,
+          markers: true,
+          containerAnimation: scrollTween,
+          toggleClass: {
+            targets: el,
+            className: "is-active"
+          }
+        }
       });
     });
   }
@@ -788,28 +822,6 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
       scrub: 1 // 要素を1秒遅れで追従させる
       //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
     }
-  });
-
-  // gsap.set('.js-fadeup', {autoAlpha: 0, y:100}); 
-
-  var images = gsap__WEBPACK_IMPORTED_MODULE_1__["default"].utils.toArray('.js-fadeup');
-  console.log(images);
-  images.forEach(function (image) {
-    console.log(image);
-    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].fromTo(image, {
-      autoAlpha: 0,
-      y: 100
-    }, {
-      autoAlpha: 1,
-      y: 0,
-      scrollTrigger: {
-        trigger: image,
-        start: "top -10%",
-        end: "bottom -50%",
-        scrub: 1,
-        markers: true
-      }
-    });
   });
 });
 

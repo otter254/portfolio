@@ -14,12 +14,11 @@ export default () => {
     if(wrapper) {
         const panels = gsap.utils.toArray('.panel');
         const wrapperWidth = wrapper.offsetWidth;
-        /**
-        * 横スクロール開始
-        */
-        gsap.to( panels, {
+    
+        let scrollTween = gsap.to( panels, {
             xPercent: -100 * (panels.length - 1), // transformX
             ease: "none", // easingの設定
+            animation: scrollTween,
             scrollTrigger: { // scrollTrigger
                 trigger: wrapper, // アニメーションの対象となる要素
                 pin: true, // 要素を固定する
@@ -33,8 +32,8 @@ export default () => {
             }
         })
 
+        // アンカーリンク
         const anchors = document.querySelectorAll(".anchor");
-        console.log(anchors)
         let index = '';
         anchors.forEach( (anchor) => {
             anchor.addEventListener( 'click', (e) => {
@@ -52,6 +51,41 @@ export default () => {
                 });
             });
         });
+
+        // 画像 fade in 下から
+        const images = document.querySelectorAll('.js-fadeup')
+        console.log(images)
+        images.forEach(el => {
+            gsap.from(el, 
+            {
+                autoAlpha: 0,
+                y: 100,
+                scrollTrigger: {
+                    trigger: el,
+                    start: "right right",
+                    end: "right 70%",
+                    scrub: 1,
+                    // markers:true,
+                    containerAnimation:scrollTween,
+                },
+            });
+        });
+
+        // テキスト blur
+        const blurs = document.querySelectorAll('.js-blur')
+        blurs.forEach(el => {
+            gsap.from(el, 
+            {
+                scrollTrigger: {
+                    trigger: el,
+                    start: "left right",
+                    scrub: 1,
+                    markers:true,
+                    containerAnimation:scrollTween,
+                    toggleClass: {targets: el, className: "is-active"},
+                },
+            });
+        }); 
     }
 
     // プログレスバー
@@ -91,30 +125,6 @@ export default () => {
          scrub: 1, // 要素を1秒遅れで追従させる
         //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
         }
-    });
-
-    // gsap.set('.js-fadeup', {autoAlpha: 0, y:100}); 
-
-    const images = gsap.utils.toArray('.js-fadeup');
-    console.log(images)
-    images.forEach((image) => {
-        console.log(image)
-      gsap.fromTo(image, 
-        {
-            autoAlpha: 0,
-            y: 100,
-        },
-        {
-        autoAlpha: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: image,
-          start: "top -10%",
-          end: "bottom -50%",
-          scrub: 1,
-          markers:true,
-        },
-      });
     });
 
 }
