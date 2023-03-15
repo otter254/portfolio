@@ -4,12 +4,12 @@
   <title>gulp + EJS ボイラーテンプレート</title>
   <meta name="description" content="サンプルテキストです（150文字前後）。">
   <meta name="author" content="サンプルテキスト">
-  <link rel="shortcut icon" type="image/svg+xml" href="http://192.168.3.8:3000/assets/images/favicon.svg">
-  <link rel="shortcut icon" sizes="16x16" href="http://192.168.3.8:3000/assets/images/favicon16.ico">
-  <link rel="shortcut icon" sizes="32x32" href="http://192.168.3.8:3000/assets/images/favicon32.ico">
-  <link rel="shortcut icon" sizes="48x48" href="http://192.168.3.8:3000/assets/images/favicon48.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="http://192.168.3.8:3000/assets/images/touch180.png">
-  <link rel="canonical" href="http://192.168.3.8:3000/">
+  <link rel="shortcut icon" type="image/svg+xml" href="http://192.168.200.111:3000/assets/images/favicon.svg">
+  <link rel="shortcut icon" sizes="16x16" href="http://192.168.200.111:3000/assets/images/favicon16.ico">
+  <link rel="shortcut icon" sizes="32x32" href="http://192.168.200.111:3000/assets/images/favicon32.ico">
+  <link rel="shortcut icon" sizes="48x48" href="http://192.168.200.111:3000/assets/images/favicon48.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://192.168.200.111:3000/assets/images/touch180.png">
+  <link rel="canonical" href="http://192.168.200.111:3000/">
   <!-- Settings -->
   <meta name="viewport" content="width=device-width,viewport-fit=cover">
   <meta name="theme-color" content="#000">
@@ -19,21 +19,51 @@
   <meta property="og:description" content="サンプルテキストです（150文字前後）。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:url" content="http://192.168.3.8:3000/">
-  <meta property="og:image" content="http://192.168.3.8:3000/assets/images/ogpimg.png">
+  <meta property="og:url" content="http://192.168.200.111:3000/">
+  <meta property="og:image" content="http://192.168.200.111:3000/assets/images/ogpimg.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="サンプルテキスト">
   <meta name="twitter:creator" content="サンプルテキスト">
   <!-- Preload -->
-  <link rel="preload" as="style" href="http://192.168.3.8:3000/assets/css/style.css?rev=36c71131ced1e520">
-  <link rel="preload" as="script" href="http://192.168.3.8:3000/assets/js/bundle.js?rev=36c71131ced1e520">
+  <link rel="preload" as="style" href="http://192.168.200.111:3000/assets/css/style.css?rev=5acdf2a2176c66c3">
+  <link rel="preload" as="script" href="http://192.168.200.111:3000/assets/js/bundle.js?rev=5acdf2a2176c66c3">
   <!-- CSS -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;family=Roboto:wght@400;500;700&amp;display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="http://192.168.3.8:3000/assets/css/style.css?rev=36c71131ced1e520">
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'cha5als',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <link rel="stylesheet" href="http://192.168.200.111:3000/assets/css/style.css?rev=5acdf2a2176c66c3">
 </head>
 
 <body id="gotop" class="top">
@@ -251,9 +281,8 @@
                           <img src="/assets/images/top/img-01.jpg" alt="" height="1333" width="2000" decoding="async" loading="lazy">
                         </figure>
                       </div>
-                      <div class="txt u-p-ct">
+                      <div class="txt u-mt-2">
                         <div>
-                          <h3 class="c-title__lv03 u-text-en">main story</h3>
                           <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         </div>
                       </div>
@@ -272,10 +301,9 @@
                           <img src="/assets/images/top/img-01.jpg" alt="" height="1333" width="2000" decoding="async" loading="lazy">
                         </figure>
                       </div>
-                      <div class="txt u-p-ct">
+                      <div class="txt u-mt-2">
                         <div>
-                          <h3 class="c-title__lv03 u-text-en">main story</h3>
-                          <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                          <p> テキストが入ります。テキストが入ります。テキストが入ります。 テキストが入ります。テキストが入ります。テキストが入ります。 </p>
                         </div>
                       </div>
                     </div>
@@ -310,7 +338,7 @@
       </div>
     </div>
   </div>
-  <script src="http://192.168.3.8:3000/assets/js/bundle.js?rev=36c71131ced1e520" defer="defer"></script>
+  <script src="http://192.168.200.111:3000/assets/js/bundle.js?rev=5acdf2a2176c66c3" defer="defer"></script>
 
 
 </body></html>
