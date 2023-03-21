@@ -10,7 +10,6 @@
   opacity: 0;
   visibility: hidden;
   transition: visibility $time $ease, opacity $time $ease;
-  background: color(bg);
   .is-loaded & {
     opacity: 1;
     visibility: visible;
@@ -57,7 +56,7 @@
   overflow: hidden;
   position: relative;
   &--wrapper {
-    width: 700%;
+    width: 1100%;
     height: 100vh;
     display: flex;
     flex-wrap: nowrap;

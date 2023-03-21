@@ -80,12 +80,52 @@ export default () => {
                     trigger: el,
                     start: "left right",
                     scrub: 1,
-                    markers:true,
+                    // markers:true,
                     containerAnimation:scrollTween,
                     toggleClass: {targets: el, className: "is-active"},
                 },
             });
-        }); 
+        });
+
+        // 背景色反転エリア
+        
+        const reversal = document.querySelector('.js-reversal')
+        gsap.from(reversal, 
+            {
+                ease: "none",
+                opacity:1,
+                scrollTrigger: {
+                 trigger: reversal,
+                 start: "left 70%",
+                 end: "right -50%",
+                 scrub: 1,
+                 containerAnimation:scrollTween,
+                 markers: true,
+                 toggleClass: {targets: EL.BODY , className: "is-active"},
+                },
+            });
+
+        // SNS fadein
+        gsap.set("#js-sns01", { y: 30, autoAlpha: 0});
+        gsap.set("#js-sns02", { y: 30, autoAlpha: 0});
+        gsap.set("#js-sns03", { y: 30, autoAlpha: 0});
+        gsap.timeline({
+            defaults: {
+              duration: 1,
+              ease: "easeInOut"
+            },
+          
+            scrollTrigger: {
+              trigger: "#js-snstrigger",
+              start: "left right",
+              toggleActions: "play none none reset",
+              containerAnimation:scrollTween,
+            //   markers: true,
+            }
+          })
+        .to("#js-sns01", { y: 0, autoAlpha: 1 ,duration: .8 })
+        .to("#js-sns02", { y: 0, autoAlpha: 1 ,duration: .8 }, "-=.5")
+        .to("#js-sns03", { y: 0, autoAlpha: 1 ,duration: .8 }, "-=.5")
     }
 
     // プログレスバー

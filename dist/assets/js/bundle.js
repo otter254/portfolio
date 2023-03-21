@@ -427,7 +427,11 @@ gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollTrigger__
     fx02.setText('species');
   }, 700);
   setTimeout(function () {
-    var tl = gsap__WEBPACK_IMPORTED_MODULE_0__["default"].timeline();
+    var tl = gsap__WEBPACK_IMPORTED_MODULE_0__["default"].timeline({
+      defaults: {
+        ease: "none"
+      }
+    });
     tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvbglayer", {
       opacity: 0,
       duration: 1
@@ -435,7 +439,7 @@ gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollTrigger__
     tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvfade01", {
       opacity: 1,
       y: 0
-    }, "+=0.3"));
+    }, "+=0.2"));
     tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvfade02", {
       opacity: 1,
       y: 0
@@ -764,7 +768,7 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
           trigger: el,
           start: "left right",
           scrub: 1,
-          markers: true,
+          // markers:true,
           containerAnimation: scrollTween,
           toggleClass: {
             targets: el,
@@ -773,6 +777,65 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
         }
       });
     });
+
+    // 背景色反転エリア
+
+    var reversal = document.querySelector('.js-reversal');
+    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(reversal, {
+      ease: "none",
+      opacity: 1,
+      scrollTrigger: {
+        trigger: reversal,
+        start: "left 70%",
+        end: "right -50%",
+        scrub: 1,
+        containerAnimation: scrollTween,
+        markers: true,
+        toggleClass: {
+          targets: _constant_elements__WEBPACK_IMPORTED_MODULE_0__["default"].BODY,
+          className: "is-active"
+        }
+      }
+    });
+
+    // SNS fadein
+    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].set("#js-sns01", {
+      y: 30,
+      autoAlpha: 0
+    });
+    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].set("#js-sns02", {
+      y: 30,
+      autoAlpha: 0
+    });
+    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].set("#js-sns03", {
+      y: 30,
+      autoAlpha: 0
+    });
+    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].timeline({
+      defaults: {
+        duration: 1,
+        ease: "easeInOut"
+      },
+      scrollTrigger: {
+        trigger: "#js-snstrigger",
+        start: "left right",
+        toggleActions: "play none none reset",
+        containerAnimation: scrollTween
+        //   markers: true,
+      }
+    }).to("#js-sns01", {
+      y: 0,
+      autoAlpha: 1,
+      duration: .8
+    }).to("#js-sns02", {
+      y: 0,
+      autoAlpha: 1,
+      duration: .8
+    }, "-=.5").to("#js-sns03", {
+      y: 0,
+      autoAlpha: 1,
+      duration: .8
+    }, "-=.5");
   }
 
   // プログレスバー

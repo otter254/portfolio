@@ -37,6 +37,8 @@ body {
   -ms-text-size-adjust: 100%;
   text-size-adjust: none;
   min-width: $lgMinWidth;
+  background: color(bg);
+  transition: .8s;
   @include fz(14, true);
 
   @include media(sm) {
@@ -47,6 +49,10 @@ body {
   @include media(retina) {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  &.is-active {
+    color:color(bg);
+    background: #fff;
   }
 }
 
