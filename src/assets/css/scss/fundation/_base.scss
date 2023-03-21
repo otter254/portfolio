@@ -66,6 +66,13 @@ body {
         background-color:color(bg);
       }
     }
+    .c-title__section {
+      .secNm {
+        &::after {
+          background: color(bg);
+        }
+      }
+    }
     .c-title__lv02 {
       span {
         &::before {

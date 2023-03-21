@@ -44,15 +44,64 @@
     align-items: center;
     nav {
       margin-left: 150px;
-      @include fz(16, true, 20, 500, 200);
+      @include fz(18, true, 20, 400, 200);
       ul {
+        overflow: hidden;
         list-style: none;
         text-transform: uppercase;
+        padding-bottom: 20px;
         li {
+          padding: 5px;
           &:nth-of-type(n + 2) {
             margin-top: 24px;
           }
+          &:hover a {
+              @include fz(20);
+              animation: revealText 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+              &:before {
+                  transform: translateX(-30%);
+              }
+          }
         }
+    
+        &:hover li a {
+            filter: blur(4px);
+        }
+    
+        li a {
+            text-decoration: none;
+            transition: font-size .5s;
+            position: relative;
+            display: inline-block;
+            filter: blur(0);
+            transition: filter .5s;
+    
+            &:hover {
+                filter: blur(0);
+            }
+    
+            &:before {
+                position: absolute;
+                content: '';
+                bottom: -0.5em;
+                left: 0;
+                height: 1px;
+                border-bottom: 2px solid color(bg);
+                width: 100%;
+                transform: translateX(-110%);
+                transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+                pointer-events: none;
+            }
+    
+        }
+      }
+      @keyframes revealText {
+          0% {
+              transform: translateX(-30%);
+          }
+          50% {
+              transform: translateX(0);
+          }
       }
     }
 

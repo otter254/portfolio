@@ -109,6 +109,14 @@
   }
 }
 
+
+.js-blur {
+  opacity: 0;
+  visibility: hidden;
+  &.is-active {
+    animation: blur 1s both ease-in;
+  }
+}
 @keyframes blur {
   from {
       filter: blur(10px);
@@ -121,26 +129,19 @@
   }
 }
 
-.js-blur {
-  opacity: 0;
-  visibility: hidden;
-  &.is-active {
-    animation: blur 1s both ease-in;
-  }
-}
-
-  /* modal */
-
-  .modal-wrapper {
+/* modal */
+.modal-wrapper {
     width: 100vw;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
     pointer-events: none;
     opacity: 0;
-    transition: 0.25s ease-out;
+    transition: 0.3s ease-out;
+    z-index: 1000;
 }
 
 .modal-wrapper.show {

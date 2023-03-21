@@ -5,9 +5,11 @@
 @use '../fundation/function' as *;
 
 .c-btn {
-  /* stylelint-disable */
-  // 使用する最に stylelint-disableコメント削除
-  /* stylelint-enable */
+  &-more {
+    a {
+      @include fz(15, true, false, 400, 150, false);
+    }
+  }
 
   @include media(sm) {
   }

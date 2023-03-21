@@ -7,7 +7,7 @@
 .c-title {
   // セクションのタイトル
   &__section {
-    @include fz(25, true, false, 300, 200, false);
+    @include fz(24, true, false, 300, 200, false);
     padding-top: 50px;
     text-transform: uppercase;
     margin-right: 5vw;
@@ -16,7 +16,7 @@
         content: "";
         display: block;
         width: 2px;
-        height: 10vh;
+        height: 6vh;
         background-color: #fff;
         position: relative;
         right: -5px;
@@ -57,7 +57,7 @@
       height: 1px;
       background: #fff;
       display: block;
-      margin-top: 8px;
+      margin-top: 12px;
     }
   }
   &__lv04 {
