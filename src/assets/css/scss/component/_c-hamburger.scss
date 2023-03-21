@@ -8,14 +8,14 @@
 $boxColor: #080808;
 $lineColor: #fff;
 $lgBoxWidth: 40px;     // ボックスサイズ（LG）
-$lgBoxHeight: 40px;
-$lgLineWidth: 20px;    // ラインサイズ（LG）
-$lgLlineHeight: 2px;
+$lgBoxHeight: 30px;
+$lgLineWidth: 30px;    // ラインサイズ（LG）
+$lgLlineHeight: 1px;
 $lgLineTop: 10px;      // 上下ライン位置（LG）
 $lgLineBottom: 10px;
 $smBoxWidth: vw(40);   // ボックスサイズ（SM）
 $smBoxHeight: vw(40);
-$smLineWidth: vw(20);  // ラインサイズ（SM）
+$smLineWidth: vw(30);  // ラインサイズ（SM）
 $smLineHeight: vw(2);
 $smLineTop: vw(10);    // 上下ライン位置（SM）
 $smLineBottom: vw(10);
@@ -41,24 +41,26 @@ $smLineBottom: vw(10);
       top: $lgLineTop;
     }
     &:nth-of-type(2) {
-      top: calc((#{$lgBoxHeight} - #{$lgLlineHeight}) / 2);
-    }
-    &:nth-of-type(3) {
+      // top: calc((#{$lgBoxHeight} - #{$lgLlineHeight}) / 2);
       bottom: $lgLineBottom;
     }
+    // &:nth-of-type(3) {
+    //   bottom: $lgLineBottom;
+    // }
     .is-nav-active & {
       background: $boxColor;
       &:nth-of-type(1) {
         top: calc((100% - #{$lgLlineHeight}) / 2);
-        transform: rotate(-315deg);
+        transform: rotate(-15deg);
       }
       &:nth-of-type(2) {
-        opacity: 0;
-      }
-      &:nth-of-type(3) {
         bottom: calc((100% - #{$lgLlineHeight}) / 2);
-        transform: rotate(315deg);
+        transform: rotate(15deg);
       }
+      // &:nth-of-type(3) {
+      //   bottom: calc((100% - #{$lgLlineHeight}) / 2);
+      //   transform: rotate(315deg);
+      // }
     }
   }
 

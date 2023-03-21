@@ -243,12 +243,14 @@ __webpack_require__.r(__webpack_exports__);
     deviceType: (0,_getDeviceType__WEBPACK_IMPORTED_MODULE_2__["default"])(),
     HMB: document.querySelector('.js-hmb'),
     HMBBG: document.querySelector('.js-layer'),
+    MEGNAV: document.querySelector('.l-nav__mega'),
     /**
      * init
      */
     init: function init() {
       if (func.HMB) func.HMB.addEventListener('click', func.switchShowHide, false);
-      if (func.HMBBG) func.HMBBG.addEventListener('click', func.switchShowHide, false);
+      // if (func.HMBBG) func.HMBBG.addEventListener('click', func.switchShowHide, false)
+      if (func.MEGNAV) func.MEGNAV.addEventListener('click', func.switchShowHide, false);
       window.addEventListener('resize', func.resize, false);
     },
     /**
@@ -779,7 +781,6 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
     });
 
     // 背景色反転エリア
-
     var reversal = document.querySelector('.js-reversal');
     gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(reversal, {
       ease: "none",
@@ -790,11 +791,38 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
         end: "right -50%",
         scrub: 1,
         containerAnimation: scrollTween,
-        markers: true,
+        //  markers: true,
         toggleClass: {
           targets: _constant_elements__WEBPACK_IMPORTED_MODULE_0__["default"].BODY,
           className: "is-active"
         }
+      }
+    });
+
+    // エトセトラエリア
+    var etcimages = document.querySelectorAll('.js-etcimg');
+    console.log(etcimages);
+    etcimages.forEach(function (el) {
+      // gsap.set(el, {y:-500})
+      gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(el, {
+        y: 500,
+        scrollTrigger: {
+          trigger: ".top-etc",
+          start: "left right",
+          end: "right left",
+          scrub: 1,
+          containerAnimation: scrollTween
+        }
+      });
+    });
+    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(".js-etcimg02", {
+      y: -500,
+      scrollTrigger: {
+        trigger: ".top-etc",
+        start: "left right",
+        end: "right left",
+        scrub: 1,
+        containerAnimation: scrollTween
       }
     });
 

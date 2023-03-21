@@ -27,7 +27,7 @@
 
   &__lv02 {
     margin-bottom: 32px;
-    @include fz(28, true, false, 400, 100, false);
+    @include fz(26, true, false, 400, 100, false);
     span {
       position: relative;
       margin-top: 6px;
@@ -50,19 +50,19 @@
   &__lv03 {
     text-transform: uppercase;
     margin-bottom: 16px;
-    @include fz(18, true, false, 400, 100, false);
+    @include fz(18, true, false, 400, 200, false);
     &::after {
       content: "";
-      width: 20px;
+      width: 30px;
       height: 1px;
       background: #fff;
       display: block;
-      margin-top: 6px;
+      margin-top: 8px;
     }
   }
   &__lv04 {
     margin-bottom: 8px;
-    @include fz(16, true, false, 400, 100, false);
+    @include fz(16, true, false, 400, 150, false);
   }
 
   @include media(sm) {

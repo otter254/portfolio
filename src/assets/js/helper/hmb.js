@@ -17,13 +17,15 @@ export default () => {
 
     HMB: document.querySelector('.js-hmb'),
     HMBBG: document.querySelector('.js-layer'),
+    MEGNAV: document.querySelector('.l-nav__mega'),
 
     /**
      * init
      */
     init: () => {
       if (func.HMB) func.HMB.addEventListener('click', func.switchShowHide, false)
-      if (func.HMBBG) func.HMBBG.addEventListener('click', func.switchShowHide, false)
+      // if (func.HMBBG) func.HMBBG.addEventListener('click', func.switchShowHide, false)
+      if (func.MEGNAV) func.MEGNAV.addEventListener('click', func.switchShowHide, false)
       window.addEventListener('resize', func.resize, false)
     },
 

@@ -266,12 +266,42 @@
     }
   }
 
-  // パネル10枚目　プロフィール　
+  // パネル10枚目 エトセトラ
+  &-etc {
+    &__content {
+      .img {
+        figure {
+          // aspect-ratio: 16 / 9;
+          height: 100vh;
+          position: relative;
+          top: -10vh;
+          &:not(:last-of-type) {
+            margin-right: 20px;
+          }
+          // img {
+          //   object-fit: cover;
+          // }
+        }
+      }
+      .txt {
+        margin-right: 40px;
+        max-width:  320px;
+      }
+    }
+  }
+
+  // パネル11枚目　プロフィール　
   &-profile {
     &__content {
       width: 100%;
       .head {
         max-width:  320px;
+        dl {
+          .job {
+            margin-top: 4px;
+            @include fz(12, true, false, 400, 200, false);
+          }
+        }
       }
       .body {
         display: flex;

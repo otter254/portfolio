@@ -88,7 +88,6 @@ export default () => {
         });
 
         // 背景色反転エリア
-        
         const reversal = document.querySelector('.js-reversal')
         gsap.from(reversal, 
             {
@@ -100,10 +99,39 @@ export default () => {
                  end: "right -50%",
                  scrub: 1,
                  containerAnimation:scrollTween,
-                 markers: true,
+                //  markers: true,
                  toggleClass: {targets: EL.BODY , className: "is-active"},
                 },
             });
+
+        // エトセトラエリア
+        const etcimages = document.querySelectorAll('.js-etcimg')
+        console.log(etcimages)
+        etcimages.forEach(el => {
+            // gsap.set(el, {y:-500})
+            gsap.from(el, 
+            {
+                y: 500,
+                scrollTrigger: {
+                    trigger: ".top-etc",
+                    start: "left right",
+                    end: "right left",
+                    scrub: 1,
+                    containerAnimation:scrollTween,
+                },
+            });
+        });
+        gsap.from(".js-etcimg02", 
+            {
+                y: -500,
+                scrollTrigger: {
+                    trigger: ".top-etc",
+                    start: "left right",
+                    end: "right left",
+                    scrub: 1,
+                    containerAnimation:scrollTween,
+                },
+        });
 
         // SNS fadein
         gsap.set("#js-sns01", { y: 30, autoAlpha: 0});

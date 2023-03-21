@@ -50,6 +50,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  // 背景色反転
   &.is-active {
     color:color(bg);
     background: #f7f7f7;
@@ -62,6 +64,18 @@ body {
     .c-hamburger {
       span {
         background-color:color(bg);
+      }
+    }
+    .c-title__lv02 {
+      span {
+        &::before {
+          background: color(bg);
+        }
+      }
+    }
+    .c-title__lv03 {
+      &:after {
+        background: color(bg);
       }
     }
   }
