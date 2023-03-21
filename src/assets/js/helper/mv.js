@@ -69,7 +69,7 @@ export default () => {
   
       const el02 = document.querySelector('.mvtext02')
       const fx02 = new TextScramble(el02)
-      fx02.setText('species')
+      fx02.setText('diverse species')
     }, 700);
 
     setTimeout(() => {
@@ -83,5 +83,5 @@ export default () => {
       tl.add(gsap.to("#js-mvfade02", { opacity:1, y:0}, "+=0.1"));
       tl.add(gsap.to("#js-mvfade03", { opacity:1, y:0}, "+=0.1"));
       tl.add(gsap.to("#js-progress", { opacity:1 , duration:1,}, "+=0.1"));
-    }, 2500);
+    }, 3000);
 }

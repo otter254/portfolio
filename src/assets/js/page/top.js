@@ -140,11 +140,12 @@ export default () => {
     // mv 背景画像パララックス
     const mvparallax01 = document.querySelector('.js-mvparallax01');
     const mvparallax02 = document.querySelector('.js-mvparallax02');
+    const mvparallax03 = document.querySelector('.top-mv__title');
 
      gsap.fromTo(mvparallax01, {
       x: 0,
      }, {
-      x: 150, // y方向-に60px移動させる
+      x: 150, 
       ease: "none", // イージングなし
       scrollTrigger: {
        trigger: '#panel01', // ScrollTriggerの開始位置を計算するために使用される要素
@@ -156,7 +157,20 @@ export default () => {
      gsap.fromTo(mvparallax02, {
         x: 0,
        }, {
-        x: 100, // y方向-に60px移動させる
+        x: 100, 
+        ease: "none", // イージングなし
+        scrollTrigger: {
+         trigger: '#panel01', // ScrollTriggerの開始位置を計算するために使用される要素
+         start: "bottom bottom", // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
+         end: "bottom top", // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
+         scrub: 1, // 要素を1秒遅れで追従させる
+        //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
+        }
+    });
+     gsap.fromTo(mvparallax03, {
+        x: 0,
+       }, {
+        x: 200, 
         ease: "none", // イージングなし
         scrollTrigger: {
          trigger: '#panel01', // ScrollTriggerの開始位置を計算するために使用される要素

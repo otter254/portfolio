@@ -424,7 +424,7 @@ gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollTrigger__
     fx.setText('CREATE');
     var el02 = document.querySelector('.mvtext02');
     var fx02 = new TextScramble(el02);
-    fx02.setText('species');
+    fx02.setText('diverse species');
   }, 700);
   setTimeout(function () {
     var tl = gsap__WEBPACK_IMPORTED_MODULE_0__["default"].timeline({
@@ -452,7 +452,7 @@ gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollTrigger__
       opacity: 1,
       duration: 1
     }, "+=0.1"));
-  }, 2500);
+  }, 3000);
 });
 
 /***/ }),
@@ -850,11 +850,11 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
   // mv 背景画像パララックス
   var mvparallax01 = document.querySelector('.js-mvparallax01');
   var mvparallax02 = document.querySelector('.js-mvparallax02');
+  var mvparallax03 = document.querySelector('.top-mv__title');
   gsap__WEBPACK_IMPORTED_MODULE_1__["default"].fromTo(mvparallax01, {
     x: 0
   }, {
     x: 150,
-    // y方向-に60px移動させる
     ease: "none",
     // イージングなし
     scrollTrigger: {
@@ -872,7 +872,24 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
     x: 0
   }, {
     x: 100,
-    // y方向-に60px移動させる
+    ease: "none",
+    // イージングなし
+    scrollTrigger: {
+      trigger: '#panel01',
+      // ScrollTriggerの開始位置を計算するために使用される要素
+      start: "bottom bottom",
+      // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
+      end: "bottom top",
+      // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
+      scrub: 1 // 要素を1秒遅れで追従させる
+      //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
+    }
+  });
+
+  gsap__WEBPACK_IMPORTED_MODULE_1__["default"].fromTo(mvparallax03, {
+    x: 0
+  }, {
+    x: 200,
     ease: "none",
     // イージングなし
     scrollTrigger: {

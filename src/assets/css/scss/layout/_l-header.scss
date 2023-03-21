@@ -5,7 +5,7 @@
 @use '../fundation/function' as *;
 
 .l-header {
-  background-color: color(bg);
+  background-color: ransparent;
   left: 0;
   position: fixed;
   top: 0;
@@ -31,12 +31,21 @@
     }
   }
 
-
-  .is-scroll & {
-    box-shadow: 0 3px 3px rgba(#000, .1);
-
-    @include media(sm) {
-      box-shadow: 0 vw(3) vw(3) rgba(#000, .1);
+  .is-nav-active & {
+    color: color(bg);
+    &__inner {
+      .txt {
+        a {
+          color: color(bg);
+        }
+      }
     }
   }
+  // .is-scroll & {
+  //   box-shadow: 0 3px 3px rgba(#000, .1);
+
+  //   @include media(sm) {
+  //     box-shadow: 0 vw(3) vw(3) rgba(#000, .1);
+  //   }
+  // }
 }

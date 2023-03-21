@@ -52,7 +52,18 @@ body {
   }
   &.is-active {
     color:color(bg);
-    background: #fff;
+    background: #f7f7f7;
+    a {
+      color:color(bg);
+    }
+    .l-header {
+      color:color(bg);
+    }
+    .c-hamburger {
+      span {
+        background-color:color(bg);
+      }
+    }
   }
 }
 
