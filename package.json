@@ -131,6 +131,8 @@
     "webpack-stream": "^6.1.2"
   },
   "dependencies": {
-    "swiper": "^8.2.6"
+    "gulp-ttf2woff2": "^4.0.1",
+    "swiper": "^8.2.6",
+    "ttf2woff2-no-gyp": "^4.0.6"
   }
 }
