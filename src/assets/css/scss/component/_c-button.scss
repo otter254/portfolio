@@ -6,7 +6,10 @@
 
 .c-btn {
   &-more {
+    // border: 1px solid #fff;
     a {
+      border: 1px solid #fff;
+      padding: 8px 24px;
       @include fz(15, true, false, 400, 150, false);
     }
   }
