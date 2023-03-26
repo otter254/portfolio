@@ -50,7 +50,7 @@
   &__lv03 {
     text-transform: uppercase;
     margin-bottom: 16px;
-    @include fz(18, true, false, 400, 200, false);
+    @include fz(20, true, false, 400, 200, false);
     &::after {
       content: "";
       width: 30px;
