@@ -27,6 +27,7 @@
 
   &__lv02 {
     margin-bottom: 32px;
+    font-family: $ff-jp-2;
     @include fz(26, true, false, 400, 100, false);
     span {
       position: relative;
@@ -61,8 +62,9 @@
     }
   }
   &__lv04 {
-    margin-bottom: 8px;
-    @include fz(16, true, false, 400, 150, false);
+    margin-bottom: 10px;
+    font-family: $ff-jp-2;
+    @include fz(17, true, false, 400, 150, false);
   }
 
   @include media(sm) {
