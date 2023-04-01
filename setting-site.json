@@ -1,13 +1,13 @@
 {
-  "siteName": "gulp + EJS ボイラーテンプレート",
+  "siteName": "PortFolio / Nishikawa Takeshi",
   "siteDomainProduction": "https://production.com/",
   "siteDomainDevelopment": "/",
-  "metaAuthor": "サンプルテキスト",
+  "metaAuthor": "PortFolio / Nishikawa Takeshi",
   "metaAppid": "0123456789",
-  "metaTwitterSite": "サンプルテキスト",
-  "metaTwitterCreator": "サンプルテキスト",
-  "publishFileName": "glpEJS",
-  "themeColor": "#000",
+  "metaTwitterSite": "PortFolio / Nishikawa Takeshi",
+  "metaTwitterCreator": "PortFolio / Nishikawa Takeshi",
+  "publishFileName": "PortFolio",
+  "themeColor": "#080808",
   "useWebp": false,
   "useSSI": true
 }
