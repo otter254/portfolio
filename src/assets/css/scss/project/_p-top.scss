@@ -76,11 +76,19 @@
       figure {
         aspect-ratio: 16 / 9;
         max-width: 60%;
+        @include media(sm) {
+          max-width: 100%;
+        }
       }
       .txt {
         width: 40%;
         max-width: 320px;
         margin-left: 4rem;
+        @include media(sm) {
+          width: 100%;
+          max-width: 100%;
+          margin-left: 0;
+        }
       }
     }
   }
@@ -194,7 +202,7 @@
           width: calc(50% - 20px);
         }
         @media (max-height: 830px) and (orientation: landscape){
-          justify-content: left;
+          justify-content: center;
           > div {
             width: 35%;
             &:first-of-type {
@@ -248,6 +256,7 @@
   // パネル9枚目 デッサン、静物着彩
   &-skeches {
     &__content {
+      justify-content: center;
       .img {
         > div {
           &:first-of-type {

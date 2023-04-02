@@ -11,6 +11,11 @@
     padding-top: 50px;
     text-transform: uppercase;
     margin-right: 5vw;
+    @include media(sm) {
+      margin-right: 0;
+      padding-block: vw(50) vw(20);
+      @include fz(20);
+    }
     .secNm {
       &::after {
         content: "";
@@ -21,6 +26,10 @@
         position: relative;
         right: -5px;
         margin-inline: 10px;
+        @include media(sm) {
+          content: none;
+          padding-left: 0;
+        }
       }
     }
   }
@@ -29,6 +38,9 @@
     margin-bottom: 32px;
     font-family: $ff-jp-2;
     @include fz(26, true, false, 400, 100, false);
+    @include media(sm) {
+      @include fz(22);
+    }
     span {
       position: relative;
       margin-top: 6px;
@@ -52,6 +64,9 @@
     text-transform: uppercase;
     margin-bottom: 16px;
     @include fz(20, true, false, 400, 200, false);
+    @include media(sm) {
+      @include fz(16);
+    }
     &::after {
       content: "";
       width: 30px;
@@ -65,6 +80,9 @@
     margin-bottom: 10px;
     font-family: $ff-jp-2;
     @include fz(17, true, false, 400, 150, false);
+    @include media(sm) {
+      @include fz(14);
+    }
   }
 
   @include media(sm) {
