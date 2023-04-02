@@ -80,10 +80,20 @@
 .u-v-lr {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
+  @include media(sm) {
+    writing-mode:inherit;
+    transform: none;
+  }
 }
 
 .u-p-ct {
   height: 50%;
+  display: flex;
+  align-items: end;
+}
+
+.u-p-end {
+  height: 100%;
   display: flex;
   align-items: end;
 }

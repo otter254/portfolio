@@ -14,6 +14,11 @@
   height: 100vh;
   z-index: 999;
   transition: box-shadow $time $ease;
+  @include media(sm) {
+    width: 100%;
+    height: inherit;
+    max-width: inherit;
+  }
 
   // インナー
   &__inner {
@@ -22,6 +27,10 @@
     flex-direction: column;
     justify-content: space-between;
     padding-block: 50px;
+    @include media(sm) {
+      flex-direction: inherit;
+      padding: vw(10) vw(20);
+    }
     .txt {
       @include fz(12, true, false, 400, 100, false);
       text-transform: uppercase;

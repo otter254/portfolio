@@ -19,6 +19,9 @@
 
 .u-d-flex {
   display: flex;
+  @include media(sm) {
+    display: block;
+  }
 }
 
 .u-d-flex-c {

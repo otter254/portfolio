@@ -15,9 +15,15 @@
       position: absolute;
       top: 20vh;
       left: 10vw;
+      @include media(sm) {
+        top: 25vh;
+      }
       p {
         @include fz(40, true, false, 400, 200, false);
         text-transform: uppercase;
+        @include media(sm) {
+          @include fz(30, true, false, 400, 180, false);
+        }
       }
     }
     &__bg {
@@ -32,6 +38,10 @@
         z-index: -2;
         img {
           object-fit: cover;
+          @include media(sm) {
+            height: 100%;
+            object-position: 40%;
+          }
         }
       }
       .mv-bglayer {
@@ -43,7 +53,6 @@
         width: 100%;
         height: 100%;
         background: color(bg);
-        // background: linear-gradient(90deg, rgb(0, 0, 0 , 1), rgb(0,0,0,0));
       }
     }
     &::after {
@@ -142,6 +151,7 @@
   // パネル5枚目
   &-conceptartworks {
     &__content {
+      justify-content: space-between;
       .img {
         display: grid;
         width: 50%;
@@ -170,7 +180,6 @@
         }
       }
       .txt {
-        width: 50%;
         padding-left: 4rem;
         max-width:  320px;
       }
@@ -291,12 +300,23 @@
     &__content {
       .img {
         width: 70%;
+        @include media(sm) {
+          width: 100%;
+          display: flex;
+        }
         figure {
           height: 100vh;
           position: relative;
           top: -10vh;
+          @include media(sm) {
+            height: inherit;
+            top: 0;
+          }
           &:not(:last-of-type) {
             margin-right: 20px;
+            @include media(sm) {
+              margin-right: 0;
+            }
           }
         }
       }
@@ -339,12 +359,20 @@
         display: flex;
         align-items: center;
         margin: 0 0 0 auto;
+        @include media(sm) {
+          justify-content: center;
+        }
         .sns {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           height: 50vh;
           list-style-type: none;
+          @include media(sm) {
+            flex-direction: inherit;
+            height: inherit;
+            width: 50vw;
+          }
           img {
             display: block;
             width: 20px;
