@@ -695,175 +695,262 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollTrigger__
 
 gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin__WEBPACK_IMPORTED_MODULE_3__.ScrollToPlugin);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  var wrapper = document.querySelector('#wrapper');
-  if (wrapper) {
-    var panels = gsap__WEBPACK_IMPORTED_MODULE_1__["default"].utils.toArray('.panel');
-    var wrapperWidth = wrapper.offsetWidth;
-    var scrollTween = gsap__WEBPACK_IMPORTED_MODULE_1__["default"].to(panels, {
-      xPercent: -100 * (panels.length - 1),
-      // transformX
-      ease: "none",
-      // easingの設定
-      animation: scrollTween,
-      scrollTrigger: {
-        // scrollTrigger
-        trigger: wrapper,
-        // アニメーションの対象となる要素
-        pin: true,
-        // 要素を固定する
-        scrub: 1,
-        // スクロールとアニメーションを同期させる。数値で秒数の設定に
-        // snap: { // スナップスクロールにする
-        //     snapTo: 1 / ( panels.length - 1 ), // スナップで移動させる位置
-        //     duration: {min: .4, max: .6}, // スナップで移動する際の遅延時間
-        //     ease: "none" // easing
-        // },
-        end: function end() {
-          return "+=" + wrapperWidth;
-        } // アニメーションの終了タイミング
-      }
-    });
+  var mediaQuery = window.matchMedia('(min-width: 768px)');
 
-    // アンカーリンク
-    var anchors = document.querySelectorAll(".anchor");
-    var index = '';
-    anchors.forEach(function (anchor) {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        index = [].slice.call(anchors).indexOf(anchor); // 何番目のアンカーリンクをクリックしたか取得
-        var target = document.querySelector(e.currentTarget.querySelector('a').getAttribute('href')); // クリックしたアンカーリンクに紐づくpanelを取得
-        var scrollbarWidth = window.innerWidth - document.body.clientWidth; // スクロールバーの長さを取得
-        var wrapperOffset = target.offsetLeft * (wrapper.clientWidth / (wrapper.clientWidth - window.innerWidth)) + scrollbarWidth * index; // 移動位置を取得
-        gsap__WEBPACK_IMPORTED_MODULE_1__["default"].to(window, {
-          scrollTo: {
-            y: wrapperOffset,
-            autoKill: false
+  // ページが読み込まれた時に実行
+  handle(mediaQuery);
+
+  // ウィンドウサイズを変更しても実行（ブレイクポイントの監視）
+  mediaQuery.addListener(handle);
+  function handle(mm) {
+    if (mm.matches) {
+      var wrapper = document.querySelector('#wrapper');
+      if (wrapper) {
+        var panels = gsap__WEBPACK_IMPORTED_MODULE_1__["default"].utils.toArray('.panel');
+        var wrapperWidth = wrapper.offsetWidth;
+        var scrollTween = gsap__WEBPACK_IMPORTED_MODULE_1__["default"].to(panels, {
+          xPercent: -100 * (panels.length - 1),
+          // transformX
+          ease: "none",
+          // easingの設定
+          animation: scrollTween,
+          scrollTrigger: {
+            // scrollTrigger
+            trigger: wrapper,
+            // アニメーションの対象となる要素
+            pin: true,
+            // 要素を固定する
+            scrub: 1,
+            // スクロールとアニメーションを同期させる。数値で秒数の設定に
+            // snap: { // スナップスクロールにする
+            //     snapTo: 1 / ( panels.length - 1 ), // スナップで移動させる位置
+            //     duration: {min: .4, max: .6}, // スナップで移動する際の遅延時間
+            //     ease: "none" // easing
+            // },
+            end: function end() {
+              return "+=" + wrapperWidth;
+            } // アニメーションの終了タイミング
+          }
+        });
+
+        // アンカーリンク
+        var anchors = document.querySelectorAll(".anchor");
+        var index = '';
+        anchors.forEach(function (anchor) {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            index = [].slice.call(anchors).indexOf(anchor); // 何番目のアンカーリンクをクリックしたか取得
+            var target = document.querySelector(e.currentTarget.querySelector('a').getAttribute('href')); // クリックしたアンカーリンクに紐づくpanelを取得
+            var scrollbarWidth = window.innerWidth - document.body.clientWidth; // スクロールバーの長さを取得
+            var wrapperOffset = target.offsetLeft * (wrapper.clientWidth / (wrapper.clientWidth - window.innerWidth)) + scrollbarWidth * index; // 移動位置を取得
+            gsap__WEBPACK_IMPORTED_MODULE_1__["default"].to(window, {
+              scrollTo: {
+                y: wrapperOffset,
+                autoKill: false
+              },
+              duration: 1
+            });
+          });
+        });
+
+        // 画像 fade in 下から
+        var images = document.querySelectorAll('.js-fadeup');
+        console.log(images);
+        images.forEach(function (el) {
+          gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(el, {
+            autoAlpha: 0,
+            y: 100,
+            scrollTrigger: {
+              trigger: el,
+              start: "right right",
+              end: "right 70%",
+              scrub: 1,
+              // markers:true,
+              containerAnimation: scrollTween
+            }
+          });
+        });
+
+        // テキスト blur
+        var blurs = document.querySelectorAll('.js-blur');
+        blurs.forEach(function (el) {
+          gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(el, {
+            scrollTrigger: {
+              trigger: el,
+              start: "left right",
+              scrub: 1,
+              // markers:true,
+              containerAnimation: scrollTween,
+              toggleClass: {
+                targets: el,
+                className: "is-active"
+              }
+            }
+          });
+        });
+
+        // 背景色反転エリア
+        var reversal = document.querySelector('.js-reversal');
+        gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(reversal, {
+          ease: "none",
+          opacity: 1,
+          scrollTrigger: {
+            trigger: reversal,
+            start: "left 70%",
+            end: "right -50%",
+            scrub: 1,
+            containerAnimation: scrollTween,
+            //  markers: true,
+            toggleClass: {
+              targets: _constant_elements__WEBPACK_IMPORTED_MODULE_0__["default"].BODY,
+              className: "is-active"
+            }
+          }
+        });
+
+        // エトセトラエリア
+        var etcimages = document.querySelectorAll('.js-etcimg');
+        console.log(etcimages);
+        etcimages.forEach(function (el) {
+          // gsap.set(el, {y:-500})
+          gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(el, {
+            y: 500,
+            scrollTrigger: {
+              trigger: ".top-etc",
+              start: "left right",
+              end: "right left",
+              scrub: 1,
+              containerAnimation: scrollTween
+            }
+          });
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(".js-etcimg02", {
+          y: -500,
+          scrollTrigger: {
+            trigger: ".top-etc",
+            start: "left right",
+            end: "right left",
+            scrub: 1,
+            containerAnimation: scrollTween
+          }
+        });
+
+        // SNS fadein
+        gsap__WEBPACK_IMPORTED_MODULE_1__["default"].set("#js-sns01", {
+          y: 30,
+          autoAlpha: 0
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_1__["default"].set("#js-sns02", {
+          y: 30,
+          autoAlpha: 0
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_1__["default"].set("#js-sns03", {
+          y: 30,
+          autoAlpha: 0
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_1__["default"].timeline({
+          defaults: {
+            duration: 1,
+            ease: "easeInOut"
           },
-          duration: 1
+          scrollTrigger: {
+            trigger: "#js-snstrigger",
+            start: "left right",
+            toggleActions: "play none none reset",
+            containerAnimation: scrollTween
+            //   markers: true,
+          }
+        }).to("#js-sns01", {
+          y: 0,
+          autoAlpha: 1,
+          duration: .8
+        }).to("#js-sns02", {
+          y: 0,
+          autoAlpha: 1,
+          duration: .8
+        }, "-=.5").to("#js-sns03", {
+          y: 0,
+          autoAlpha: 1,
+          duration: .8
+        }, "-=.5");
+      }
+
+      // mv 背景画像パララックス
+      var mvparallax01 = document.querySelector('.js-mvparallax01');
+      var mvparallax02 = document.querySelector('.js-mvparallax02');
+      var mvparallax03 = document.querySelector('.top-mv__title');
+      gsap__WEBPACK_IMPORTED_MODULE_1__["default"].fromTo(mvparallax01, {
+        x: 0
+      }, {
+        x: 150,
+        ease: "none",
+        // イージングなし
+        scrollTrigger: {
+          trigger: '#panel01',
+          // ScrollTriggerの開始位置を計算するために使用される要素
+          start: "bottom bottom",
+          // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
+          end: "bottom top",
+          // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
+          scrub: 1 // 要素を1秒遅れで追従させる
+        }
+      });
+
+      gsap__WEBPACK_IMPORTED_MODULE_1__["default"].fromTo(mvparallax02, {
+        x: 0
+      }, {
+        x: 100,
+        ease: "none",
+        // イージングなし
+        scrollTrigger: {
+          trigger: '#panel01',
+          // ScrollTriggerの開始位置を計算するために使用される要素
+          start: "bottom bottom",
+          // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
+          end: "bottom top",
+          // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
+          scrub: 1 // 要素を1秒遅れで追従させる
+          //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
+        }
+      });
+
+      gsap__WEBPACK_IMPORTED_MODULE_1__["default"].fromTo(mvparallax03, {
+        x: 0
+      }, {
+        x: 200,
+        ease: "none",
+        // イージングなし
+        scrollTrigger: {
+          trigger: '#panel01',
+          // ScrollTriggerの開始位置を計算するために使用される要素
+          start: "bottom bottom",
+          // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
+          end: "bottom top",
+          // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
+          scrub: 1 // 要素を1秒遅れで追従させる
+          //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
+        }
+      });
+    } else {
+      // それ以外の処理
+
+      // テキスト blur
+      var _blurs = document.querySelectorAll('.js-blur');
+      _blurs.forEach(function (el) {
+        gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(el, {
+          scrollTrigger: {
+            trigger: el,
+            start: "top 80%",
+            scrub: 1,
+            // markers:true,
+            toggleClass: {
+              targets: el,
+              className: "is-active"
+            }
+          }
         });
       });
-    });
-
-    // 画像 fade in 下から
-    var images = document.querySelectorAll('.js-fadeup');
-    console.log(images);
-    images.forEach(function (el) {
-      gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(el, {
-        autoAlpha: 0,
-        y: 100,
-        scrollTrigger: {
-          trigger: el,
-          start: "right right",
-          end: "right 70%",
-          scrub: 1,
-          // markers:true,
-          containerAnimation: scrollTween
-        }
-      });
-    });
-
-    // テキスト blur
-    var blurs = document.querySelectorAll('.js-blur');
-    blurs.forEach(function (el) {
-      gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(el, {
-        scrollTrigger: {
-          trigger: el,
-          start: "left right",
-          scrub: 1,
-          // markers:true,
-          containerAnimation: scrollTween,
-          toggleClass: {
-            targets: el,
-            className: "is-active"
-          }
-        }
-      });
-    });
-
-    // 背景色反転エリア
-    var reversal = document.querySelector('.js-reversal');
-    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(reversal, {
-      ease: "none",
-      opacity: 1,
-      scrollTrigger: {
-        trigger: reversal,
-        start: "left 70%",
-        end: "right -50%",
-        scrub: 1,
-        containerAnimation: scrollTween,
-        //  markers: true,
-        toggleClass: {
-          targets: _constant_elements__WEBPACK_IMPORTED_MODULE_0__["default"].BODY,
-          className: "is-active"
-        }
-      }
-    });
-
-    // エトセトラエリア
-    var etcimages = document.querySelectorAll('.js-etcimg');
-    console.log(etcimages);
-    etcimages.forEach(function (el) {
-      // gsap.set(el, {y:-500})
-      gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(el, {
-        y: 500,
-        scrollTrigger: {
-          trigger: ".top-etc",
-          start: "left right",
-          end: "right left",
-          scrub: 1,
-          containerAnimation: scrollTween
-        }
-      });
-    });
-    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(".js-etcimg02", {
-      y: -500,
-      scrollTrigger: {
-        trigger: ".top-etc",
-        start: "left right",
-        end: "right left",
-        scrub: 1,
-        containerAnimation: scrollTween
-      }
-    });
-
-    // SNS fadein
-    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].set("#js-sns01", {
-      y: 30,
-      autoAlpha: 0
-    });
-    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].set("#js-sns02", {
-      y: 30,
-      autoAlpha: 0
-    });
-    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].set("#js-sns03", {
-      y: 30,
-      autoAlpha: 0
-    });
-    gsap__WEBPACK_IMPORTED_MODULE_1__["default"].timeline({
-      defaults: {
-        duration: 1,
-        ease: "easeInOut"
-      },
-      scrollTrigger: {
-        trigger: "#js-snstrigger",
-        start: "left right",
-        toggleActions: "play none none reset",
-        containerAnimation: scrollTween
-        //   markers: true,
-      }
-    }).to("#js-sns01", {
-      y: 0,
-      autoAlpha: 1,
-      duration: .8
-    }).to("#js-sns02", {
-      y: 0,
-      autoAlpha: 1,
-      duration: .8
-    }, "-=.5").to("#js-sns03", {
-      y: 0,
-      autoAlpha: 1,
-      duration: .8
-    }, "-=.5");
+    }
   }
 
   // プログレスバー
@@ -873,63 +960,6 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = windowYPos / height * 100;
     progressBar.style.width = scrolled + "%";
-  });
-
-  // mv 背景画像パララックス
-  var mvparallax01 = document.querySelector('.js-mvparallax01');
-  var mvparallax02 = document.querySelector('.js-mvparallax02');
-  var mvparallax03 = document.querySelector('.top-mv__title');
-  gsap__WEBPACK_IMPORTED_MODULE_1__["default"].fromTo(mvparallax01, {
-    x: 0
-  }, {
-    x: 150,
-    ease: "none",
-    // イージングなし
-    scrollTrigger: {
-      trigger: '#panel01',
-      // ScrollTriggerの開始位置を計算するために使用される要素
-      start: "bottom bottom",
-      // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
-      end: "bottom top",
-      // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
-      scrub: 1 // 要素を1秒遅れで追従させる
-    }
-  });
-
-  gsap__WEBPACK_IMPORTED_MODULE_1__["default"].fromTo(mvparallax02, {
-    x: 0
-  }, {
-    x: 100,
-    ease: "none",
-    // イージングなし
-    scrollTrigger: {
-      trigger: '#panel01',
-      // ScrollTriggerの開始位置を計算するために使用される要素
-      start: "bottom bottom",
-      // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
-      end: "bottom top",
-      // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
-      scrub: 1 // 要素を1秒遅れで追従させる
-      //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
-    }
-  });
-
-  gsap__WEBPACK_IMPORTED_MODULE_1__["default"].fromTo(mvparallax03, {
-    x: 0
-  }, {
-    x: 200,
-    ease: "none",
-    // イージングなし
-    scrollTrigger: {
-      trigger: '#panel01',
-      // ScrollTriggerの開始位置を計算するために使用される要素
-      start: "bottom bottom",
-      // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
-      end: "bottom top",
-      // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
-      scrub: 1 // 要素を1秒遅れで追従させる
-      //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
-    }
   });
 });
 

@@ -61,6 +61,11 @@
     display: flex;
     flex-wrap: nowrap;
     will-change: auto;
+    @include media(sm) {
+      display: block;
+      width: 100%;
+      height: inherit;
+    }
   }
   &-panel {
     width: 100%;
@@ -69,22 +74,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    // background: color(bg);
-    // &-01 {
-    //   background: #000;
-    // }
-    // &-02 {
-    //   background: blue;
-    // }
-    // &-03 {
-    //   background: red;
-    // }
-    // &-04 {
-    //   background: green($color: #000000);
-    // }
   }
   &-panel__contents {
-    // border: 1px solid #a73e3e;
     height: calc(100% - 10vh);
     width: calc(100% - 10vw);
   }

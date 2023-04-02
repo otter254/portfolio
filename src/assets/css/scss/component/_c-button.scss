@@ -6,7 +6,6 @@
 
 .c-btn {
   &-more {
-    @include hoverOpacity(0.8);
     margin-top: 8px;
     text-transform: uppercase;
     a {

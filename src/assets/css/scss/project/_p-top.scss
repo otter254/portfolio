@@ -350,6 +350,9 @@
             width: 20px;
             height: 20px;
           }
+          a {
+            @include hoverOpacity(0.6);
+          }
         }
       }
     }

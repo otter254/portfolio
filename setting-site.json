@@ -8,6 +8,6 @@
   "metaTwitterCreator": "PortFolio / Nishikawa Takeshi",
   "publishFileName": "PortFolio",
   "themeColor": "#080808",
-  "useWebp": false,
+  "useWebp": true,
   "useSSI": true
 }
