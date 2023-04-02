@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-icon_artstation">
+      <rect width="20" height="20"/>
+    </clipPath>
+  </defs>
+  <g id="icon_artstation" clip-path="url(#clip-icon_artstation)">
+    <path id="icons8-アートステーション" d="M12.005,5,22.1,23.1l1.64-3.712a2.471,2.471,0,0,0-.1-2.392l-6.4-10.814A2.47,2.47,0,0,0,15.135,5ZM10.18,6.792l-4.838,8.9h9.8ZM4,18.163l1.787,3.572A2.467,2.467,0,0,0,7.993,23.1H19.274l-2.752-4.936Z" transform="translate(-4 -4.049)" fill="#fff"/>
+  </g>
+</svg>
