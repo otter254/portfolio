@@ -88,6 +88,7 @@
           width: 100%;
           max-width: 100%;
           margin-left: 0;
+          margin-top: vw(32);
         }
       }
     }
@@ -111,12 +112,12 @@
             img {
               object-fit: cover;
             }
-            // &:first-of-type {
-            //   margin-bottom: 20px;
-            // }
           }
         }
         .col3 {
+          @include media(sm) {
+            margin-top: vw(56);
+          }
           figure {
             aspect-ratio: 16 / 9;
             img {
@@ -128,12 +129,21 @@
               height: calc((100% - 40px) / 3);
               &:nth-of-type(2){
                 margin-left: 10vw;
+                @include media(sm) {
+                  margin-left: 0;
+                }
               }
               &:nth-of-type(3){
                 margin-left: 20vw;
+                @include media(sm) {
+                  margin-left: 0;
+                }
               }
               &:not(:last-of-type) {
                 margin-bottom: 20px;
+                @include media(sm) {
+                  margin-bottom: vw(40);
+                }
               }
             }
           }
@@ -144,6 +154,12 @@
             height: calc((100% - 40px) / 3);
             &:not(:last-of-type) {
               margin-bottom: 20px;
+              @include media(sm) {
+                margin-bottom: vw(48);
+              }
+            }
+            @include media(sm) {
+              display: block;
             }
           }
         }
@@ -151,6 +167,12 @@
           margin-left: 4rem;
           width: 40%;
           max-width:  320px;
+          @include media(sm) {
+            max-width:  100%;
+            width: 100%;
+            margin-left: 0;
+            margin-top: vw(32);
+          }
         }
       }
     }
@@ -166,6 +188,10 @@
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
         gap: 24px;
+        @include media(sm) {
+          width: 100%;
+          gap: vw(10);
+        }
         figure {
           // aspect-ratio: 16 / 9;
           height: 100%;
@@ -190,6 +216,11 @@
       .txt {
         padding-left: 4rem;
         max-width:  320px;
+        @include media(sm) {
+          margin-top: vw(32);
+          max-width: 100%;
+          padding-left: 0;
+        }
       }
     }
   }

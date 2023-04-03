@@ -221,7 +221,6 @@ export default () => {
                 scrollTrigger: {
                     trigger: el,
                     start: "top 80%",
-                    scrub: 1,
                     // markers:true,
                     toggleClass: {targets: el, className: "is-active"},
                 },

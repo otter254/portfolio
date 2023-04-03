@@ -14,6 +14,7 @@
     @include media(sm) {
       margin-right: 0;
       padding-block: vw(50) vw(20);
+      margin-bottom: vw(24);
       @include fz(20);
     }
     .secNm {
@@ -81,7 +82,7 @@
     font-family: $ff-jp-2;
     @include fz(17, true, false, 400, 150, false);
     @include media(sm) {
-      @include fz(14);
+      @include fz(15);
     }
   }
 

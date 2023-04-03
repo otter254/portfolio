@@ -8,7 +8,7 @@
   .u-pl-#{$i} {
     padding-left: 8px * $i;
     @include media(sm) {
-      padding-left: vw(4 * $i);
+      padding-left: 0;
     }
   }
 

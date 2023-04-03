@@ -941,7 +941,6 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
           scrollTrigger: {
             trigger: el,
             start: "top 80%",
-            scrub: 1,
             // markers:true,
             toggleClass: {
               targets: el,
