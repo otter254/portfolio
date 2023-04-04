@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollToPlugin);
 
 export default () => {
 
-    const mediaQuery = window.matchMedia('(min-width: 768px)');
+    const mediaQuery = window.matchMedia('(min-width: 1025px)');
  
     // ページが読み込まれた時に実行
     handle(mediaQuery);
@@ -64,7 +64,6 @@ export default () => {
     
             // 画像 fade in 下から
             const images = document.querySelectorAll('.js-fadeup')
-            console.log(images)
             images.forEach(el => {
                 gsap.from(el, 
                 {
@@ -116,7 +115,6 @@ export default () => {
     
             // エトセトラエリア
             const etcimages = document.querySelectorAll('.js-etcimg')
-            console.log(etcimages)
             etcimages.forEach(el => {
                 // gsap.set(el, {y:-500})
                 gsap.from(el, 

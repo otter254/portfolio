@@ -695,7 +695,7 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollTrigger__
 
 gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin__WEBPACK_IMPORTED_MODULE_3__.ScrollToPlugin);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  var mediaQuery = window.matchMedia('(min-width: 768px)');
+  var mediaQuery = window.matchMedia('(min-width: 1025px)');
 
   // ページが読み込まれた時に実行
   handle(mediaQuery);
@@ -755,7 +755,6 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
 
         // 画像 fade in 下から
         var images = document.querySelectorAll('.js-fadeup');
-        console.log(images);
         images.forEach(function (el) {
           gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(el, {
             autoAlpha: 0,
@@ -810,7 +809,6 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
 
         // エトセトラエリア
         var etcimages = document.querySelectorAll('.js-etcimg');
-        console.log(etcimages);
         etcimages.forEach(function (el) {
           // gsap.set(el, {y:-500})
           gsap__WEBPACK_IMPORTED_MODULE_1__["default"].from(el, {

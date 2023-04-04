@@ -105,5 +105,8 @@
   align-items: center;
   div {
     transform: translateY(50%);
+    @include media(sm) {
+      transform: none;
+    }
   }
 }

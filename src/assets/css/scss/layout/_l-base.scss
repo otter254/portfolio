@@ -90,6 +90,9 @@
   background-color: #797979;
   opacity: 0;
   z-index: 100;
+  @include media(sm) {
+    bottom: vw(20);
+  }
   &__bar {
     position: absolute;
     top: 0;
@@ -150,6 +153,9 @@
     object-fit: contain;
     opacity: 0;
     transition: 0.5s ease-out;
+    @include media(sm) {
+      max-width: 90vw;
+    }
 }
 
 .modal-image.show {

@@ -230,6 +230,12 @@
         justify-content: space-between;
         > div {
           width: calc(50% - 20px);
+          @include media(sm) {
+            width: 100%;
+            &:nth-of-type(2) {
+              margin-top: vw(32);
+            }
+          }
         }
         @media (max-height: 830px) and (orientation: landscape){
           justify-content: center;
@@ -277,6 +283,9 @@
         .txt {
           @include fz(14, true, 20 , 400, 150);
           max-width: 750px;
+          @include media(sm) {
+            margin-top: vw(20);
+          }
           a {
             text-decoration: underline;
             @include hoverOpacity(0.8);
@@ -293,6 +302,14 @@
         > div {
           &:first-of-type {
             margin-right: 20px;
+            @include media(sm) {
+              margin-right: 0;
+            }
+          }
+          @include media(sm) {
+            &:nth-of-type(2) {
+              margin-top: vw(20);
+            }
           }
         }
         figure {
@@ -308,6 +325,9 @@
           &:nth-of-type(3) {
             position: relative;
             left: 4vw;
+            @include media(sm) {
+              left: 0;
+            }
           }
         }
       }
@@ -316,15 +336,28 @@
         max-width:  320px;
         display: flex;
         align-items: center;
+        @include media(sm) {
+          margin-left: 0;
+          max-width: 100%;
+          margin-top: vw(32);
+        }
       }
       // 静物着彩
       &.type02 {
-        .img {
-          figure {
-            &:nth-of-type(1),
-            &:nth-of-type(3) {
-              position: relative;
-              left: -4vw;
+        @include media(sm) {
+          > div {
+            display: flex;
+            flex-direction: column-reverse;
+          }
+        }
+        @include media(lg) {
+          .img {
+            figure {
+              &:nth-of-type(1),
+              &:nth-of-type(3) {
+                position: relative;
+                left: -4vw;
+              }
             }
           }
         }
@@ -344,6 +377,7 @@
         @include media(sm) {
           width: 100%;
           display: flex;
+          margin-top: vw(32);
         }
         figure {
           height: 100vh;
@@ -365,6 +399,11 @@
         margin-right: 40px;
         max-width:  320px;
         width: 30%;
+        @include media(sm) {
+          width: 100%;
+          max-width: 100%;
+          margin-right: 0;
+        }
       }
     }
   }
@@ -387,13 +426,24 @@
         align-items: end;
         margin-left: 8vw;
         max-width: 320px;
+        @include media(sm) {
+          margin-left: 0;
+          max-width: 100%;
+          margin-top: vw(48);
+        }
         h4 {
           font-family: $ff-jp-2;
           @include fz(18, true, false, 400, 200, false);
           margin-bottom: 8px;
+          @include media(sm) {
+            @include fz(16);
+          }
         }
         p {
           @include fz(13, true, false , 400, 150);
+          @include media(sm) {
+            @include fz(12);
+          }
         }
       }
       .foot {
@@ -402,6 +452,7 @@
         margin: 0 0 0 auto;
         @include media(sm) {
           justify-content: center;
+          margin-block: vw(104) vw(24);
         }
         .sns {
           display: flex;

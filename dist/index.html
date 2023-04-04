@@ -25,8 +25,8 @@
   <meta name="twitter:site" content="PortFolio / Nishikawa Takeshi">
   <meta name="twitter:creator" content="PortFolio / Nishikawa Takeshi">
   <!-- Preload -->
-  <link rel="preload" as="style" href="/assets/css/style.css?rev=5c7ea0fe3d88d739">
-  <link rel="preload" as="script" href="/assets/js/bundle.js?rev=5c7ea0fe3d88d739">
+  <link rel="preload" as="style" href="/assets/css/style.css?rev=5bcf0d56f513f234">
+  <link rel="preload" as="script" href="/assets/js/bundle.js?rev=5bcf0d56f513f234">
   <!-- CSS -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&amp;display=swap" rel="stylesheet">
@@ -61,12 +61,42 @@
       s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
-  <link rel="stylesheet" href="/assets/css/style.css?rev=5c7ea0fe3d88d739">
+  <link rel="stylesheet" href="/assets/css/style.css?rev=5bcf0d56f513f234">
 </head>
 
 <body id="gotop" class="top">
   <div class="l-body">
-    <!--#include virtual="/ssi/header.html" -->
+    <header class="l-header">
+      <div class="l-header__inner u-h-max">
+        <h1 class="txt u-text-en" id="js-mvfade01">
+          <a href="/" class="u-v-lr">portfolio</a>
+        </h1>
+        <div class="c-hamburger js-hmb" role="button" id="js-mvfade02">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="txt u-text-en l-lg" id="js-mvfade03">
+          <span class="u-v-lr">nishikawa takeshi</span>
+        </div>
+      </div>
+    </header>
+    <div class="progress" id="js-progress">
+      <div class="progress__bar"></div>
+    </div>
+    <div class="l-backlayer js-layer"></div>
+    <div class="l-nav__mega">
+      <nav>
+        <ul class="u-text-en">
+          <li class="anchor"><a href="#panel01" class="u-color-selection">top</a></li>
+          <li class="anchor"><a href="#panel02" class="u-color-selection">section01_conceptart</a></li>
+          <li class="anchor"><a href="#panel05" class="u-color-selection">section02_conceptworks</a></li>
+          <li class="anchor"><a href="#panel07" class="u-color-selection">section03_illustration</a></li>
+          <li class="anchor"><a href="#panel08" class="u-color-selection">section04_skeches</a></li>
+          <li class="anchor"><a href="#panel10" class="u-color-selection">section05_freeworks</a></li>
+          <li class="anchor"><a href="#panel11" class="u-color-selection">section06_profile</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="l-wrapper">
       <div class="l-content">
         <!-- main -->
@@ -119,7 +149,7 @@
             <!-- パネル3枚目 コンセプトアート section01-conceptart02 -->
             <section class="l-main-panel panel" id="panel03">
               <div class="l-main-panel__contents u-d-flex">
-                <div class="c-title__section u-h-max u-d-flex u-v-lr u-text-en">
+                <div class="c-title__section u-h-max u-d-flex u-v-lr u-text-en l-lg">
                   <b class="secNm u-d-flex">section01</b>
                   <b>conceptart</b>
                 </div>
@@ -151,7 +181,7 @@
             <!-- パネル4枚目 コンセプトアート section01-conceptart03 -->
             <section class="l-main-panel panel" id="panel04">
               <div class="l-main-panel__contents u-d-flex">
-                <div class="c-title__section u-h-max u-d-flex u-v-lr u-text-en">
+                <div class="c-title__section u-h-max u-d-flex u-v-lr u-text-en l-lg">
                   <b class="secNm u-d-flex">section01</b>
                   <b>conceptart</b>
                 </div>
@@ -247,7 +277,7 @@
             <!-- パネル6枚目 コンセプトアート2 section02-conceptart02 -->
             <section class="l-main-panel l-main-panel-06 panel" id="panel06">
               <div class="l-main-panel__contents u-d-flex">
-                <div class="c-title__section u-h-max u-d-flex u-v-lr u-text-en u-pl-5">
+                <div class="c-title__section u-h-max u-d-flex u-v-lr u-text-en u-pl-5 l-lg">
                   <b class="secNm u-d-flex">section02</b>
                   <b>conceptworks</b>
                 </div>
@@ -284,17 +314,17 @@
                 <div class="c-contents__body top-works">
                   <div class="top-works__content u-d-flex u-h-max">
                     <div class="u-h-max">
-                      <h2 class="c-title__lv02"> WEBデザイン <span class="u-d-block u-d-flex u-text-en">procreate/gulp/html/css/javascript</span>
+                      <h2 class="c-title__lv02"> WEBデザイン <span class="u-d-block u-d-flex u-text-en">procreate/gulp/<br class="l-sm">html/css/javascript</span>
                       </h2>
                       <div class="img border">
                         <figure>
-                          <img src="/assets/images/top/illust/img-01.png" class="image js-fadeup" data-src="/assets/images/top/illust/img-01.png" alt="" height="440" width="660" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/illust/img-01.png" class="image" data-src="/assets/images/top/illust/img-01.png" alt="" height="440" width="660" decoding="async" loading="lazy">
                         </figure>
                         <figure>
-                          <img src="/assets/images/top/illust/img-02.png" class="image js-fadeup" data-src="/assets/images/top/illust/img-02.png" alt="" height="876" width="1638" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/illust/img-02.png" class="image" data-src="/assets/images/top/illust/img-02.png" alt="" height="876" width="1638" decoding="async" loading="lazy">
                         </figure>
                         <figure>
-                          <img src="/assets/images/top/illust/img-03.png" class="image js-fadeup" data-src="/assets/images/top/illust/img-03.png" alt="" height="440" width="660" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/illust/img-03.png" class="image" data-src="/assets/images/top/illust/img-03.png" alt="" height="440" width="660" decoding="async" loading="lazy">
                         </figure>
                       </div>
                       <div class="txt u-mt-1 js-blur">
@@ -305,17 +335,17 @@
                       </div>
                     </div>
                     <div class="u-h-max">
-                      <h2 class="c-title__lv02"> WEBデザイン <span class="u-d-block u-d-flex u-text-en">Illustrator/photoshop/gulp/html/css</span>
+                      <h2 class="c-title__lv02"> WEBデザイン <span class="u-d-block u-d-flex u-text-en">Illustrator/photoshop/<br class="l-sm">gulp/html/css</span>
                       </h2>
                       <div class="img">
                         <figure>
-                          <img src="/assets/images/top/img-01.jpg" class="js-fadeup" alt="" height="900" width="1600" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/img-01.jpg" class="image" alt="" height="900" width="1600" decoding="async" loading="lazy">
                         </figure>
                         <figure>
-                          <img src="/assets/images/top/img-01.jpg" class="js-fadeup" alt="" height="900" width="1600" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/img-01.jpg" class="image" alt="" height="900" width="1600" decoding="async" loading="lazy">
                         </figure>
                         <figure>
-                          <img src="/assets/images/top/img-01.jpg" class="js-fadeup" alt="" height="900" width="1600" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/img-01.jpg" class="image" alt="" height="900" width="1600" decoding="async" loading="lazy">
                         </figure>
                       </div>
                       <div class="txt u-mt-1 js-blur">
@@ -331,7 +361,7 @@
             <!-- パネル8枚目 その他の制作 section03-works02 -->
             <section class="l-main-panel l-main-panel-07 panel" id="panel07_2">
               <div class="l-main-panel__contents u-d-flex">
-                <div class="c-title__section u-h-max u-d-flex u-v-lr u-text-en u-pl-5">
+                <div class="c-title__section u-h-max u-d-flex u-v-lr u-text-en u-pl-5 l-lg">
                   <b class="secNm u-d-flex">section03</b>
                   <b>illustration</b>
                 </div>
@@ -342,13 +372,13 @@
                       </h2>
                       <div class="img">
                         <figure>
-                          <img src="/assets/images/top/illust/img-04.png" class="image js-fadeup" data-src="/assets/images/top/illust/img-04.png" alt="" height="880" width="1320" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/illust/img-04.png" class="image" data-src="/assets/images/top/illust/img-04.png" alt="" height="880" width="1320" decoding="async" loading="lazy">
                         </figure>
                         <figure>
-                          <img src="/assets/images/top/illust/img-05.png" class="image js-fadeup" data-src="/assets/images/top/illust/img-05.png" alt="" height="880" width="1320" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/illust/img-05.png" class="image" data-src="/assets/images/top/illust/img-05.png" alt="" height="880" width="1320" decoding="async" loading="lazy">
                         </figure>
                         <figure>
-                          <img src="/assets/images/top/illust/img-06.png" class="image js-fadeup" data-src="/assets/images/top/illust/img-06.png" alt="" height="880" width="1320" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/illust/img-06.png" class="image" data-src="/assets/images/top/illust/img-06.png" alt="" height="880" width="1320" decoding="async" loading="lazy">
                         </figure>
                       </div>
                       <div class="txt u-mt-1 js-blur">
@@ -362,13 +392,13 @@
                       </h2>
                       <div class="img">
                         <figure>
-                          <img src="/assets/images/top/img-01.jpg" class="js-fadeup" alt="" height="900" width="1600" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/img-01.jpg" class="image" alt="" height="900" width="1600" decoding="async" loading="lazy">
                         </figure>
                         <figure>
-                          <img src="/assets/images/top/img-01.jpg" class="js-fadeup" alt="" height="900" width="1600" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/img-01.jpg" class="image" alt="" height="900" width="1600" decoding="async" loading="lazy">
                         </figure>
                         <figure>
-                          <img src="/assets/images/top/img-01.jpg" class="js-fadeup" alt="" height="900" width="1600" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/img-01.jpg" class="image" alt="" height="900" width="1600" decoding="async" loading="lazy">
                         </figure>
                       </div>
                       <div class="txt u-mt-1 js-blur">
@@ -430,7 +460,7 @@
             <!-- パネル10枚目 静物着彩 section04-skeches02 -->
             <section class="l-main-panel l-main-panel-09 panel" id="panel09">
               <div class="l-main-panel__contents u-d-flex">
-                <div class="c-title__section u-h-max u-d-flex u-v-lr u-text-en">
+                <div class="c-title__section u-h-max u-d-flex u-v-lr u-text-en l-lg">
                   <b class="secNm u-d-flex">section04</b>
                   <b>sketches</b>
                 </div>
@@ -582,7 +612,7 @@
       </div>
     </div>
   </div>
-  <script src="/assets/js/bundle.js?rev=5c7ea0fe3d88d739" defer="defer"></script>
+  <script src="/assets/js/bundle.js?rev=5bcf0d56f513f234" defer="defer"></script>
 
 
 </body></html>
