@@ -10,7 +10,8 @@ export default () => {
             modalWrapper.classList.add('show');
             modalImage.classList.add('show');
   
-            var imageSrc = image.getAttribute('data-src');
+          //   var imageSrc = image.getAttribute('data-src');
+            let imageSrc = image.getAttribute('src');
             modalImage.src = imageSrc;
        });
   });

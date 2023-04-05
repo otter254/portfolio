@@ -26,13 +26,13 @@ export default () => {
             const wrapperWidth = wrapper.offsetWidth;
         
             let scrollTween = gsap.to( panels, {
-                xPercent: -100 * (panels.length - 1), // transformX
-                ease: "none", // easingの設定
+                xPercent: -100 * (panels.length - 1),
+                ease: "none",
                 animation: scrollTween,
-                scrollTrigger: { // scrollTrigger
-                    trigger: wrapper, // アニメーションの対象となる要素
-                    pin: true, // 要素を固定する
-                    scrub: 1, // スクロールとアニメーションを同期させる。数値で秒数の設定に
+                scrollTrigger: {
+                    trigger: wrapper,
+                    pin: true,
+                    scrub: 1,
                     // snap: { // スナップスクロールにする
                     //     snapTo: 1 / ( panels.length - 1 ), // スナップで移動させる位置
                     //     duration: {min: .4, max: .6}, // スナップで移動する際の遅延時間
@@ -173,38 +173,38 @@ export default () => {
         x: 0,
         }, {
         x: 150, 
-        ease: "none", // イージングなし
+        ease: "none",
         scrollTrigger: {
-        trigger: '#panel01', // ScrollTriggerの開始位置を計算するために使用される要素
-        start: "bottom bottom", // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
-        end: "bottom top", // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
-        scrub: 1, // 要素を1秒遅れで追従させる
+        trigger: '#panel01',
+        start: "bottom bottom",
+        end: "bottom top",
+        scrub: 1,
         }
         });
         gsap.fromTo(mvparallax02, {
             x: 0,
         }, {
             x: 100, 
-            ease: "none", // イージングなし
+            ease: "none",
             scrollTrigger: {
-            trigger: '#panel01', // ScrollTriggerの開始位置を計算するために使用される要素
-            start: "bottom bottom", // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
-            end: "bottom top", // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
-            scrub: 1, // 要素を1秒遅れで追従させる
-            //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
+            trigger: '#panel01',
+            start: "bottom bottom",
+            end: "bottom top",
+            scrub: 1,
+            //  markers: true,
             }
         });
         gsap.fromTo(mvparallax03, {
             x: 0,
         }, {
             x: 200, 
-            ease: "none", // イージングなし
+            ease: "none",
             scrollTrigger: {
-            trigger: '#panel01', // ScrollTriggerの開始位置を計算するために使用される要素
-            start: "bottom bottom", // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
-            end: "bottom top", // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
-            scrub: 1, // 要素を1秒遅れで追従させる
-            //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
+            trigger: '#panel01',
+            start: "bottom bottom",
+            end: "bottom top",
+            scrub: 1,
+            //  markers: true,
             }
         });
 

@@ -124,6 +124,14 @@
 }
 
 /* modal */
+
+img.image {
+  transition: .3s;
+  cursor: pointer;
+  @include ahover {
+    filter: blur(3px);
+  }
+}
 .modal-wrapper {
     width: 100vw;
     height: 100%;

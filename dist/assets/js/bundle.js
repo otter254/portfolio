@@ -222,10 +222,8 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _constant_elements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constant/elements */ "./src/assets/js/constant/elements.js");
-/* harmony import */ var _preventDefault__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./preventDefault */ "./src/assets/js/helper/preventDefault.js");
-/* harmony import */ var _getDeviceType__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getDeviceType */ "./src/assets/js/helper/getDeviceType.js");
-/* harmony import */ var throttle_debounce__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! throttle-debounce */ "./node_modules/throttle-debounce/esm/index.js");
-
+/* harmony import */ var _getDeviceType__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getDeviceType */ "./src/assets/js/helper/getDeviceType.js");
+/* harmony import */ var throttle_debounce__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! throttle-debounce */ "./node_modules/throttle-debounce/esm/index.js");
 
 
 
@@ -240,7 +238,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var func = {
     isActive: false,
-    deviceType: (0,_getDeviceType__WEBPACK_IMPORTED_MODULE_2__["default"])(),
+    deviceType: (0,_getDeviceType__WEBPACK_IMPORTED_MODULE_1__["default"])(),
     HMB: document.querySelector('.js-hmb'),
     HMBBG: document.querySelector('.js-layer'),
     MEGNAV: document.querySelector('.l-nav__mega'),
@@ -276,9 +274,9 @@ __webpack_require__.r(__webpack_exports__);
     /**
      * resize
      */
-    resize: (0,throttle_debounce__WEBPACK_IMPORTED_MODULE_3__.debounce)(150, function () {
-      if (func.deviceType !== (0,_getDeviceType__WEBPACK_IMPORTED_MODULE_2__["default"])()) {
-        func.deviceType = (0,_getDeviceType__WEBPACK_IMPORTED_MODULE_2__["default"])();
+    resize: (0,throttle_debounce__WEBPACK_IMPORTED_MODULE_2__.debounce)(150, function () {
+      if (func.deviceType !== (0,_getDeviceType__WEBPACK_IMPORTED_MODULE_1__["default"])()) {
+        func.deviceType = (0,_getDeviceType__WEBPACK_IMPORTED_MODULE_1__["default"])();
         func.hide();
       }
     })
@@ -306,7 +304,9 @@ __webpack_require__.r(__webpack_exports__);
     image.addEventListener('click', function () {
       modalWrapper.classList.add('show');
       modalImage.classList.add('show');
-      var imageSrc = image.getAttribute('data-src');
+
+      //   var imageSrc = image.getAttribute('data-src');
+      var imageSrc = image.getAttribute('src');
       modalImage.src = imageSrc;
     });
   });
@@ -455,26 +455,6 @@ gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollTrigger__
       duration: 1
     }, "+=0.1"));
   }, 3000);
-});
-
-/***/ }),
-
-/***/ "./src/assets/js/helper/preventDefault.js":
-/*!************************************************!*\
-  !*** ./src/assets/js/helper/preventDefault.js ***!
-  \************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-/**
- * preventDefault
- * @param {object} event
- */
-/* harmony default export */ __webpack_exports__["default"] = (function (event) {
-  event.preventDefault ? event.preventDefault() : event.returnValue = false;
 });
 
 /***/ }),
@@ -710,18 +690,12 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
         var wrapperWidth = wrapper.offsetWidth;
         var scrollTween = gsap__WEBPACK_IMPORTED_MODULE_1__["default"].to(panels, {
           xPercent: -100 * (panels.length - 1),
-          // transformX
           ease: "none",
-          // easingの設定
           animation: scrollTween,
           scrollTrigger: {
-            // scrollTrigger
             trigger: wrapper,
-            // アニメーションの対象となる要素
             pin: true,
-            // 要素を固定する
             scrub: 1,
-            // スクロールとアニメーションを同期させる。数値で秒数の設定に
             // snap: { // スナップスクロールにする
             //     snapTo: 1 / ( panels.length - 1 ), // スナップで移動させる位置
             //     duration: {min: .4, max: .6}, // スナップで移動する際の遅延時間
@@ -882,33 +856,24 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
       }, {
         x: 150,
         ease: "none",
-        // イージングなし
         scrollTrigger: {
           trigger: '#panel01',
-          // ScrollTriggerの開始位置を計算するために使用される要素
           start: "bottom bottom",
-          // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
           end: "bottom top",
-          // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
-          scrub: 1 // 要素を1秒遅れで追従させる
+          scrub: 1
         }
       });
-
       gsap__WEBPACK_IMPORTED_MODULE_1__["default"].fromTo(mvparallax02, {
         x: 0
       }, {
         x: 100,
         ease: "none",
-        // イージングなし
         scrollTrigger: {
           trigger: '#panel01',
-          // ScrollTriggerの開始位置を計算するために使用される要素
           start: "bottom bottom",
-          // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
           end: "bottom top",
-          // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
-          scrub: 1 // 要素を1秒遅れで追従させる
-          //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
+          scrub: 1
+          //  markers: true,
         }
       });
 
@@ -917,16 +882,12 @@ gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollToPlugin_
       }, {
         x: 200,
         ease: "none",
-        // イージングなし
         scrollTrigger: {
           trigger: '#panel01',
-          // ScrollTriggerの開始位置を計算するために使用される要素
           start: "bottom bottom",
-          // 1つ目の値がtriggerで指定した要素の開始位置　2つ目の値が画面の開始位置
           end: "bottom top",
-          // 1つ目の値がtriggerで指定した要素の終了位置　2つ目の値が画面の終了位置
-          scrub: 1 // 要素を1秒遅れで追従させる
-          //  markers: true, // 開始位置、終了位置を調整確認する際に使用します
+          scrub: 1
+          //  markers: true,
         }
       });
     } else {

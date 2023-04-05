@@ -1,7 +1,6 @@
 'use strict'
 
 import EL from '../constant/elements'
-import pD from './preventDefault'
 import getDeviceType from './getDeviceType'
 import { throttle, debounce } from 'throttle-debounce'
 
