@@ -240,14 +240,12 @@ __webpack_require__.r(__webpack_exports__);
     isActive: false,
     deviceType: (0,_getDeviceType__WEBPACK_IMPORTED_MODULE_1__["default"])(),
     HMB: document.querySelector('.js-hmb'),
-    HMBBG: document.querySelector('.js-layer'),
     MEGNAV: document.querySelector('.l-nav__mega'),
     /**
      * init
      */
     init: function init() {
       if (func.HMB) func.HMB.addEventListener('click', func.switchShowHide, false);
-      // if (func.HMBBG) func.HMBBG.addEventListener('click', func.switchShowHide, false)
       if (func.MEGNAV) func.MEGNAV.addEventListener('click', func.switchShowHide, false);
       window.addEventListener('resize', func.resize, false);
     },
@@ -303,12 +301,18 @@ __webpack_require__.r(__webpack_exports__);
   var modalText = document.getElementById('modal-txt');
   images.forEach(function (image) {
     image.addEventListener('click', function () {
+      //テキスト中をリセット
+      modalText.innerText = "";
       modalWrapper.classList.add('show');
       modalImage.classList.add('show');
       var imageSrc = image.getAttribute('src');
-      var imageText = image.getAttribute('data-src');
       modalImage.src = imageSrc;
-      modalText.innerText = "制作時間" + imageText;
+
+      //   data-src があれば表示
+      if (image.hasAttribute('data-src')) {
+        var imageText = image.getAttribute('data-src');
+        modalText.innerText = "制作時間" + imageText;
+      } else {}
     });
   });
   modalWrapper.addEventListener('click', function () {

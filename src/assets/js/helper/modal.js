@@ -8,13 +8,22 @@ export default () => {
 
   images.forEach(function(image) {
        image.addEventListener('click', function() {
+            
+            //テキスト中をリセット
+            modalText.innerText = "";
+            
             modalWrapper.classList.add('show');
             modalImage.classList.add('show');
   
             let imageSrc = image.getAttribute('src');
-            let imageText = image.getAttribute('data-src');
             modalImage.src = imageSrc;
-            modalText.innerText = "制作時間" + imageText;
+
+            //   data-src があれば表示
+            if (image.hasAttribute('data-src')) {
+               let imageText = image.getAttribute('data-src');
+               modalText.innerText = "制作時間" + imageText;
+            } else {
+            }
        });
   });
   

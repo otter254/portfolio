@@ -126,7 +126,7 @@
 /* modal */
 
 img.image {
-  transition: .3s;
+  transition: .5s;
   cursor: pointer;
   @include ahover {
     filter: blur(3px);
@@ -144,28 +144,28 @@ img.image {
     opacity: 0;
     transition: 0.3s ease-out;
     z-index: 1000;
-}
-
-.modal-wrapper.show {
-    opacity: 1;
-    pointer-events: all;
-}
-
-.modal-image {
-    position: absolute;
-    max-width: 80%;
-    max-height: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: contain;
-    opacity: 0;
-    transition: 0.5s ease-out;
-    @include media(sm) {
-      max-width: 90vw;
+    display: grid;
+    place-items: center;
+    &.show {
+      opacity: 1;
+      pointer-events: all;
     }
-}
-
-.modal-image.show {
-    opacity: 1;
+    figure {
+      max-width: 80%;
+      max-height: 80vh;
+      @include media(lg) {
+        height: 80vh;
+      }
+      .modal-image {
+        object-fit: contain;
+        max-height: 100%;
+        &.show {
+          opacity: 1;
+        }
+      }
+      figcaption {
+        text-align: center;
+        margin-top: 8px;
+      }
+    }
 }
