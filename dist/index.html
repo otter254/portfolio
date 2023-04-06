@@ -4,10 +4,10 @@
   <title>PortFolio / Nishikawa Takeshi</title>
   <meta name="description" content="サンプルテキストです（150文字前後）。">
   <meta name="author" content="PortFolio / Nishikawa Takeshi">
-  <link rel="shortcut icon" type="image/svg+xml" href="/assets/images/favicon.svg">
-  <link rel="shortcut icon" sizes="32x32" href="/assets/images/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/touch180.png">
-  <link rel="canonical" href="/">
+  <link rel="shortcut icon" type="image/svg+xml" href="http://192.168.200.114:3000/assets/images/favicon.svg">
+  <link rel="shortcut icon" sizes="32x32" href="http://192.168.200.114:3000/assets/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://192.168.200.114:3000/assets/images/touch180.png">
+  <link rel="canonical" href="http://192.168.200.114:3000/">
   <!-- Settings -->
   <meta name="viewport" content="width=device-width,viewport-fit=cover">
   <meta name="theme-color" content="#080808">
@@ -17,16 +17,16 @@
   <meta property="og:description" content="サンプルテキストです（150文字前後）。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:url" content="/">
-  <meta property="og:image" content="/assets/images/ogpimg.png">
+  <meta property="og:url" content="http://192.168.200.114:3000/">
+  <meta property="og:image" content="http://192.168.200.114:3000/assets/images/ogpimg.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="PortFolio / Nishikawa Takeshi">
   <meta name="twitter:creator" content="PortFolio / Nishikawa Takeshi">
   <!-- Preload -->
-  <link rel="preload" as="style" href="/assets/css/style.css?rev=86c6ace72f58deec">
-  <link rel="preload" as="script" href="/assets/js/bundle.js?rev=86c6ace72f58deec">
+  <link rel="preload" as="style" href="http://192.168.200.114:3000/assets/css/style.css?rev=1d39cd48fd2efec1">
+  <link rel="preload" as="script" href="http://192.168.200.114:3000/assets/js/bundle.js?rev=1d39cd48fd2efec1">
   <!-- CSS -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&amp;display=swap" rel="stylesheet">
@@ -61,7 +61,7 @@
       s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
-  <link rel="stylesheet" href="/assets/css/style.css?rev=86c6ace72f58deec">
+  <link rel="stylesheet" href="http://192.168.200.114:3000/assets/css/style.css?rev=1d39cd48fd2efec1">
 </head>
 
 <body id="gotop" class="top">
@@ -69,7 +69,7 @@
     <header class="l-header">
       <div class="l-header__inner u-h-max">
         <h1 class="txt u-text-en" id="js-mvfade01">
-          <a href="/" class="u-v-lr">portfolio</a>
+          <a href="http://192.168.200.114:3000/" class="u-v-lr">portfolio</a>
         </h1>
         <div class="c-hamburger js-hmb" role="button" id="js-mvfade02">
           <span></span>
@@ -135,7 +135,7 @@
                   </h2>
                   <div class="top-conceptart__content u-d-flex">
                     <figure class="js-fadeup">
-                      <img src="/assets/images/top/concept/img01.jpg" class="image" data-src="/assets/images/top/concept/img01.jpg" alt="" height="1172" width="2000" decoding="async" loading="lazy">
+                      <img src="/assets/images/top/concept/img01.jpg" class="image" data-src="15時間" alt="" height="1172" width="2000" decoding="async" loading="lazy">
                     </figure>
                     <div class="txt js-blur">
                       <h3 class="c-title__lv03 u-text-en">main story</h3>
@@ -158,13 +158,13 @@
                     <div class="u-d-flex">
                       <div class="img col3 ex">
                         <figure class="js-fadeup">
-                          <img src="/assets/images/top/concept/img02.jpg" class="image u-h-max" data-src="/assets/images/top/concept/img02.jpg" alt="" height="900" width="1600" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/concept/img02.jpg" class="image u-h-max" data-src="8時間" alt="" height="900" width="1600" decoding="async" loading="lazy">
                         </figure>
                         <figure class="js-fadeup">
-                          <img src="/assets/images/top/concept/img03.jpg" class="image u-h-max" data-src="/assets/images/top/concept/img03.jpg" alt="" height="900" width="1600" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/concept/img03.jpg" class="image u-h-max" data-src="30分" alt="" height="900" width="1600" decoding="async" loading="lazy">
                         </figure>
                         <figure class="js-fadeup">
-                          <img src="/assets/images/top/concept/img04.jpg" class="image u-h-max" data-src="/assets/images/top/concept/img04.jpg" alt="" height="900" width="1600" decoding="async" loading="lazy">
+                          <img src="/assets/images/top/concept/img04.jpg" class="image u-h-max" data-src="５時間" alt="" height="900" width="1600" decoding="async" loading="lazy">
                         </figure>
                       </div>
                       <div class="txt u-p-ct js-blur">
@@ -588,6 +588,7 @@
           </div>
           <div class="modal-wrapper">
             <img src="/assets/images/top/img-01.jpg" alt="" class="modal-image" height="900" width="1600" decoding="async" loading="lazy">
+            <span id="modal-txt"></span>
           </div>
           <!-- Slider main container
   <div class="swiper">
@@ -612,7 +613,7 @@
       </div>
     </div>
   </div>
-  <script src="/assets/js/bundle.js?rev=86c6ace72f58deec" defer="defer"></script>
+  <script src="http://192.168.200.114:3000/assets/js/bundle.js?rev=1d39cd48fd2efec1" defer="defer"></script>
 
 
 </body></html>

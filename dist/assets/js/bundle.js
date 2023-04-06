@@ -300,14 +300,15 @@ __webpack_require__.r(__webpack_exports__);
   var modalWrapper = document.querySelector('.modal-wrapper');
   var images = document.querySelectorAll('.image');
   var modalImage = document.querySelector('.modal-image');
+  var modalText = document.getElementById('modal-txt');
   images.forEach(function (image) {
     image.addEventListener('click', function () {
       modalWrapper.classList.add('show');
       modalImage.classList.add('show');
-
-      //   var imageSrc = image.getAttribute('data-src');
       var imageSrc = image.getAttribute('src');
+      var imageText = image.getAttribute('data-src');
       modalImage.src = imageSrc;
+      modalText.innerText = "制作時間" + imageText;
     });
   });
   modalWrapper.addEventListener('click', function () {
