@@ -156,6 +156,9 @@ img.image {
       @include media(lg) {
         height: 80vh;
       }
+      @include media(sm) {
+        max-width: 90%;
+      }
       .modal-image {
         object-fit: contain;
         max-height: 100%;
