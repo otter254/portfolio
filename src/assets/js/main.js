@@ -15,7 +15,6 @@ import getDocumentH from './helper/getDocumentHeight'
 import getOrientation from './helper/getOrientation'
 import getClassName from './helper/getClassName'
 import set100vh from './helper/set100vh'
-import swiper from './helper/swiper'
 import headerFixed from './helper/headerFixed'
 import mv from './helper/mv'
 import modal from './helper/modal'
@@ -129,8 +128,6 @@ const initOnce = () => {
   // hmb menu
   hmb()
 
-  // swiper
-  swiper()
 }
 
 /**

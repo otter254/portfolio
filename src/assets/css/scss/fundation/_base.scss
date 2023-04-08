@@ -129,11 +129,6 @@ table {
   }
 }
 
-// IE11のクリアボタンを非表示
-input::-ms-clear {
-  display: none;
-}
-
 // タブキーでの移動以外はアウトラインを削除
 [data-js-focus-visible]:focus:not([data-focus-visible-added]) {
   outline: none;
