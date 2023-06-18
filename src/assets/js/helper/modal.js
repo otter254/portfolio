@@ -2,13 +2,12 @@
 
 export default () => {
   const modalWrapper = document.querySelector('.modal-wrapper');
-  const images = document.querySelectorAll('.image');
+  const images = document.querySelectorAll('.js-image');
   const modalImage = document.querySelector('.modal-image');
   const modalText = document.getElementById('modal-txt')
-
+     
   images.forEach(function(image) {
        image.addEventListener('click', function() {
-            
             //テキスト中をリセット
             modalText.innerText = "";
             

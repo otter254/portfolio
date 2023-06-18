@@ -425,25 +425,49 @@
       .body {
         display: flex;
         align-items: end;
+        justify-content: space-between;
         margin-left: 8vw;
-        max-width: 320px;
         @include media(sm) {
           margin-left: 0;
-          max-width: 100%;
           margin-top: vw(48);
         }
-        h4 {
-          font-family: $ff-jp-2;
-          @include fz(18, true, false, 400, 200, false);
-          margin-bottom: 8px;
+        .txt {
+          max-width: 320px;
           @include media(sm) {
-            @include fz(16);
+            max-width: 100%;
+          }
+          h4 {
+            font-family: $ff-jp-2;
+            @include fz(18, true, false, 400, 200, false);
+            margin-bottom: 8px;
+            @include media(sm) {
+              @include fz(16);
+            }
+          }
+          p {
+            @include fz(13, true, false , 400, 150);
+            @include media(sm) {
+              @include fz(12);
+            }
           }
         }
-        p {
-          @include fz(13, true, false , 400, 150);
-          @include media(sm) {
-            @include fz(12);
+        .skills {
+          display: flex;
+          dl {
+            dt {
+              @include fz(14, true, false , 400, 150);
+              margin-bottom: 4px;
+              a {
+                text-decoration: underline;
+                @include hoverOpacity(0.8);
+              }
+            }
+            dd {
+              &:not(:last-of-type) {
+                margin-bottom: 6px;
+                padding-bottom: 6px;
+              }
+            }
           }
         }
       }

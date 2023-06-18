@@ -6,12 +6,13 @@
 
 .c-btn {
   &-more {
-    margin-top: 8px;
+    margin-top: 10px;
     text-transform: uppercase;
     a {
       @include fz(15, true, false, 400, 150, false);
       display: flex;
       align-items: center;
+      text-decoration: underline;
       &::before {
         content: "";
         background: #fff;

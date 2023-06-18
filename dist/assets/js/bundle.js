@@ -296,7 +296,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var modalWrapper = document.querySelector('.modal-wrapper');
-  var images = document.querySelectorAll('.image');
+  var images = document.querySelectorAll('.js-image');
   var modalImage = document.querySelector('.modal-image');
   var modalText = document.getElementById('modal-txt');
   images.forEach(function (image) {
