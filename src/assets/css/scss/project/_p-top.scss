@@ -415,10 +415,44 @@
       width: 100%;
       .head {
         max-width:  320px;
-        dl {
-          .job {
-            margin-top: 4px;
-            @include fz(12, true, false, 400, 200, false);
+        .job {
+          color: #c3c3c3;
+          margin-top: 4px;
+          @include fz(12, true, 20, 400, 200, false);
+        }
+        .skills {
+          display: flex;
+          dl {
+            dt {
+              @include fz(14, true, false , 400, 150);
+              margin-bottom: 2px;
+              display: flex;
+              align-items: center;
+              a {
+                @include hoverOpacity(0.8);
+              text-decoration: underline;
+              }
+              &::before {
+                content: "";
+                background: #fff;
+                width: 4px;
+                height: 4px;
+                display: inline-block;
+                margin-right: 12px;
+                transition: $time $ease;
+              }
+            }
+            dd {
+              &:not(:last-of-type) {
+                margin-bottom: 6px;
+                padding-bottom: 6px;
+              }
+            }
+            @include media(sm) {
+              &:nth-of-type(2) {
+                margin-left: vw(20);
+              }
+            }
           }
         }
       }
@@ -444,29 +478,15 @@
               @include fz(16);
             }
           }
+          span {
+            display: block;
+            margin-bottom: 8px;
+            @include fz(12, true, false , 400, 150);
+          }
           p {
             @include fz(13, true, false , 400, 150);
             @include media(sm) {
               @include fz(12);
-            }
-          }
-        }
-        .skills {
-          display: flex;
-          dl {
-            dt {
-              @include fz(14, true, false , 400, 150);
-              margin-bottom: 4px;
-              a {
-                text-decoration: underline;
-                @include hoverOpacity(0.8);
-              }
-            }
-            dd {
-              &:not(:last-of-type) {
-                margin-bottom: 6px;
-                padding-bottom: 6px;
-              }
             }
           }
         }

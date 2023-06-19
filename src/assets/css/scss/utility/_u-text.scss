@@ -103,7 +103,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  div {
+  > div {
     transform: translateY(50%);
     @include media(sm) {
       transform: none;
