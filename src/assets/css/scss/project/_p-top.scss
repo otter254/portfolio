@@ -430,16 +430,8 @@
               align-items: center;
               a {
                 @include hoverOpacity(0.8);
-              text-decoration: underline;
-              }
-              &::before {
-                content: "";
-                background: #fff;
-                width: 4px;
-                height: 4px;
-                display: inline-block;
-                margin-right: 12px;
-                transition: $time $ease;
+                text-decoration: underline;
+                text-indent: 1rem;
               }
             }
             dd {
