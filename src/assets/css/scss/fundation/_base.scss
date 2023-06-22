@@ -39,7 +39,7 @@ body {
   min-width: $lgMinWidth;
   background: color(bg);
   transition: .8s;
-  @include fz(14, true, false , 400, 150);
+  @include fz(14, true, false , 400, 200);
 
   @include media(sm) {
     min-width: initial;
