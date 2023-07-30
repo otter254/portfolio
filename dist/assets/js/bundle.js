@@ -618,6 +618,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/assets/js/page/product.js":
+/*!***************************************!*\
+  !*** ./src/assets/js/page/product.js ***!
+  \***************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _constant_elements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constant/elements */ "./src/assets/js/constant/elements.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var targetElement = document.querySelectorAll(".js-fadeIn");
+  document.addEventListener("scroll", function () {
+    for (var i = 0; i < targetElement.length; i++) {
+      var getElementDistance = targetElement[i].getBoundingClientRect().top + targetElement[i].clientHeight * .2;
+      if (window.innerHeight > getElementDistance) {
+        targetElement[i].classList.add("show");
+      }
+    }
+  });
+});
+
+/***/ }),
+
 /***/ "./src/assets/js/page/top.js":
 /*!***********************************!*\
   !*** ./src/assets/js/page/top.js ***!
@@ -33572,6 +33598,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helper_modal__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./helper/modal */ "./src/assets/js/helper/modal.js");
 /* harmony import */ var throttle_debounce__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! throttle-debounce */ "./node_modules/throttle-debounce/esm/index.js");
 /* harmony import */ var _page_top__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./page/top */ "./src/assets/js/page/top.js");
+/* harmony import */ var _page_product__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./page/product */ "./src/assets/js/page/product.js");
 
 
 // babel polyfill
@@ -33597,6 +33624,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // page scripts
+
 
 
 // require
@@ -33687,7 +33715,9 @@ var firstRun = function firstRun() {
 
   // set100vh（常に更新）
   (0,_helper_set100vh__WEBPACK_IMPORTED_MODULE_9__["default"])('--vh-always');
-  (0,_helper_headerFixed__WEBPACK_IMPORTED_MODULE_10__["default"])();
+  // get body className
+  className = (0,_helper_getClassName__WEBPACK_IMPORTED_MODULE_8__["default"])(_constant_elements__WEBPACK_IMPORTED_MODULE_1__["default"].BODY);
+  if (className.endsWith('top')) (0,_helper_headerFixed__WEBPACK_IMPORTED_MODULE_10__["default"])();
 };
 
 /**
@@ -33721,6 +33751,7 @@ var initRun = function initRun() {
   if (className.endsWith('top')) (0,_page_top__WEBPACK_IMPORTED_MODULE_14__["default"])();
   if (className.endsWith('top')) (0,_helper_mv__WEBPACK_IMPORTED_MODULE_11__["default"])();
   if (className.endsWith('top')) (0,_helper_modal__WEBPACK_IMPORTED_MODULE_12__["default"])();
+  if (className.endsWith('product')) (0,_page_product__WEBPACK_IMPORTED_MODULE_15__["default"])();
   _constant_elements__WEBPACK_IMPORTED_MODULE_1__["default"].HTML.classList.add('is-loaded');
 };
 

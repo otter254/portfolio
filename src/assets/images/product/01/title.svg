@@ -1,0 +1,357 @@
+<svg id="グループ_431" data-name="グループ 431" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="96.459" viewBox="0 0 600 96.459">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_218" data-name="長方形 218" width="600" height="96.459" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="パス_158" data-name="パス 158" d="M27.29,15.319V17.69h3.161A2.416,2.416,0,0,1,31.9,18.4a1.641,1.641,0,0,1,.5,1.08V39.553Q31.925,51.2,21.6,51.2q-10.537,0-10.536-11.643V19.428a1.946,1.946,0,0,1,.448-1.133,1.811,1.811,0,0,1,1.554-.606h3.16V15.319H0V17.69H2.9q2.9.422,2.9,2.423V39.553Q5.8,54.3,21.442,54.3q14.066,0,14.066-14.751V20.113a2.055,2.055,0,0,1,1.08-1.554,4.51,4.51,0,0,1,1.818-.869h2.634V15.319Z" transform="translate(0 -15.319)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" y1="2.286" x2="0.012" y2="2.286" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.2" stop-color="#fff"/>
+      <stop offset="0.247" stop-color="#f1f1ef"/>
+      <stop offset="0.457" stop-color="#bab8b0"/>
+      <stop offset="0.556" stop-color="#a5a298"/>
+      <stop offset="1" stop-color="#a5a298"/>
+    </linearGradient>
+    <clipPath id="clip-path-3">
+      <path id="パス_159" data-name="パス 159" d="M163.245,12.751v2.371h1.475q4.426,0,4.425,3.688V39.777L146.281,12.751h-9.746v2.371h3.424q2.264.369,2.476,1.581V47.541q0,3.32-4.583,3.477l-1.317.053v2.371h15.489V51.071h-1.159q-4.69,0-4.689-3.53V20.97l26.71,31.662V18.81q0-3.635,4.478-3.635h1.369V12.751Z" transform="translate(-136.535 -12.751)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="-1.547" y1="2.221" x2="-1.535" y2="2.221" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-4">
+      <path id="パス_160" data-name="パス 160" d="M298.785,16.319V18.69h3.161a2.546,2.546,0,0,1,1.475.711,1.607,1.607,0,0,1,.526,1.08v.632L293.254,51.089,282.559,21.113v-.685a1.942,1.942,0,0,1,.448-1.133,1.811,1.811,0,0,1,1.554-.606h3.161V16.319H271.5V18.69h2.9a3.408,3.408,0,0,1,2.9,2.423L289.513,55.3h5.268L307,21.113a3.915,3.915,0,0,1,2.9-2.423h2.634V16.319Z" transform="translate(-271.496 -16.319)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="-3.162" y1="2.274" x2="-3.151" y2="2.274" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-5">
+      <path id="パス_161" data-name="パス 161" d="M437.438,0a22.026,22.026,0,0,0-11.893,3.353,25.9,25.9,0,0,0-8.667,8.888,23.276,23.276,0,0,0-3.29,12.114,22.91,22.91,0,0,0,2.343,10.271l7.177-.023a23.888,23.888,0,0,1-1.992-9.995,24.492,24.492,0,0,1,4.618-15.056q4.618-6.2,10-6.2h2.088q6.135,0,11.039,5.725t4.9,14.961a27.675,27.675,0,0,1-1.847,10.474l7.159-.022a23.568,23.568,0,0,0,2.216-10.23,23.638,23.638,0,0,0-3.322-12.4,24.659,24.659,0,0,0-8.667-8.7A22.862,22.862,0,0,0,437.438,0Z" transform="translate(-413.588 0)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-4" x1="-4.144" y1="2.786" x2="-4.134" y2="2.786" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-6">
+      <path id="パス_162" data-name="パス 162" d="M419.639,74.616a25.6,25.6,0,0,0,8.667,8.73,22.346,22.346,0,0,0,11.893,3.29,22.694,22.694,0,0,0,11.861-3.195,25.152,25.152,0,0,0,8.667-8.635c.233-.38.446-.77.654-1.161l-7.063-.065a19.759,19.759,0,0,1-2.258,3.789,13.729,13.729,0,0,1-11.387,5.852,15.113,15.113,0,0,1-11.862-5.757,19.391,19.391,0,0,1-2.716-4.14l-7.217-.065q.356.688.76,1.359" transform="translate(-418.879 -73.257)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-5" x1="-4.711" y1="4.592" x2="-4.699" y2="4.592" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-7">
+      <path id="パス_163" data-name="パス 163" d="M583.407,83.59a2.744,2.744,0,0,1-2.16,1.528h-3.741v2.371H610.17v-9.27L607.8,78.2V79.85q0,5.164-5.795,5.163l-11.959-.053a3.032,3.032,0,0,1-1.633-2.266V78.021l-5.005-.046Z" transform="translate(-577.507 -77.975)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-6" x1="-8.451" y1="6.221" x2="-8.437" y2="6.221" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-8">
+      <path id="パス_164" data-name="パス 164" d="M577.507,16.87v2.371h3.424a2.924,2.924,0,0,1,1.659.816,2.862,2.862,0,0,1,.817,1.554V44.98l5.005-.016V21.348q1-1.843,1.9-2h4.32V16.87Z" transform="translate(-577.507 -16.87)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-7" x1="-16.122" y1="3.145" x2="-16.095" y2="3.145" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-9">
+      <path id="パス_165" data-name="パス 165" d="M705.623,84.115a2.743,2.743,0,0,1-2.16,1.528h-3.741v2.371h32.663v-8.79l-2.371-.022v1.172q0,5.164-5.795,5.163l-11.959-.053a3.035,3.035,0,0,1-1.633-2.266V79.025l-5.005-.045Z" transform="translate(-699.723 -78.98)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-8" x1="-10.24" y1="6.499" x2="-10.225" y2="6.499" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-10">
+      <path id="パス_166" data-name="パス 166" d="M699.723,16.87v2.371h3.424a2.922,2.922,0,0,1,1.659.816,2.858,2.858,0,0,1,.817,1.554v23.2l5.005-.016V21.348q1-1.843,1.9-2h4.32V16.87Z" transform="translate(-699.723 -16.87)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-9" x1="-19.534" y1="3.163" x2="-19.507" y2="3.163" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-11">
+      <path id="パス_167" data-name="パス 167" d="M817.837,76.1l5.11,8.851h2.634q-.158-.474-.316-1L825.159,83l.79.474a13.479,13.479,0,0,0,6.849,1.792q6.216,0,9.9-2.423a11.017,11.017,0,0,0,2.977-3.188,8.72,8.72,0,0,0,1.372-3.525l-5.529-.05a7.967,7.967,0,0,1-2.585,3.6,11.923,11.923,0,0,1-7.613,2.582h-.315a11.643,11.643,0,0,1-8.482-3.952l-2.107-2-.331-.425-1.967-.018Z" transform="translate(-817.837 -75.867)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-10" x1="-13.381" y1="6.404" x2="-13.365" y2="6.404" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-12">
+      <path id="パス_168" data-name="パス 168" d="M840.3,11.327a7.864,7.864,0,0,0,.422,1.317c.21.526.263.825.158.895a15.284,15.284,0,0,0-7.112-1.685,14.8,14.8,0,0,0-7.691,2.318,8.78,8.78,0,0,0-3.082,3.266,9.4,9.4,0,0,0-1.185,4.689v.21q0,5.164,5.058,7.692a82.785,82.785,0,0,0,12.065,4.426,10.345,10.345,0,0,1,3.845,2.739,4.205,4.205,0,0,1,1,2.6l5.426-.017q-.461-4.6-5-7.635a27.317,27.317,0,0,0-8.535-3.214,23.79,23.79,0,0,1-3.345-1.212,16.166,16.166,0,0,1-3.82-2.213,4.442,4.442,0,0,1-1.581-3.687,6.707,6.707,0,0,1,2.371-4.742,7.851,7.851,0,0,1,5.69-2.318,12.853,12.853,0,0,1,4.979.738,11.64,11.64,0,0,1,3.4,2.476l2.107,2,1.107,1.423,1.475-1.212-5.11-8.851Z" transform="translate(-821.804 -11.327)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-11" x1="-14.341" y1="3.199" x2="-14.324" y2="3.199" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-13">
+      <path id="パス_169" data-name="パス 169" d="M955.612,84.383a3.472,3.472,0,0,1-.843,1.528,2.445,2.445,0,0,1-1.58.79h-5.005v2.424h20.23V86.6h-5.848q-.948-.1-1.9-2V81.155l-5.058-.046Z" transform="translate(-948.184 -81.109)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-12" x1="-22.403" y1="7.197" x2="-22.38" y2="7.197" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-14">
+      <path id="パス_170" data-name="パス 170" d="M931.21,16.76v9.483h2.318V24.451q0-5.162,11.59-5.163a2.515,2.515,0,0,1,1.633,1.475V44.406l5.058-.016V21.606a2.925,2.925,0,0,1,1.581-2.318h6.216q5.794,0,5.795,5.163v1.792h2.319V16.76Z" transform="translate(-931.21 -16.76)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-13" x1="-12.192" y1="3.199" x2="-12.179" y2="3.199" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-15">
+      <path id="パス_171" data-name="パス 171" d="M1071.3,20.533l6.48,18.175h-12.96Zm-1.528-4.214-9.909,27.72,3.012-.009,1-2.845h14.751l1.01,2.792,4.763-.015-9.882-27.643Z" transform="translate(-1059.862 -16.319)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-14" x1="-20.65" y1="3.198" x2="-20.631" y2="3.198" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-16">
+      <path id="パス_172" data-name="パス 172" d="M1048.982,84.751a3.709,3.709,0,0,1-1.107,1.581,3.817,3.817,0,0,1-1.791.843h-2.634v2.371h13.75V87.175h-3.161a2.547,2.547,0,0,1-1.475-.712,1.6,1.6,0,0,1-.526-1.08v-.632l.984-2.808L1050,81.915Z" transform="translate(-1043.45 -81.915)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-15" x1="-36.272" y1="7.51" x2="-36.238" y2="7.51" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-17">
+      <path id="パス_173" data-name="パス 173" d="M1100.525,84.975v.685a2.014,2.014,0,0,1-.448,1.106,1.773,1.773,0,0,1-1.554.632h-3.161V89.77h15.7V87.4h-2.9a3.4,3.4,0,0,1-2.9-2.424l-.925-2.587-4.768-.043Z" transform="translate(-1095.362 -82.344)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-16" x1="-33.35" y1="7.689" x2="-33.32" y2="7.689" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-18">
+      <path id="パス_174" data-name="パス 174" d="M1184.8,21.238a1.956,1.956,0,0,1,.659-1.5q.657-.605,4.03-.606a43.19,43.19,0,0,1,5,.21q4.9.632,4.9,8.561t-7.8,7.929h-6.8Zm-11.222-4.478v2.371h3.477a2.417,2.417,0,0,1,1.818.738,2.307,2.307,0,0,1,.711,1.633V44.093l5.215-.016V38.2h4.689l4.64,5.845,5.529-.017-4.743-5.986q10.114-1.054,10.114-10.063a10.713,10.713,0,0,0-3.292-8.034q-3.293-3.187-9.035-3.187Z" transform="translate(-1173.578 -16.76)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-17" x1="-17.836" y1="3.236" x2="-17.821" y2="3.236" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-19">
+      <path id="パス_175" data-name="パス 175" d="M1224.572,86.5a1.564,1.564,0,0,1,.422.9q0,.528-1.107.527H1220.2V90.3h16.753V87.927H1234a4.855,4.855,0,0,1-3.9-1.423l-2.454-3.1-5.577-.051Z" transform="translate(-1220.199 -83.355)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-18" x1="-34.814" y1="8.155" x2="-34.785" y2="8.155" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-20">
+      <path id="パス_176" data-name="パス 176" d="M1179.584,86.218a1.281,1.281,0,0,1-.711,1.08,2.773,2.773,0,0,1-1.5.448h-3.793v2.371h17.07V87.746h-3.477q-2.37,0-2.37-1.528V83.057l-5.215-.048Z" transform="translate(-1173.578 -83.009)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-19" x1="-32.863" y1="7.989" x2="-32.835" y2="7.989" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-21">
+      <rect id="長方形_217" data-name="長方形 217" width="599.999" height="96.459" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-22">
+      <rect id="長方形_216" data-name="長方形 216" width="599.524" height="51.335" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-23">
+      <path id="パス_177" data-name="パス 177" d="M28.2,134.323h3.16a2.421,2.421,0,0,0,1.449-.711,1.642,1.642,0,0,0,.5-1.08V112.46q-.474-11.643-10.8-11.642-10.538,0-10.536,11.642v20.125a1.948,1.948,0,0,0,.448,1.133,1.811,1.811,0,0,0,1.554.606h3.161v2.371H.907v-2.371H3.8q2.9-.422,2.9-2.423V112.46q0-14.751,15.647-14.751,14.067,0,14.066,14.751V131.9a2.054,2.054,0,0,0,1.08,1.554,4.513,4.513,0,0,0,1.818.869h2.634v2.371H28.2Z" transform="translate(-0.907 -97.709)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-24">
+      <path id="パス_178" data-name="パス 178" d="M163.152,131.912h1.475q4.425,0,4.425-3.688V107.257l-22.864,27.026h-9.746v-2.371h3.424q2.264-.369,2.476-1.581V101.883q0-3.319-4.583-3.477l-1.317-.053V95.983H151.93v2.371h-1.159q-4.69,0-4.689,3.529v24.181L172.792,94.4v33.822q0,3.635,4.478,3.635h1.369v2.423H163.152Z" transform="translate(-136.442 -94.402)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-25">
+      <path id="パス_179" data-name="パス 179" d="M309.043,133.48a3.66,3.66,0,0,0,1.765.843h2.634v2.371h-13.75v-2.371h3.161a2.55,2.55,0,0,0,1.475-.711,1.609,1.609,0,0,0,.527-1.08V131.9L294.16,101.923,283.466,131.9v.685a1.948,1.948,0,0,0,.448,1.133,1.811,1.811,0,0,0,1.554.606h3.161v2.371H272.4v-2.371h2.9a3.408,3.408,0,0,0,2.9-2.423l12.222-34.191h5.268L307.91,131.9a3.633,3.633,0,0,0,1.132,1.58" transform="translate(-272.402 -97.709)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-26">
+      <path id="パス_180" data-name="パス 180" d="M422.2,139.376a24.49,24.49,0,0,0,4.618,15.056q4.617,6.2,10,6.2h2.087q6.135,0,11.039-5.725t4.9-14.962A27.677,27.677,0,0,0,453,129.471l7.159.022a24.771,24.771,0,0,1-1.106,22.63,24.651,24.651,0,0,1-8.667,8.7,22.862,22.862,0,0,1-11.861,3.163,22.03,22.03,0,0,1-11.893-3.353,25.907,25.907,0,0,1-8.667-8.889,23.276,23.276,0,0,1-3.29-12.114,22.9,22.9,0,0,1,2.343-10.271l7.177.022a23.892,23.892,0,0,0-1.992,10" transform="translate(-414.677 -129.358)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-27">
+      <path id="パス_181" data-name="パス 181" d="M453.15,109.821a13.73,13.73,0,0,0-11.387-5.852,15.113,15.113,0,0,0-11.861,5.757,19.389,19.389,0,0,0-2.716,4.14l-7.218.066q.356-.688.761-1.359a25.6,25.6,0,0,1,8.667-8.731,22.35,22.35,0,0,1,11.893-3.29,22.694,22.694,0,0,1,11.861,3.195,25.154,25.154,0,0,1,8.667,8.635c.233.381.446.771.654,1.162l-7.064.064a19.767,19.767,0,0,0-2.258-3.788" transform="translate(-419.967 -100.553)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-28">
+      <path id="パス_182" data-name="パス 182" d="M607.705,105.348q0-5.164-5.795-5.163l-11.959.053a3.031,3.031,0,0,0-1.633,2.265v4.674l-5.005.045v-5.615a2.744,2.744,0,0,0-2.16-1.528h-3.741V97.709h32.663v9.27l-2.371.022Z" transform="translate(-577.413 -97.709)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-29">
+      <path id="パス_183" data-name="パス 183" d="M588.319,143.54q1,1.843,1.9,2h4.32v2.476H577.413v-2.37h3.424a2.927,2.927,0,0,0,1.66-.817,2.861,2.861,0,0,0,.817-1.554V119.908l5.005.016Z" transform="translate(-577.413 -119.908)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-30">
+      <path id="パス_184" data-name="パス 184" d="M729.922,105.348q0-5.164-5.795-5.163l-11.959.053a3.033,3.033,0,0,0-1.633,2.265V106.7l-5.005.046v-5.135a2.743,2.743,0,0,0-2.16-1.528H699.63V97.709h32.663V106.5l-2.371.022Z" transform="translate(-699.63 -97.709)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-31">
+      <path id="パス_185" data-name="パス 185" d="M710.535,143.722q1,1.843,1.9,2h4.32V148.2H699.63v-2.37h3.424a2.928,2.928,0,0,0,1.659-.817,2.856,2.856,0,0,0,.817-1.554v-23.2l5.005.016Z" transform="translate(-699.63 -120.255)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-32">
+      <path id="パス_186" data-name="パス 186" d="M839.843,101.64a11.915,11.915,0,0,0-7.613-2.582h-.316a11.643,11.643,0,0,0-8.482,3.951l-2.107,2-.331.425-1.967.018-.283-.233,5.11-8.851h2.634q-.158.475-.316,1l-.106.948.79-.474a13.478,13.478,0,0,1,6.849-1.791q6.216,0,9.9,2.423a11.008,11.008,0,0,1,2.977,3.187,8.714,8.714,0,0,1,1.372,3.525l-5.53.05a7.957,7.957,0,0,0-2.585-3.6" transform="translate(-818.744 -96.056)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-33">
+      <path id="パス_187" data-name="パス 187" d="M845.1,128.368a27.307,27.307,0,0,1-8.535,3.214,23.79,23.79,0,0,0-3.345,1.212,16.193,16.193,0,0,0-3.82,2.213,4.444,4.444,0,0,0-1.58,3.688,6.7,6.7,0,0,0,2.371,4.741,7.848,7.848,0,0,0,5.69,2.318,12.84,12.84,0,0,0,4.978-.738,11.613,11.613,0,0,0,3.4-2.476l2.107-2,1.106-1.422,1.475,1.211-5.11,8.851H841.2a7.752,7.752,0,0,1,.422-1.317q.315-.79.158-.9a15.282,15.282,0,0,1-7.112,1.686,14.792,14.792,0,0,1-7.691-2.318,8.783,8.783,0,0,1-3.082-3.266,9.4,9.4,0,0,1-1.185-4.689v-.21q0-5.164,5.057-7.692a82.762,82.762,0,0,1,12.065-4.425,10.359,10.359,0,0,0,3.846-2.739,4.207,4.207,0,0,0,1-2.6l5.426.017q-.461,4.6-5,7.635" transform="translate(-822.711 -120.716)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-34">
+      <path id="パス_188" data-name="パス 188" d="M955.519,102.451a3.47,3.47,0,0,0-.843-1.528,2.448,2.448,0,0,0-1.581-.79h-5V97.709h20.23v2.529h-5.847q-.948.1-1.9,2v3.439l-5.058.046Z" transform="translate(-948.091 -97.709)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-35">
+      <path id="パス_189" data-name="パス 189" d="M951.716,143.789a2.924,2.924,0,0,0,1.58,2.318h6.216q5.795,0,5.8-5.163v-1.791h2.318v9.483H931.117v-9.483h2.318v1.791q0,5.163,11.59,5.163a2.516,2.516,0,0,0,1.633-1.475V120.989l5.058.016Z" transform="translate(-931.117 -120.989)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-36">
+      <path id="パス_190" data-name="パス 190" d="M1062.781,121.286l-3.012-.01,9.909,27.72h4.742l9.882-27.643-4.763-.015-1.01,2.792h-14.751Zm1.945,5.321h12.959l-6.48,18.175Z" transform="translate(-1059.769 -121.276)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-37">
+      <path id="パス_191" data-name="パス 191" d="M1048.889,102.5a3.71,3.71,0,0,0-1.107-1.581,3.815,3.815,0,0,0-1.792-.843h-2.634V97.709h13.75v2.371h-3.161a2.543,2.543,0,0,0-1.475.711,1.6,1.6,0,0,0-.526,1.08v.632l.984,2.808-3.026.028Z" transform="translate(-1043.357 -97.709)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-38">
+      <path id="パス_192" data-name="パス 192" d="M1100.432,102.5v-.685a2.021,2.021,0,0,0-.448-1.107,1.774,1.774,0,0,0-1.555-.632h-3.16V97.709h15.7v2.371h-2.9a3.4,3.4,0,0,0-2.9,2.423l-.925,2.587-4.768.043Z" transform="translate(-1095.269 -97.709)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-39">
+      <path id="パス_193" data-name="パス 193" d="M1184.707,121.661l-5.215-.016v22.591a2.3,2.3,0,0,1-.712,1.633,2.416,2.416,0,0,1-1.817.738h-3.477v2.371h19.124q5.742,0,9.035-3.187a10.714,10.714,0,0,0,3.293-8.034q0-9.009-10.115-10.063l4.743-5.986-5.53-.018-4.64,5.846h-4.688Zm0,8.246h6.8q7.8,0,7.8,7.928t-4.9,8.561a43.049,43.049,0,0,1-5.005.211q-3.372,0-4.029-.606a1.957,1.957,0,0,1-.659-1.5Z" transform="translate(-1173.485 -121.645)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-40">
+      <path id="パス_194" data-name="パス 194" d="M1224.479,101.5a1.566,1.566,0,0,0,.422-.9q0-.527-1.107-.527h-3.688V97.709h16.753v2.371h-2.95a4.855,4.855,0,0,0-3.9,1.423l-2.454,3.1-5.576.051Z" transform="translate(-1220.106 -97.709)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-41">
+      <path id="パス_195" data-name="パス 195" d="M1179.491,101.607a1.278,1.278,0,0,0-.712-1.08,2.771,2.771,0,0,0-1.5-.448h-3.794V97.709h17.069v2.371h-3.477q-2.37,0-2.37,1.528v3.161l-5.215.047Z" transform="translate(-1173.485 -97.709)" fill="none"/>
+    </clipPath>
+    <image id="image" width="41.585" height="39.673" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFcAAABTCAYAAADqWZt6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHuSURBVHhe7dBvZxZgAIXx525Jkk0mmUxiMkkmksxIJiMZMxmZSCKJJJJIYiITMxLZ52tta9XWn9WeZ0/34XyEc7+7fm/OeX2Vg+7vtQ6aqHF/ffJHmOJ+9EeY4n7wR5jirvojTHFX/BFWDvZ/vvdHmOIu+yNMcd/5I0xx3/ojrMbdXfJHmOK+8UdY6e3vvvZHmOK+8kdYjbvz0h9hivvCH2GK+9wfYYr7zB9hivvUH2Gl9+/HE3+EKe5jf4Qp7iN/hCnuQ3+E1bjfH/gjTHHv+yNMce/5I0xx7/ojTHEX/RFW4367448wxV3wR5ji3vZHmOLO+yNMcef8EVZ6f7dn/RGmuLf8Eaa4N/0Rprgz/gircb/e8EeY4k77I0xxr/sjTHGv+SNMcaf8EVbjbk36I0xxr/ojTHGv+CNMcS/7I0xxL/kjrPT2Nif8Eaa4F/0RprgX/BFWunub5/0Rprjj/gircTfO+SNMccf8Eaa4Z/0Rprhn/BGmuKP+CKtxv5z2R5jijvgjTHFP+SNMcU/6I0xxh/0Rprgn/BFWun/Wh/wRpriD/ghT3OP+CFPcY/4IU9yj/ghT3CP+CKtxPx/2R5jiDvgjTHGLP8JKv9/3RdohLxogbkPEbYi4DRG3IeI2RNyGiNsQcRsibjOdzn8GwOizA0dXRwAAAABJRU5ErkJggg=="/>
+    <image id="image-2" width="17.686" height="28.202" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAA7CAYAAAD8QkPoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEDSURBVGhD7Za9SkNhEAXvJxJEAiIiQURCQESsxFZsg51v4atHzQ92JiHXmz1wHmDLKXbgwJTD/TaQ1u9/PzsYJ7F/2rBRPW3ULzWEsFbPl11FZdf63eYjBEU9X3Z6vvcQFBG1ntsx1E1lRz309VsIiohavdox1E1lRz301UsIitZvl892DHVT2bXDdvkUgkJRj3YMEfXzYMegqHs7BkXN7BgUNbVjUNSdHUNEfd/aMSjqxo5BURM7BkVd2zEo6sqOQVGXdgzt8Pd1Ycegvy4DbfpS4xAUijq3Y1DUmR2DokZ2DBG1OLVjoP76Fi0ERRsGxbHQ8+GoqCwVlaWislRUjq47AhYDf3XaBj4KAAAAAElFTkSuQmCC"/>
+  </defs>
+  <g id="グループ_430" data-name="グループ 430" clip-path="url(#clip-path)">
+    <g id="グループ_350" data-name="グループ 350" transform="translate(0 7.322)">
+      <g id="グループ_349" data-name="グループ 349" clip-path="url(#clip-path-2)">
+        <rect id="長方形_178" data-name="長方形 178" width="41.039" height="38.985" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="グループ_352" data-name="グループ 352" transform="translate(65.263 6.095)">
+      <g id="グループ_351" data-name="グループ 351" clip-path="url(#clip-path-3)">
+        <rect id="長方形_179" data-name="長方形 179" width="42.198" height="40.691" transform="translate(0 0)" fill="url(#linear-gradient-2)"/>
+      </g>
+    </g>
+    <g id="グループ_354" data-name="グループ 354" transform="translate(129.773 7.8)">
+      <g id="グループ_353" data-name="グループ 353" clip-path="url(#clip-path-4)">
+        <rect id="長方形_180" data-name="長方形 180" width="41.039" height="38.985" transform="translate(0)" fill="url(#linear-gradient-3)"/>
+      </g>
+    </g>
+    <g id="グループ_356" data-name="グループ 356" transform="translate(197.692)">
+      <g id="グループ_355" data-name="グループ 355" clip-path="url(#clip-path-5)">
+        <rect id="長方形_181" data-name="長方形 181" width="47.7" height="34.627" transform="translate(0 0)" fill="url(#linear-gradient-4)"/>
+      </g>
+    </g>
+    <g id="グループ_358" data-name="グループ 358" transform="translate(200.221 35.016)">
+      <g id="グループ_357" data-name="グループ 357" clip-path="url(#clip-path-6)">
+        <rect id="長方形_182" data-name="長方形 182" width="42.504" height="13.379" transform="translate(0 0)" fill="url(#linear-gradient-5)"/>
+      </g>
+    </g>
+    <g id="グループ_360" data-name="グループ 360" transform="translate(276.044 37.271)">
+      <g id="グループ_359" data-name="グループ 359" clip-path="url(#clip-path-7)">
+        <rect id="長方形_183" data-name="長方形 183" width="32.663" height="9.514" transform="translate(0 0)" fill="url(#linear-gradient-6)"/>
+      </g>
+    </g>
+    <g id="グループ_362" data-name="グループ 362" transform="translate(276.044 8.064)">
+      <g id="グループ_361" data-name="グループ 361" clip-path="url(#clip-path-8)">
+        <rect id="長方形_184" data-name="長方形 184" width="17.122" height="28.11" transform="translate(0 0)" fill="url(#linear-gradient-7)"/>
+      </g>
+    </g>
+    <g id="グループ_364" data-name="グループ 364" transform="translate(334.462 37.752)">
+      <g id="グループ_363" data-name="グループ 363" clip-path="url(#clip-path-9)">
+        <rect id="長方形_185" data-name="長方形 185" width="32.663" height="9.034" transform="translate(0 0)" fill="url(#linear-gradient-8)"/>
+      </g>
+    </g>
+    <g id="グループ_366" data-name="グループ 366" transform="translate(334.462 8.064)">
+      <g id="グループ_365" data-name="グループ 365" clip-path="url(#clip-path-10)">
+        <rect id="長方形_186" data-name="長方形 186" width="17.122" height="27.945" transform="translate(0 0)" fill="url(#linear-gradient-9)"/>
+      </g>
+    </g>
+    <g id="グループ_368" data-name="グループ 368" transform="translate(390.92 36.264)">
+      <g id="グループ_367" data-name="グループ 367" clip-path="url(#clip-path-11)">
+        <rect id="長方形_187" data-name="長方形 187" width="29.214" height="9.4" transform="translate(0 0)" fill="url(#linear-gradient-10)"/>
+      </g>
+    </g>
+    <g id="グループ_370" data-name="グループ 370" transform="translate(392.816 5.414)">
+      <g id="グループ_369" data-name="グループ 369" clip-path="url(#clip-path-12)">
+        <rect id="長方形_188" data-name="長方形 188" width="27.391" height="28.462" transform="translate(0 0)" fill="url(#linear-gradient-11)"/>
+      </g>
+    </g>
+    <g id="グループ_372" data-name="グループ 372" transform="translate(453.225 38.769)">
+      <g id="グループ_371" data-name="グループ 371" clip-path="url(#clip-path-13)">
+        <rect id="長方形_189" data-name="長方形 189" width="20.23" height="8.016" transform="translate(0)" fill="url(#linear-gradient-12)"/>
+      </g>
+    </g>
+    <g id="グループ_374" data-name="グループ 374" transform="translate(445.111 8.011)">
+      <g id="グループ_373" data-name="グループ 373" clip-path="url(#clip-path-14)">
+        <rect id="長方形_190" data-name="長方形 190" width="36.51" height="27.646" transform="translate(0 0)" fill="url(#linear-gradient-13)"/>
+      </g>
+    </g>
+    <g id="グループ_376" data-name="グループ 376" transform="translate(506.606 7.8)">
+      <g id="グループ_375" data-name="グループ 375" clip-path="url(#clip-path-15)">
+        <rect id="長方形_191" data-name="長方形 191" width="24.532" height="27.72" fill="url(#linear-gradient-14)"/>
+      </g>
+    </g>
+    <g id="グループ_378" data-name="グループ 378" transform="translate(498.761 39.155)">
+      <g id="グループ_377" data-name="グループ 377" clip-path="url(#clip-path-16)">
+        <rect id="長方形_192" data-name="長方形 192" width="13.75" height="7.631" transform="translate(0 0)" fill="url(#linear-gradient-15)"/>
+      </g>
+    </g>
+    <g id="グループ_380" data-name="グループ 380" transform="translate(523.575 39.36)">
+      <g id="グループ_379" data-name="グループ 379" clip-path="url(#clip-path-17)">
+        <rect id="長方形_193" data-name="長方形 193" width="15.699" height="7.426" transform="translate(0)" fill="url(#linear-gradient-16)"/>
+      </g>
+    </g>
+    <g id="グループ_382" data-name="グループ 382" transform="translate(560.961 8.011)">
+      <g id="グループ_381" data-name="グループ 381" clip-path="url(#clip-path-18)">
+        <rect id="長方形_194" data-name="長方形 194" width="31.451" height="27.333" transform="translate(0 0)" fill="url(#linear-gradient-17)"/>
+      </g>
+    </g>
+    <g id="グループ_384" data-name="グループ 384" transform="translate(583.246 39.843)">
+      <g id="グループ_383" data-name="グループ 383" clip-path="url(#clip-path-19)">
+        <rect id="長方形_195" data-name="長方形 195" width="16.753" height="6.942" transform="translate(0 0)" fill="url(#linear-gradient-18)"/>
+      </g>
+    </g>
+    <g id="グループ_386" data-name="グループ 386" transform="translate(560.961 39.678)">
+      <g id="グループ_385" data-name="グループ 385" clip-path="url(#clip-path-20)">
+        <rect id="長方形_196" data-name="長方形 196" width="17.07" height="7.108" fill="url(#linear-gradient-19)"/>
+      </g>
+    </g>
+    <g id="グループ_429" data-name="グループ 429">
+      <g id="グループ_428" data-name="グループ 428" clip-path="url(#clip-path-21)">
+        <g id="グループ_427" data-name="グループ 427" transform="translate(0.433 45.123)" opacity="0.2">
+          <g id="グループ_426" data-name="グループ 426">
+            <g id="グループ_425" data-name="グループ 425" clip-path="url(#clip-path-22)">
+              <g id="グループ_388" data-name="グループ 388" transform="translate(0 1.581)">
+                <g id="グループ_387" data-name="グループ 387" clip-path="url(#clip-path-23)">
+                  <use id="長方形_197" data-name="長方形 197" transform="translate(-0.434 -0.434)" xlink:href="#image"/>
+                </g>
+              </g>
+              <g id="グループ_390" data-name="グループ 390" transform="translate(64.785)">
+                <g id="グループ_389" data-name="グループ 389" clip-path="url(#clip-path-24)">
+                  <image id="長方形_198" data-name="長方形 198" width="42.541" height="40.629" transform="translate(-0.211 -0.288)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABVCAYAAAAiyUjUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH8SURBVHhe7dBvZ9ZxAIXx+7slk1kmmWQmJkmSSGZiksQkkkQSk0giiUlkxoyZyEgkMb23/e3PWq2t3ffufQ/nLZzfo+vz5JzHVzlo73xrIUqRl/0Roshf/RGiyF/8EVIj//3sjxBF/uSPEEX+6I8QRV7yR4gif/BHSDnY//PeHyGKvOiPEEVe8EeIIs/7I6RG3p7zR4giz/ojpHT2t2f8EaLI7/wRUiP/fuuPEEV+448QRZ72R4giv/ZHiCK/8kdI6fzfeumPEEV+4Y8QRX7ujxBFfuaPkBr511N/hCjyE3+EKPKUP0IU+bE/QhT5kT9CauSfD/0RosgP/BGiyPf9EaLI9/wRosh3/RFSOns/7vgjRJFv+yNEkSf9EaLIt/wRUiN/v+mPEEW+4Y8QRb7ujxBFnvBHiCJf80dIjbw57o8QRR7zR4giX/VHiCJf8UeIIl/2R0jp7G5c8keIIl/0R4giX/BHSGnvbpz3R4gin/NHSI28ftYfIYo86o8QRT7jjxBFHvFHiCIP+yOkRl477Y8QRT7ljxBFHvJHiCKf9EeIIp/wR4giD/ojpLT/rR73R4giD/gjRJH7/RGiyMf8EaLIff4IUeSj/gipkVeO+CNEkXv9EaLIxR8hpdvt+iKlx4sgIjeAyA0gcgOI3AAiN4DIDSByA4gc12odAt3j82nh3Lq3AAAAAElFTkSuQmCC"/>
+                </g>
+              </g>
+              <g id="グループ_392" data-name="グループ 392" transform="translate(129.773 1.581)">
+                <g id="グループ_391" data-name="グループ 391" clip-path="url(#clip-path-25)">
+                  <use id="長方形_199" data-name="長方形 199" transform="translate(-0.192 -0.434)" xlink:href="#image"/>
+                </g>
+              </g>
+              <g id="グループ_394" data-name="グループ 394" transform="translate(197.779 16.709)">
+                <g id="グループ_393" data-name="グループ 393" clip-path="url(#clip-path-26)">
+                  <image id="長方形_200" data-name="長方形 200" width="48.277" height="34.893" transform="translate(-0.324 -0.267)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAABJCAYAAAAkEuiCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGmSURBVHhe7dxvZ5ZxHIbx+ypLKUtKkywpmSZJySSbTFKSSRJJMknvvNr6+2gru939Ts4XcTw4Pnw5nx+u6+Fvmv/783kmlBHl96duQSTKx25BJMputyAS5UO3IBLlfbcgEuVdtyBGlF9vuwVxbNzCY12+lDdjCCRRXncLIlFedQtimv/9+bJbEImy0y2IRHnRLYhEed4tiER51i2IRHnaLYgR5ceTbkEkyuNuQSTKdrcgEuVRtyASZatbEImy2S2IEeX7w25BJMqDbkEkyka3IBLlfrcgEuVetyAS5W63IKb54f6dbkEkyu1uQSTKrW5BTEeH++vdgkiUm92CSJS1bkGMKHs3ugWRKNe7BZEo17oFkShXuwWRKFe6BZEoq92CGFG+Xe4WRKJc6hZEoqx0CyJRLnYLIlEudAsiUc53CyJRznULYjo6+Hq2WxCJstwtiEQ50y2IRDndLYhEOdUtiEQ52S2IRDnRLYgR5ctStyAS5Xi3IBIlr+MJJFGmbkFMi0WeLRSJvy4gowAZBcgoQEYBMgqQUYCMAmQUIKMAGQXIKDiz2X/PMh0T9Sg3LwAAAABJRU5ErkJggg=="/>
+                </g>
+              </g>
+              <g id="グループ_396" data-name="グループ 396" transform="translate(200.308 2.94)">
+                <g id="グループ_395" data-name="グループ 395" clip-path="url(#clip-path-27)">
+                  <image id="長方形_201" data-name="長方形 201" width="43.019" height="13.862" transform="translate(-0.462 -0.36)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAAdCAYAAAAq9XvWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADNSURBVGhD7dfBSgJRHIXxuT6uiEhESISEECIiIS6ECJHeMCddOM7UPXBe4bT6fvCHb324m1uG+/WrQZyGPrkRpKGPbgRp6E83gurQlw83gjT0wY2gUb1fLn960fsaCNPQOzeCytD9vLsRpKG3bgRp6I0bQRp67UaQhl65EVSHbt/cCOLD8k+nF72sgbDSd+2rG0EaeuFGUB36/OJGkIZ+diNIQ8/dCNLQT24EaehHN4I09IMbQaW/fc/cCNLQUzeCNPTEjSANPXYjpmn+ADjaEG2iA+A5AAAAAElFTkSuQmCC"/>
+                </g>
+              </g>
+              <g id="グループ_398" data-name="グループ 398" transform="translate(275.566 1.581)">
+                <g id="グループ_397" data-name="グループ 397" clip-path="url(#clip-path-28)">
+                  <image id="長方形_202" data-name="長方形 202" width="32.981" height="10.038" transform="translate(-0.197 -0.434)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAAVCAYAAAAQAyPeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACTSURBVFhH7dNBCsJAEETRGe8bEHHnRgIiiAgiiBBySI26MGawS/4igRyhHjT8dTGTy/fdJpuIUV4NbdAoN9qgUa60QaNcaINGOdOGXPrniTZolCNt0CgH2qBR9rQhRul2tEGj1LQhD323pQ2LuOKbXryUxybCRvxSZs6jzJy+zzrCRjTKijbk4XNf0gaNUtH2l9IPuLoLpIZPtk4AAAAASUVORK5CYII="/>
+                </g>
+              </g>
+              <g id="グループ_400" data-name="グループ 400" transform="translate(275.566 12.192)">
+                <g id="グループ_399" data-name="グループ 399" clip-path="url(#clip-path-29)">
+                  <use id="長方形_203" data-name="長方形 203" transform="translate(-0.197 -0.052)" xlink:href="#image-2"/>
+                </g>
+              </g>
+              <g id="グループ_402" data-name="グループ 402" transform="translate(333.984 1.581)">
+                <g id="グループ_401" data-name="グループ 401" clip-path="url(#clip-path-30)">
+                  <image id="長方形_204" data-name="長方形 204" width="32.981" height="9.56" transform="translate(-0.301 -0.434)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAAUCAYAAADbX/B7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACOSURBVFhH7dNBCsJAEETRGU8swZ0bESQgIkhABPGQJtGFMYNd8hcJ5Aj1oOGvi5lcvu9HspkY5XWnDRrlRhs0ypU2aJSGNmiUC23IZejPtEGjnGiDRjnSBo1S04YYpTvQBo2ypw15HLodbVjFFd/84qW02wib8EtZOI+ycPo+mwib0CgVbcjj57mm7S+lHycKCE59J3d9AAAAAElFTkSuQmCC"/>
+                </g>
+              </g>
+              <g id="グループ_404" data-name="グループ 404" transform="translate(333.984 12.358)">
+                <g id="グループ_403" data-name="グループ 403" clip-path="url(#clip-path-31)">
+                  <use id="長方形_205" data-name="長方形 205" transform="translate(-0.301 -0.217)" xlink:href="#image-2"/>
+                </g>
+              </g>
+              <g id="グループ_406" data-name="グループ 406" transform="translate(390.92 0.791)">
+                <g id="グループ_405" data-name="グループ 405" clip-path="url(#clip-path-32)">
+                  <image id="長方形_206" data-name="長方形 206" width="29.636" height="9.56" transform="translate(-0.356 -0.122)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAAUCAYAAADV9o4UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB4SURBVFhH7ZWxCoAwDAWt3+zmIoK4uQgiiPiPVl1qiwm8vzgPArceCW0o73NUQDx8l6Ow8HuTo/DwVY7Cwxc5Cg+f5Shqm0KcUNI1meDAbhx96qMJDguPgxyFh/dyFCGn2MlRcB+3nM7WBMf/j9PGT70xwQHdeFU+1BXb9yltHqkAAAAASUVORK5CYII="/>
+                </g>
+              </g>
+              <g id="グループ_408" data-name="グループ 408" transform="translate(392.816 12.578)">
+                <g id="グループ_407" data-name="グループ 407" clip-path="url(#clip-path-33)">
+                  <image id="長方形_207" data-name="長方形 207" width="28.202" height="29.158" transform="translate(-0.34 -0.438)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAA9CAYAAAATfBGuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE1SURBVGhD7dpbR4RRHEbx2ZUkKUmSJJEkSSJJIkkiiSSRdNdX7zCd7jqYadoP61Os9/3x57ld7Mtd+r+fD52GGKr315RrVGye8X0djZDYO7Zejf24Zesl9oatl9hrtl5ir9h6ib1k65X+z/sFWy+x52y9xJ6x9RJ7ytarsW8nbL3EHrP1EnvE1kvsIVsvsQdsvRr7us/WS+weWy+xu2y9xO6w9RK7zdYr/e/uFlsvsZtsvcRusPVK77u7ztZL7Bpbr8a+rLL1ErvC1kvsMlsvsUtsvcQusvVq7PMCWy+x82y9xM6x9RI7y9ZL7AxbL7HTbL3S+3qaYusldpKtl9gJtl5ix9l6iR1j6yV2lK1XYx9H2HqJHWbrJbaw9cpgMGD65b9xY7SxVm2sVRtr1cZatbFOnc4/2q4IRGaqZe4AAAAASUVORK5CYII="/>
+                </g>
+              </g>
+              <g id="グループ_410" data-name="グループ 410" transform="translate(452.747 1.581)">
+                <g id="グループ_409" data-name="グループ 409" clip-path="url(#clip-path-34)">
+                  <image id="長方形_208" data-name="長方形 208" width="20.554" height="8.604" transform="translate(-0.043 -0.434)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAASCAYAAADCKCelAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABoSURBVEhL1ZQxCsAgEATVb+cPNmmEkE8Gk8acZgXLPOBmYGDBZlnU2N/nDBBU9j5Wds8sW1Z2T5Kd4lx2V0AAW7bVrIAAtSyurFFU2aHWDFnLDt0FiqgHFq1dmwIC3Nf1e+BR0G8Q7ANbJ2perIeHIQAAAABJRU5ErkJggg=="/>
+                </g>
+              </g>
+              <g id="グループ_412" data-name="グループ 412" transform="translate(444.633 12.708)">
+                <g id="グループ_411" data-name="グループ 411" clip-path="url(#clip-path-35)">
+                  <image id="長方形_209" data-name="長方形 209" width="36.805" height="28.202" transform="translate(-0.056 -0.09)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAA7CAYAAAA+cgdsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFQSURBVHhe7dBdR4RhAIThfSpJUpIkSSJJkkSSFUkSSSSJJNJ/72P7OmvLru0d5gfMPsf3dTJzfJf+3/dTC0NRtEd/hBTtwR8hRbv3R6iJ9nXnj5Ci3fojpGg3/ggp2rU/Qop25Y9Q6f9+XvojpGgX/ggp2rk/Qop25o9QE+3j1B8hRTvxR0jRjv0RUrQjf4QU7dAfoSbae9sfIUU78EdI0fb9EVK0PX+EFG3XH6HS73Z2/BFStG1/hBRtyx+h0ut2Nv0RUrQNf4SaaG/r/ggp2po/Qoq26o+Qoq34I6Roy/4INdFel/wRUrRFf4QUbcEfIUWb90dI0eb8EVK0WX+ESu/nZcYfIUWb9kdI0ab8EVK0SX+EFG3CHyFFG/dHqIn2POaPkKKN+iOkaMUfoTIYDHyRGvFiCESrQLQKRKtAtApEq0C0CkSrQLQKRBtaq/UPUmGWY1Xr2pcAAAAASUVORK5CYII="/>
+                </g>
+              </g>
+              <g id="グループ_414" data-name="グループ 414" transform="translate(506.128 12.846)">
+                <g id="グループ_413" data-name="グループ 413" clip-path="url(#clip-path-36)">
+                  <image id="長方形_210" data-name="長方形 210" width="25.334" height="28.202" transform="translate(-0.368 -0.228)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAA7CAYAAADb7MIAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEoSURBVGhD7ZpNR0VRGEbPriRJSZIkiSRJEkmuSJJImkaDJv33Pm5fs265t9t+WH/iLGfxsKbLu4e7jH6/HhsZE3V/tuVSD1VUWC/1eV9FRaLucA3K59dFtWVl9PNxW0VFom5wDYm6xjUk6grXUKPeL3ENibrANSTqHNeQqDNcQ6JOcQ016q2Ha0jUCa4hUce4hkQd4RoSdYhrKKNB/wDXkKh9XEOi9nANZTjo7+IaErWDa6hRr9u4hkRt4RoStYlrSNQGriFR67iGGvWyhmtI1CquIVEruIZELeMaErWEa0jUIq6hDL+fF3ANiZrHNSRqDteQqFlcQ6JmcA2JmsY11KinKVxDoiZxDYkquIYyHo9RD/kcoqOLagtdVFvootpCF9UWhFFN8w/r9I0qc3R3FAAAAABJRU5ErkJggg=="/>
+                </g>
+              </g>
+              <g id="グループ_416" data-name="グループ 416" transform="translate(498.283 1.581)">
+                <g id="グループ_415" data-name="グループ 415" clip-path="url(#clip-path-37)">
+                  <image id="長方形_211" data-name="長方形 211" width="14.34" height="8.126" transform="translate(-0.171 -0.434)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAARCAYAAADKZhx3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABZSURBVEhL5ZMxDsAwCAOd/l/5QX5ZdUkCcXdW8BCkk5AYwGCarW9AEA/gpoCNsRX8jTlBPfcpbjbfzqQ8pDcOC9kozRU/eDY6xc59K1Cayym9HqXiuJAL7ABS/Dy1fY6t9AAAAABJRU5ErkJggg=="/>
+                </g>
+              </g>
+              <g id="グループ_418" data-name="グループ 418" transform="translate(523.097 1.581)">
+                <g id="グループ_417" data-name="グループ 417" clip-path="url(#clip-path-38)">
+                  <image id="長方形_212" data-name="長方形 212" width="16.252" height="8.126" transform="translate(-0.129 -0.434)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAARCAYAAAC4qX7BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABcSURBVEhL7ZQxCsAwDAOV/J/+oL8MWdrYVdbi2dYQw4FBi5CFm73zhsB0wE0BGsFSYBuho3pOIn+aPePiUj5SHQmFbJTKGj+YbHQScd5HAaWyOqOpRymRWMgF9gHUV4gZkMt/bQAAAABJRU5ErkJggg=="/>
+                </g>
+              </g>
+              <g id="グループ_420" data-name="グループ 420" transform="translate(560.484 13.022)">
+                <g id="グループ_419" data-name="グループ 419" clip-path="url(#clip-path-39)">
+                  <image id="長方形_213" data-name="長方形 213" width="32.025" height="28.202" transform="translate(-0.232 -0.404)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAAA7CAYAAAAguzffAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFCSURBVGhD7dBdR0RRHIXxsyvJSEmSjCRGkoxEkhFJEklkJJJI372m6e2uKXOc9soj+zus/+9mresn1T+fj1X4oxgPfHuKcc+3pxh3fHs5xsct355i3PDtKcY1355i9Pn2FOOKby/V3++XfHuKccG3pxjnfHuKcca3l2O8nfLtKcYJ355iHPPtKcYR355iHPLt5RivPb49xTjg21OMfb49xdjj21OMXb69VI+GO3x7itHl21OMbb69NB4Nt/j2FGOTby/HeNng21OMDt+eYqzz7SnGGt+eYqzy7eUYgzbfnmKs8O0pxjLfnmIs8e0pxiLfnmIs8O2l8dfzPN+eYszx7SnGLN+eYrT49hRjhm9PMab59nKMpym+PcWY5NtTjMS3l5qm4YYJNmQRoxAxChGjEDEKEaMQMQoRoxAxChHjX1X9AiI9lmN43BPYAAAAAElFTkSuQmCC"/>
+                </g>
+              </g>
+              <g id="グループ_422" data-name="グループ 422" transform="translate(582.768 1.581)">
+                <g id="グループ_421" data-name="グループ 421" clip-path="url(#clip-path-40)">
+                  <image id="長方形_214" data-name="長方形 214" width="17.208" height="7.648" transform="translate(-0.051 -0.434)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAQCAYAAAB+690jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABYSURBVEhL7ZQxCsAwDAOV/J/8oL8MWdraVfZAx9wQwYHBi5CFSzzjEkhVyiBhQ3pJTEN2xuEk9EeJuzcPGCE7tFzsgljq9YPaBS+h9N1IEEudjooDLCHFB7M2ihGcOFFSAAAAAElFTkSuQmCC"/>
+                </g>
+              </g>
+              <g id="グループ_424" data-name="グループ 424" transform="translate(560.484 1.581)">
+                <g id="グループ_423" data-name="グループ 423" clip-path="url(#clip-path-41)">
+                  <image id="長方形_215" data-name="長方形 215" width="17.686" height="7.648" transform="translate(-0.232 -0.434)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAQCAYAAACRKbYdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABdSURBVEhL7ZQxCsAwDAPlfrt/yA/6yVK6JHGq7hm65YYKDgxehCwc2e5DMG3SSBo2pU7jNWV3LP6kvhJZr+IBJWynpouVUIs+f2ArYSY1fEMayKJHr+fuASVgUsoHfPJV5NbzopsAAAAASUVORK5CYII="/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

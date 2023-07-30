@@ -24,6 +24,7 @@ import { throttle, debounce } from 'throttle-debounce'
 
 // page scripts
 import pageNameTop from './page/top'
+import pageNameProduct from './page/product'
 
 // require
 require('intersection-observer')
@@ -114,8 +115,10 @@ const firstRun = () => {
 
   // set100vh（常に更新）
   set100vh('--vh-always')
-
-  headerFixed()
+  // get body className
+  className = getClassName(EL.BODY)
+  
+  if (className.endsWith('top')) headerFixed()
 }
 
 /**
@@ -150,6 +153,8 @@ const initRun = () => {
   if (className.endsWith('top')) pageNameTop()
   if (className.endsWith('top')) mv()
   if (className.endsWith('top')) modal()
+
+  if (className.endsWith('product')) pageNameProduct()
 
   EL.HTML.classList.add('is-loaded')
 }

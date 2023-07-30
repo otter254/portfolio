@@ -50,11 +50,15 @@
       }
     }
   }
-  // .is-scroll & {
-  //   box-shadow: 0 3px 3px rgba(#000, .1);
+}
 
-  //   @include media(sm) {
-  //     box-shadow: 0 vw(3) vw(3) rgba(#000, .1);
-  //   }
-  // }
+// product以下
+
+.l-ProductHeader {
+  &__inner {
+    position: fixed;
+    margin-inline: 64px;
+    margin-top: 48px;
+    z-index: 50;
+  }
 }
