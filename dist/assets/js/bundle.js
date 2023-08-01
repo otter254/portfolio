@@ -305,8 +305,13 @@ __webpack_require__.r(__webpack_exports__);
       modalText.innerText = "";
       modalWrapper.classList.add('show');
       modalImage.classList.add('show');
-      var imageSrc = image.getAttribute('src');
-      modalImage.src = imageSrc;
+      if (image.hasAttribute('src')) {
+        var imageSrc = image.getAttribute('src');
+        modalImage.src = imageSrc;
+      } else if (image.hasAttribute('data-url')) {
+        var _imageSrc = image.getAttribute('data-url');
+        modalImage.src = _imageSrc;
+      } else {}
 
       //   data-src があれば表示
       if (image.hasAttribute('data-src')) {
@@ -626,11 +631,41 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _constant_elements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constant/elements */ "./src/assets/js/constant/elements.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap/ScrollTrigger */ "./node_modules/gsap/ScrollTrigger.js");
 
 
 
+
+gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__.ScrollTrigger);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
+  setTimeout(function () {
+    var tl = gsap__WEBPACK_IMPORTED_MODULE_0__["default"].timeline({
+      defaults: {
+        ease: "none"
+      }
+    });
+    tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvfade01", {
+      opacity: 1,
+      y: 0
+    }));
+    tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvfade02", {
+      opacity: 1,
+      y: 0
+    }));
+    tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvfade03", {
+      opacity: 1,
+      y: 0
+    }, "+=0.1"));
+    tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvfade04", {
+      opacity: 1,
+      y: 0
+    }, "+=0.1"));
+    tl.add(gsap__WEBPACK_IMPORTED_MODULE_0__["default"].to("#js-mvfade05", {
+      opacity: 1,
+      y: 0
+    }));
+  }, 500);
   var targetElement = document.querySelectorAll(".js-fadeIn");
   document.addEventListener("scroll", function () {
     for (var i = 0; i < targetElement.length; i++) {
@@ -33751,6 +33786,7 @@ var initRun = function initRun() {
   if (className.endsWith('top')) (0,_page_top__WEBPACK_IMPORTED_MODULE_14__["default"])();
   if (className.endsWith('top')) (0,_helper_mv__WEBPACK_IMPORTED_MODULE_11__["default"])();
   if (className.endsWith('top')) (0,_helper_modal__WEBPACK_IMPORTED_MODULE_12__["default"])();
+  if (className.endsWith('product')) (0,_helper_modal__WEBPACK_IMPORTED_MODULE_12__["default"])();
   if (className.endsWith('product')) (0,_page_product__WEBPACK_IMPORTED_MODULE_15__["default"])();
   _constant_elements__WEBPACK_IMPORTED_MODULE_1__["default"].HTML.classList.add('is-loaded');
 };

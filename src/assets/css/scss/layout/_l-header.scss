@@ -60,5 +60,13 @@
     margin-inline: 64px;
     margin-top: 48px;
     z-index: 50;
+    h1 {
+      opacity: 0;
+      transition: 1s;
+    }
+    a {
+      transition: $time $ease;
+      @include hoverOpacity(0.8);
+    }
   }
 }

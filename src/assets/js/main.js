@@ -154,6 +154,8 @@ const initRun = () => {
   if (className.endsWith('top')) mv()
   if (className.endsWith('top')) modal()
 
+  if (className.endsWith('product')) modal()
+
   if (className.endsWith('product')) pageNameProduct()
 
   EL.HTML.classList.add('is-loaded')

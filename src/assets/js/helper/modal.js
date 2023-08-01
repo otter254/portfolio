@@ -13,9 +13,15 @@ export default () => {
             
             modalWrapper.classList.add('show');
             modalImage.classList.add('show');
-  
-            let imageSrc = image.getAttribute('src');
-            modalImage.src = imageSrc;
+
+            if (image.hasAttribute('src')) {
+              let imageSrc = image.getAttribute('src');
+              modalImage.src = imageSrc;
+            } else if(image.hasAttribute('data-url')) {
+              let imageSrc = image.getAttribute('data-url');
+              modalImage.src = imageSrc;
+            } else {
+            }
 
             //   data-src があれば表示
             if (image.hasAttribute('data-src')) {
