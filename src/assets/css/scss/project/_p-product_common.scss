@@ -209,7 +209,7 @@
     }
   }
   .product__scene {
-    padding-block: 127px;
+    padding-block: 150px;
     @include media(lg) {
       &:nth-child(even) {
         .l-section-inner {
@@ -219,7 +219,7 @@
       }
     }
     @include media(sm) {
-      padding-block: vw(110);
+      padding-block: vw(140);
     }
   }
   .product__movie {
