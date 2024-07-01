@@ -1,0 +1,162 @@
+<%
+var dir = '../'
+var define = (typeof define === 'undefined') ? '' : define
+var pageData = {
+  pageName: 'top',
+  title: 'ポートフォリオサイト',
+  desc: 'ポートフォリオサイトです。'
+}
+%>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og:http://ogp.me/ns#">
+  <meta charset="utf-8">
+
+  <!-- SEO -->
+  <title>ポートフォリオサイト</title>
+  <meta name="description" content="ポートフォリオサイトです。">
+
+  <!-- Settings -->
+  <meta name="viewport" content="width=device-width, viewport-fit=cover">
+  <meta name="theme-color" content="<%= siteSetting.themeColor %>">
+
+  <!-- SNS -->
+
+  <!-- Preload -->
+  <link rel="preload" as="style" href="<%= siteurl %>assets/css/style.css?rev">
+  <link rel="preload" as="script" href="<%= siteurl %>assets/js/bundle.js?rev">
+
+  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&amp;display=swap" rel="stylesheet">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'cha5als',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  
+  <link rel="stylesheet" href="<%= siteurl %>assets/css/style.css?rev">
+
+</head>
+
+<body id="gotop" class="top">
+<div class="l-body">
+  <header class="l-header">
+    <div class="l-header__inner u-h-max">
+      <div class="c-hamburger js-hmb" role="button" id="js-mvfade02">
+        <span></span>
+        <span></span>
+      </div>
+      <h1 class="txt u-text-en" id="js-mvfade01">
+        <a href="<%= siteurl %>" class="u-v-lr">portfolio</a>
+      </h1>
+    </div>
+  </header>
+  <div class="progress" id="js-progress">
+    <div class="progress__bar"></div>
+  </div>
+  <div class="l-backlayer js-layer"></div>
+  <div class="l-nav__mega">
+    <nav>
+      <ul class="u-text-en">
+        <li class="anchor"><a href="#panel01" class="u-color-selection">top</a></li>
+        <li class="anchor"><a href="#panel02" class="u-color-selection">section01_conceptart</a></li>
+        <li class="anchor"><a href="#panel05" class="u-color-selection">section02_conceptworks</a></li>
+        <li class="anchor"><a href="#panel07" class="u-color-selection">section03_illustration</a></li>
+        <li class="anchor"><a href="#panel08" class="u-color-selection">section04_skeches</a></li>
+        <li class="anchor"><a href="#panel10" class="u-color-selection">section05_freeworks</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="l-wrapper">
+    <div class="l-content">
+
+<!-- main -->
+<main class="l-main">
+
+    <div class="l-main--wrapper" id="wrapper">
+
+      <!-- MV -->
+      <section class="l-main-panel l-main-panel-01 panel" id="panel01">
+        <div class="top-mv">
+          <div class="top-mv__bg">
+            <figure class="js-mvparallax01">
+              <img src="/assets/images/top/mv_bg01.webp" alt="" id="js-mvbg-01">
+            </figure>
+            <figure class="js-mvparallax02">
+              <img src="/assets/images/top/mv_bg02.webp" alt="" id="js-mvbg-02">
+            </figure>
+            <figure>
+              <img src="/assets/images/top/mv_bg03.webp" alt="" id="js-mvbg-03">
+            </figure>
+            <div class="mv-bglayer" id="js-mvbglayer"></div>
+          </div>
+          <div class="top-mv__title">
+            <p class="u-text-en mvtext"></p>
+            <p class="u-text-en mvtext02"></p>  
+          </div>
+        </div>
+      </section>
+
+      <!-- パネル2枚目 コンセプトアート section01-conceptart01 -->
+      <%- include(dir + 'inc/layout/_panel02', {meta: pageData}) %>
+
+      <!-- パネル3枚目 コンセプトアート section01-conceptart02 -->
+      <%- include(dir + 'inc/layout/_panel03', {meta: pageData}) %>
+      
+      <!-- パネル4枚目 コンセプトアート section01-conceptart03 -->
+      <%- include(dir + 'inc/layout/_panel04', {meta: pageData}) %>
+
+      <!-- パネル5枚目 コンセプトアート section01-conceptart04 -->
+      <%- include(dir + 'inc/layout/_panel04_2', {meta: pageData}) %>
+      
+      <!-- パネル6枚目 コンセプトアート section02-conceptart01 -->
+      <%- include(dir + 'inc/layout/_panel05', {meta: pageData}) %>
+
+      <!-- パネル7枚目 コンセプトアート2 section02-conceptart02 -->
+      <%- include(dir + 'inc/layout/_panel06', {meta: pageData}) %>
+
+      <!-- パネル8枚目 その他の制作 section03-works01 -->
+      <%- include(dir + 'inc/layout/_panel07', {meta: pageData}) %>
+
+      <!-- パネル9枚目 その他の制作 section03-works02 -->
+      <%- include(dir + 'inc/layout/_panel07_2', {meta: pageData}) %>
+
+      <!-- パネル10枚目 デッサン section04-skeches01 -->
+      <%- include(dir + 'inc/layout/_panel08', {meta: pageData}) %>
+
+      <!-- パネル11枚目 静物着彩 section04-skeches02 -->
+      <%- include(dir + 'inc/layout/_panel09', {meta: pageData}) %>
+
+      <!-- パネル11枚目 静物着彩 section04-skeches02 -->
+      <%- include(dir + 'inc/layout/_panel12', {meta: pageData}) %>
+      
+      <!-- パネル12枚目 その他趣味 section05-etc -->
+      <%- include(dir + 'inc/layout/_panel10', {meta: pageData}) %>
+      
+
+    </div>
+    <div class="modal-wrapper">
+      <figure>
+        <img src="/assets/images/ogpimg.png" alt="" class="modal-image">
+        <figcaption id="modal-txt"></figcaption>
+      </figure>
+    </div>
+
+
+</main>
+</div>
+
+</div>
+</div>
+
+<script src="/assets/js/bundle.js?rev" defer="defer"></script>
+</body>
+</html>
